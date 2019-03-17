@@ -1,11 +1,12 @@
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-/* ==UserStyle==
+    /* ==UserStyle==
 @name         ISIS TUB Dark
 @description  A dark theme for ISIS TUB.
 @namespace    github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @author       B4rtware, Re-Krass
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
-@version      0.0.1
+@updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
+@version      0.0.2
 ==/UserStyle== */
 }
 
