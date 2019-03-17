@@ -11,140 +11,145 @@
 }
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-:root {
-    --main-bg-color: rgb(20, 20, 20);
-    --main-navs-color: rgb(40, 40, 40);
-    --main-white: rgb(245, 245, 245);
-    --main-white-muted: rgb(200, 200, 200);
-}
+    :root {
+        --main-bg-color: rgb(20, 20, 20);
+        --main-navs-color: rgb(40, 40, 40);
+        --main-white: rgb(245, 245, 245);
+        --main-white-muted: rgb(200, 200, 200);
+    }
 }
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-body, html {
-    background-color: var(--main-bg-color);
-}
+    /*** Main Colors etc ***/
+    body, html {
+        background-color: var(--main-bg-color);
+    }
 
-/*** Fonts ***/
-h1, h2, h3, h4, h5, h6 {
-    color: var(--main-white)!important;
-}
-.text-muted {
-    color: var(--main-white-muted)!important;
-}
-/* a {
+    /*** Fonts ***/
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--main-white)!important;
+    }
+    .text-muted {
+        color: var(--main-white-muted)!important;
+    }
+    /* a {
     color: rgb(255, 255, 255)!important;
     font-weight: bold;
 } */
-
-.subject {
-    color: var(--main-white)!important;
-}
-.author {
-    color: var(--main-white)!important;
-}
-.maincontent {
-    background-color: var(--main-bg-color)!important;
-    color: rgb(238, 238, 238)!important;
-}
-
-.tub-logo {
-    background-color: var(--main-navs-color)!important;
-}
-.return-home {
-    background-color: var(--main-bg-color)!important;
-}
-.header-right {
-    background-color: var(--main-navs-color)!important;
-}
-.home {
-    filter: grayscale(100%) invert(100%)!important;
-}
-#nav-notification-popover-container, #nav-message-popover-container {
-    background-color: var(--main-bg-color);
-}
-.nav-right-top {
-    background-color: var(--main-navs-color)!important;
+    .subject {
+        color: var(--main-white)!important;
+    }
+    .author {
+        color: var(--main-white)!important;
+    }
+    .maincontent {
+        background-color: var(--main-bg-color)!important;
+        color: rgb(238, 238, 238)!important;
+    }
 }
 
-.hidden-print {
-    background-color: var(--main-navs-color)!important;
-}
-#block-site-news {
-    border-bottom: none!important;
-}
-.row.maincontent.clearfix {
-    padding: 0px 15px;
-}
-#block-region-side-pre .card-title {
-    border-bottom: 4px solid var(--main-white-muted);
-}
-[data-region="blocks-column"] {
-    padding: 0px;
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+    /*** left upper logo ***/
+    .tub-logo { /* left upper logo block */
+        background-color: var(--main-navs-color)!important;
+    }
+    .return-home { /* left upper 'Startseite der TUB' block*/
+        background-color: var(--main-bg-color)!important;
+    }
 }
 
-.left {
-    width: 0px!important;
-} 
-/* list-group-item list-group-item-action active */
-
-/*** No Progress - nur für Kästchen Kurse ***/
-.no-progress {
-    /* Von den Kästchen den weißen rechten Rand entfernt */
-    -webkit-box-shadow: none!important;
-    -moz-box-shadow: none!important;
-    box-shadow: none!important;
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+    /*** middle-right upper logo ***/
+    .header-right { /* middle-right upper logo main block */
+        background-color: var(--main-navs-color)!important;
+    }
+    .nav-right-top { /* middle-right upper bar 'language | help | contact | impressum  */
+        background-color: var(--main-navs-color)!important;
+    }
+    .home { /* ISIS logo 'ISIS INFORMATION SYSTEM FOR INSTRUCTORS AND STUDENTS' */
+        filter: grayscale(100%) invert(100%)!important;
+    }
+    #nav-notification-popover-container, #nav-message-popover-container { /* notification and message logo background */
+        background-color: var(--main-bg-color);
+    }
+		/*** header dark image ***/
+    .header.navbar { /* upper navbar - normal */
+        background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
+    }
+    .nephthys-night header.navbar { /* upper navbar - dark */
+        background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
+    }
 }
 
-/* .tub-nav {
-    background-color: rgb(111, 85, 85);
-    color: rgb(6, 138, 226)!important;
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+    /*** left navigation / navbar ***/
+    #nav-drawer .list-group .list-group-item { /* left navigation text container */
+        color: rgb(227, 227, 227)!important;
+    }
+    #nav-drawer .list-group .list-group-item-action.active { /* left active selection */
+        color: var(--main-bg-color)!important;
+        background-color: var(--main-white-muted)!important;
+    }
+    /*** arrow for search field ***/
+    #nav-drawer { /* arrow button for search field */
+        background-color: var(--main-navs-color);
+    }
+    .custom-drawer-toggle.nephthys-collapse > button { /* fix height and width for button */
+        top: 200px;
+        height: 35px;
+        width: 35px;
+    }
+    .custom-drawer-toggle.nephthys-collapse.nephthys-shrink > button { /* lock button to search field */
+        top: 0px;
+    }
 }
- */
-/*** Left Navbar ***/
-#nav-drawer {
-    background-color: var(--main-navs-color);
-}
-/* #nav-drawer .a {
-    color: rgb(255, 255, 255)!important;
-} */
-#nav-drawer .list-group .list-group-item-action.active {
-    color: var(--main-bg-color)!important;
-    background-color: var(--main-white-muted)!important;
-}
-#nav-drawer .list-group .list-group-item {
-    color: rgb(227, 227, 227)!important;
-}
-.nav-search {
-    background-color: rgb(195, 3, 3)!important;
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+    /*** left lower / left right main block ***/
+    .hidden-print { /* 'Ankündigungen' block */
+        background-color: var(--main-navs-color)!important;
+    }
+    #block-region-side-pre .card-title { /* line below title */
+        border-bottom: 4px solid var(--main-white-muted);
+    }
+    [data-region="blocks-column"] { /* news text container padding left fixed */
+        padding: 0px;
+    }
+    .row.maincontent.clearfix { /* news text padding left fixed (same distance)*/
+        padding: 0px 0px;
+    }
+    .row.maincontent.clearfix .left { /* news text padding left fixed (same distance / remove useless container padding) */
+        width: 0px!important; 
+        padding: 0px 15px;
+    }
+    #block-site-news { /* hide useless white border at the lower bottom */
+        border-bottom: none!important;
+    }
 }
 
-.custom-drawer-toggle.nephthys-collapse.nephthys-shrink > button { 
-    top: 0px;
-}
-.custom-drawer-toggle.nephthys-collapse > button { 
-    top: 200px;
-    height: 35px;
-    width: 35px;
-}
-
-.nav-link {
-    color: rgb(255, 255, 255)!important;
-/*     color: rgb(197, 14, 31)!important; */
-    font-weight: bold;
-}
-.h5 a {
-    color: rgb(255, 255, 255)!important;
-    font-weight: bold;
-}
-
-
-/*** https://shibboleth.tubit.tu-berlin.de/ ***/
-}
-
-@-moz-document url-prefix("http://example.com") {
-/***
-https://isis.tu-berlin.de/theme/image.php/nephthys/theme/1552409344/isis_header_2
-
-
-***/
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+    /*** Main Site (middle block) ***/
+    /*** fix square for courses ***/
+    .no-progress {
+        /* remove white border from course squares */
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+	.nav-link { /* main navigation 'Zeitliche Übersicht | Kurse ...' */
+        color: rgb(255, 255, 255)!important;
+        font-weight: bold;
+    }
+	.h5 a { /* course names main site */
+        color: rgb(255, 255, 255)!important;
+        font-weight: bold;
+    }
+    
+    /*** Course Site ***/
+    .instancename { /* resource names */
+        color: var(--main-white)!important;
+        border-left: 4px solid rgb(255, 34, 34)!important;
+    }	
+	a .instancename { /* add padding left from border to text */
+        padding-left: 4px!important;
+    }
 }
