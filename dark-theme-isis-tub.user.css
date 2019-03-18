@@ -6,7 +6,7 @@
 @author       B4rtware, Re-Krass
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
-@version      0.1.0
+@version      0.2.0
 ==/UserStyle== */
 }
 
@@ -401,4 +401,8 @@
 		/* 'Aktuelle Termine' icon */
 		color: var(--main-white-muted);
 	}
+	/* Bewertungen Ansicht */
+    #region-main tr {
+        color: var(--main-white-muted)
+    }
 }
