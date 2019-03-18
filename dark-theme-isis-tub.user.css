@@ -48,33 +48,87 @@
 	}
 }
 
+/* +------------------------------+  */
+/* +       top left logo          +  */
+/* +------------------------------+  */
+/* + ####                         +  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +------------------------------+  */
+
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** left upper logo ***/
-	.tub-logo {
+	.tub-nav .tub-logo {
 		/* left upper logo block */
 		background-color: var(--main-navs-color)!important;
 	}
-	.return-home {
+	.tub-nav .return-home {
 		/* left upper 'Startseite der TUB' block*/
 		background-color: var(--main-bg-color)!important;
 	}
 }
 
+/* +------------------------------+  */
+/* +          top header          +  */
+/* +------------------------------+  */
+/* +         #####################+  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +------------------------------+  */
+
+/* everything is inside the header-right class which is the top header */
+
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** middle-right upper logo ***/
+	/* Systemnachrichten -> popover-region-container */
+	.popover-region-container .content-item-container {
+		background-color: var(--main-bg-color);
+		border-bottom: 1px solid var(--main-white-muted);
+		margin: 0px;
+	}
+	.popover-region-container .content-item-container:hover {
+		background-color: var(--main-bg-color);
+		border-right: 4px solid rgb(197, 14, 31);
+		border-bottom: 1px solid var(--main-white-muted);
+		margin-right: -4px;
+	}
+	.popover-region-container .content-item-container .content-item-body p {
+		color: var(--main-white-muted);
+	}
+	/* TODO: fix messages (i dont have messages) */
+	.popover-region-header-container {
+		border: none;
+	}
+	.popover-region-content-container {
+		background-color: var(--main-bg-color);
+	}
+	.empty-message {
+		background-color: var(--main-navs-color);
+		color: var(--main-white-muted);
+	}
+	.popover-region-footer-container {
+		border: none;
+		background-color: var(--main-navs-color);
+		color: var(--main-white-muted);
+	}
 	.header-right {
 		/* middle-right upper logo main block */
 		background-color: var(--main-navs-color)!important;
 	}
-	.nav-right-top {
+	.header-right .nav-right-top {
 		/* middle-right upper bar 'language | help | contact | impressum  */
 		background-color: var(--main-navs-color)!important;
 	}
-	.home {
+	.header-right .home {
 		/* ISIS logo 'ISIS INFORMATION SYSTEM FOR INSTRUCTORS AND STUDENTS' */
 		filter: grayscale(100%) invert(100%)!important;
 	}
-	header .header-right .usermenu .usertext { /* user name */
+	.header-right .usermenu .usertext { /* user name */
 		color: var(--main-white-muted);
 	}
 	.dropdown-menu .dropdown-item:hover { /* hover over menu item */
@@ -114,6 +168,17 @@
 	}
 }
 
+/* +------------------------------+  */
+/* +          left navigation     +  */
+/* +------------------------------+  */
+/* +                              +  */
+/* + #                            +  */
+/* + #                            +  */
+/* + #                            +  */
+/* + #                            +  */
+/* + #                            +  */
+/* +------------------------------+  */
+
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** left navigation / navbar ***/
 	#nav-drawer .list-group .list-group-item {
@@ -152,6 +217,18 @@
 		top: 0px;
 	}
 }
+
+/* +------------------------------+  */
+/* +          right block         +  */
+/* +------------------------------+  */
+/* +                              +  */
+/* +                             #+  */
+/* +                             #+  */
+/* +                             #+  */
+/* +                             #+  */
+/* +                             #+  */
+/* +------------------------------+  */
+
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** left lower / right main block ***/
 	/*** 'Diese Seite bearbeiten' button ***/	
@@ -210,14 +287,45 @@
 	
 	***/
 }
+
+/* +------------------------------+  */
+/* +           footer             +  */
+/* +------------------------------+  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +                              +  */
+/* +        ################      +  */
+/* +------------------------------+  */
+
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** lower bottom / footer ***/
 	#page-footer .logininfo {
 		color: var(--main-white-muted);
 	}
 }
+
+/* +------------------------------+  */
+/* +          main block          +  */
+/* +------------------------------+  */
+/* +                              +  */
+/* +      #################       +  */
+/* +      #################       +  */
+/* +      #################       +  */
+/* +      #################       +  */
+/* +      #################       +  */
+/* +------------------------------+  */
+
+/* #region-main */
+
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** Main Site (middle block) ***/
+	/* captions for weeks and main caption of course */
+	h3.sectionname {
+		border: none!important;
+		background-color: var(--main-navs-color)!important;
+	}
 	/*** fix square for courses ***/
 	.no-progress {
 		/* remove white border from course squares */
