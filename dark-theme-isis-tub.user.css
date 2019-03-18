@@ -6,7 +6,7 @@
 @author       B4rtware, Re-Krass
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
-@version      0.3.0
+@version      0.4.0
 ==/UserStyle== */
 }
 
@@ -16,6 +16,7 @@
 		--main-navs-color: rgb(40, 40, 40);
 		--main-white: rgb(245, 245, 245);
 		--main-white-muted: rgb(200, 200, 200);
+		--main-red-tu: rgb(255, 60, 78)
 	}
 }
 
@@ -46,6 +47,14 @@
 		background-color: var(--main-bg-color)!important;
 		color: rgb(238, 238, 238)!important;
 	}
+	li { /* li text elements */
+		color: var(--main-white);
+	}
+	.form-inline .form-control { /* search form lower */
+		background-color: var(--main-bg-color);
+		color: var(--main-white);
+	}
+	
 }
 
 /* +------------------------------+  */
@@ -147,37 +156,7 @@
 /* everything is inside the header-right class which is the top header */
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/* Systemnachrichten -> popover-region-container */
-	.popover-region-container .content-item-container {
-		background-color: var(--main-bg-color);
-		border-bottom: 1px solid var(--main-white-muted);
-		margin: 0px;
-	}
-	.popover-region-container .content-item-container:hover {
-		background-color: var(--main-bg-color);
-		border-right: 4px solid rgb(197, 14, 31);
-		border-bottom: 1px solid var(--main-white-muted);
-		margin-right: -4px;
-	}
-	.popover-region-container .content-item-container .content-item-body p {
-		color: var(--main-white-muted);
-	}
-	/* TODO: fix messages (i dont have messages) */
-	.popover-region-header-container {
-		border: none;
-	}
-	.popover-region-content-container {
-		background-color: var(--main-bg-color);
-	}
-	.empty-message {
-		background-color: var(--main-navs-color);
-		color: var(--main-white-muted);
-	}
-	.popover-region-footer-container {
-		border: none;
-		background-color: var(--main-navs-color);
-		color: var(--main-white-muted);
-	}
+	/*** header upper right-middle ***/
 	.header-right {
 		/* middle-right upper logo main block */
 		background-color: var(--main-navs-color)!important;
@@ -186,17 +165,40 @@
 		/* middle-right upper bar 'language | help | contact | impressum  */
 		background-color: var(--main-navs-color)!important;
 	}
-	.header-right .home {
-		/* ISIS logo 'ISIS INFORMATION SYSTEM FOR INSTRUCTORS AND STUDENTS' */
-		filter: grayscale(100%) invert(100%)!important;
-	}
+	/*.header-right a.home { */
+		/* ISIS logo 'ISIS INFORMATION SYSTEM FOR INSTRUCTORS AND STUDENTS' FIXME */
+	/*	filter: grayscale(100%) invert(100%)!important;
+	}*/
 	.header-right .usermenu .usertext { /* user name */
-		color: var(--main-white-muted);
+		color: var(--main-white)!important;
 	}
+	
+	.user-navbar #nav-notification-popover-container, #nav-message-popover-container {
+		/* notification and message logo background */
+		background-color: var(--main-navs-color);
+	}
+	#nav-notification-popover-container:hover, #nav-message-popover-container:hover {
+		background-color: transparent;
+	}
+
+	/*** header dark image ***/
+	.header.navbar {
+		/* upper navbar - normal */
+		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
+	}
+	.nephthys-night header.navbar {
+		/* upper navbar - dark */
+		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
+	}
+	/*** user dropdown menu ***/
+	.usermenu .dropdown-menu.dropdown-menu-right.menu.align-tr-br.show .dropdown-item.menu-action { /* fix background color for dropbdown item (maybe find out active elemnt and readd bg) */
+		background-color: transparent!important;
+	}
+	
 	.dropdown-menu .dropdown-item:hover { /* hover over menu item */
 		border-left: 5px solid rgb(197, 14, 31)!important;
-		margin-left: -5px;
-		background-color: transparent;
+		margin-left: -5px;	
+		background-color: transparent!important;
 	}
 	.dropdown-menu .dropdown-item:active { /* FIXME */
 		background-color: transparent!important;
@@ -213,21 +215,46 @@
 		color: var(--main-white);
 	}
 	
-
-	.user-navbar #nav-notification-popover-container, #nav-message-popover-container {
-		/* notification and message logo background */
+	/*** Systemnachrichten, Mitteilungen  -> popover-region-container ***/
+	.popover-region-container .content-item-container { 
+		/* main dropdwon container */
+		background-color: var(--main-bg-color);
+		border-bottom: 1px solid var(--main-white-muted);
+		margin: 0px;
+	}
+	.popover-region-container .content-item-container:hover { 
+		/* hover over dropdown */
+		border-right: 4px solid rgb(197, 14, 31);
+		border-bottom: 1px solid var(--main-white-muted);
+		margin-right: -4px;
+	}
+		/* TODO: fix messages (i dont have messages) */
+	.popover-region-header-container {
+		border: none;
+	}
+	.popover-region-content-container {
+		background-color: var(--main-bg-color);
+	}
+	.empty-message {
 		background-color: var(--main-navs-color);
+		color: var(--main-white-muted);
 	}
+	.popover-region-footer-container {
+		border: none;
+		background-color: var(--main-navs-color);
+		color: var(--main-white-muted);
+	}
+	/*** Systemnachrichten ***/
+	.notification-message { 
+		/* message title text */
+		color: var(--main-white);
+	}
+	/*** Mitteilungen ***/
+	.popover-region-container .content-item-container .content-item-body p {
+		color: var(--main-white-muted)!important;
+	}
+	
 
-	/*** header dark image ***/
-	.header.navbar {
-		/* upper navbar - normal */
-		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
-	}
-	.nephthys-night header.navbar {
-		/* upper navbar - dark */
-		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
-	}
 }
 
 /* +------------------------------+  */
@@ -267,12 +294,14 @@
 	button.btn.pull-xs-left.m-r-1.btn-secondary {
 		/* button */
 		background-color: var(--main-white-muted);
+		border: none!important;
 	}
 	.custom-drawer-toggle.nephthys-collapse > button {
 		/* fix height and width for button */
 		top: 200px;
 		height: 35px;
 		width: 35px;
+		border: none!important;
 	}
 	.custom-drawer-toggle.nephthys-collapse.nephthys-shrink > button {
 		/* lock button to search field */
@@ -306,6 +335,26 @@
 		/* 'Ankündigungen' main block */
 		background-color: var(--main-navs-color)!important;
 	}
+	#page-mod-forum-discuss .discussioncontrol.displaymode { 
+		/* button bg 1 */
+		background-color: var(--main-navs-color)!important;
+	}
+	#page-mod-forum-discuss .singleselect { 
+		/* button bg 2 */
+		background-color: var(--main-navs-color)!important;
+	}
+	#page-mod-forum-discuss .custom-select { /* button text */
+		color: var(--main-white-muted);
+		border: 1px solid var(--main-navs-color);
+	}
+	.form-control { /* buttons */
+		background-color: var(--main-navs-color);
+	}
+	span {
+		color: var(--main-white)
+	}
+	
+	
 	#block-region-side-pre .card-title {
 		/* line below title */
 		border-bottom: 4px solid var(--main-white-muted);
@@ -465,6 +514,71 @@
 	}
 	/* Bewertungen Ansicht */
     #region-main tr {
-        color: var(--main-white-muted)
+        color: var(--main-white-muted);
     }
+	
+	/*** 'Mitteilungen' site ***/
+	.tabimage { /* nav block */
+		background-color: var(--main-navs-color);
+	}
+	i.icon.fa.fa-comment.fa-fw { /* comment icon */
+		color: var(--main-red-tu)!important;
+	}
+	i.icon.fa.fa-users.fa-fw { /* users icon */
+		color: var(--main-white-muted)!important;
+	}
+	.messages-header { /* header message block */
+		background-color: var(--main-navs-color)!important;
+	}
+	.messages .blocktime { /* message date and time text */
+		color: rgb(61, 41, 41)!important;
+	}
+	.messaging-area-container .message .content.left .timesent { /* */
+		color: rgb(69, 45, 45)!important;
+	}
+	.messaging-area-container .messages { /* messages bg */
+		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_chat_pattern)!important;
+		filter: grayscale(100%) invert(100%)!important;
+	}
+	.messaging-area-container .message .content.left { /* message block */
+		background-color: rgb(255, 201, 201)!important;
+	}
+	.messages p { /* message text */
+		color: var(--main-bg-color)!important;
+	}
+	div.name { /* user names */
+		color: var(--main-white)!important;
+	}
+	.messaging-area-container .messaging-area .contacts-area .contacts .contact.selected .name { /* selected user name */
+		color: var(--main-red-tu)!important;
+	}
+	.contacts-area { /* left block */
+		background-color: var(--main-navs-color);
+	}
+	.messaging-area-container .messaging-area .contacts-area .searchtextarea { /* search bar */
+		background-color: var(--main-bg-color);
+		margin: 0rem 1rem 1rem 1rem;
+	}
+	.messaging-area-container .messaging-area .contacts-area .searchtextarea.searching { /* search bar clicked FIXME*/
+		background-color: var(--main-bg-color)!important;
+	}
+	p.lastmessage { /* last message text */
+		color: var(--main-white-muted)!important;
+	}
+	.messaging-area-container .messaging-area .messages-area .response .message-box .message-text-container textarea { /* messagte text not clicked */
+		background-color: var(--main-navs-color);
+		color: var(--main-white)!important;
+		margin: 0rem 0rem 1.25rem 0.5rem;
+	}
+		.messaging-area-container .messaging-area .messages-area .response.messaging .message-box .message-text-container textarea { /* message clicked */
+		background-color: var(--main-navs-color);
+		color: var(--main-white)!important;
+	}
+	.btn-primary, .btn-secondary, .btn-default, #shibbolethbutton, .messaging-area-container .messaging-area .messages-area .response .message-box .send-button-container button { /* button send */
+		background-color: var(--main-navs-color);
+		border: 2px solid var(--main-navs-color)!important;
+	}
+	i.icon.fa.fa-circle-o-notch.fa-spin.fa-fw { /* load more icon */
+		color: var(--main-white)!important;
+	}
 }
