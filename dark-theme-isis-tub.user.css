@@ -1,155 +1,296 @@
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-    /* ==UserStyle==
+	/* ==UserStyle==
 @name         ISIS TUB Dark
 @description  A dark theme for ISIS TUB.
 @namespace    github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @author       B4rtware, Re-Krass
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
-@version      0.0.3
+@version      0.0.2
 ==/UserStyle== */
 }
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-    :root {
-        --main-bg-color: rgb(20, 20, 20);
-        --main-navs-color: rgb(40, 40, 40);
-        --main-white: rgb(245, 245, 245);
-        --main-white-muted: rgb(200, 200, 200);
-    }
+	:root {
+		--main-bg-color: rgb(20, 20, 20);
+		--main-navs-color: rgb(40, 40, 40);
+		--main-white: rgb(245, 245, 245);
+		--main-white-muted: rgb(200, 200, 200);
+	}
 }
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-    /*** Main Colors etc ***/
-    body, html {
-        background-color: var(--main-bg-color);
-    }
+	/*** Main Colors etc ***/
+	body, html {
+		background-color: var(--main-bg-color);
+	}
 
-    /*** Fonts ***/
-    h1, h2, h3, h4, h5, h6 {
-        color: var(--main-white)!important;
-    }
-    .text-muted {
-        color: var(--main-white-muted)!important;
-    }
-    /* a {
+	/*** Fonts ***/
+	h1, h2, h3, h4, h5, h6 {
+		color: var(--main-white)!important;
+	}
+	.text-muted {
+		color: var(--main-white-muted)!important;
+	}
+	/* a {
     color: rgb(255, 255, 255)!important;
     font-weight: bold;
 } */
-    .subject {
-        color: var(--main-white)!important;
-    }
-    .author {
-        color: var(--main-white)!important;
-    }
-    .maincontent {
-        background-color: var(--main-bg-color)!important;
-        color: rgb(238, 238, 238)!important;
-    }
+	.subject {
+		color: var(--main-white)!important;
+	}
+	.author {
+		color: var(--main-white)!important;
+	}
+	.maincontent {
+		background-color: var(--main-bg-color)!important;
+		color: rgb(238, 238, 238)!important;
+	}
 }
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-    /*** left upper logo ***/
-    .tub-logo { /* left upper logo block */
-        background-color: var(--main-navs-color)!important;
-    }
-    .return-home { /* left upper 'Startseite der TUB' block*/
-        background-color: var(--main-bg-color)!important;
-    }
+	/*** left upper logo ***/
+	.tub-logo {
+		/* left upper logo block */
+		background-color: var(--main-navs-color)!important;
+	}
+	.return-home {
+		/* left upper 'Startseite der TUB' block*/
+		background-color: var(--main-bg-color)!important;
+	}
 }
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-    /*** middle-right upper logo ***/
-    .header-right { /* middle-right upper logo main block */
-        background-color: var(--main-navs-color)!important;
-    }
-    .nav-right-top { /* middle-right upper bar 'language | help | contact | impressum  */
-        background-color: var(--main-navs-color)!important;
-    }
-    .home { /* ISIS logo 'ISIS INFORMATION SYSTEM FOR INSTRUCTORS AND STUDENTS' */
-        filter: grayscale(100%) invert(100%)!important;
-    }
-    #nav-notification-popover-container, #nav-message-popover-container { /* notification and message logo background */
-        background-color: var(--main-bg-color);
-    }
-		/*** header dark image ***/
-    .header.navbar { /* upper navbar - normal */
-        background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
-    }
-    .nephthys-night header.navbar { /* upper navbar - dark */
-        background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
-    }
+	/*** middle-right upper logo ***/
+	.header-right {
+		/* middle-right upper logo main block */
+		background-color: var(--main-navs-color)!important;
+	}
+	.nav-right-top {
+		/* middle-right upper bar 'language | help | contact | impressum  */
+		background-color: var(--main-navs-color)!important;
+	}
+	.home {
+		/* ISIS logo 'ISIS INFORMATION SYSTEM FOR INSTRUCTORS AND STUDENTS' */
+		filter: grayscale(100%) invert(100%)!important;
+	}
+	header .header-right .usermenu .usertext { /* user name */
+		color: var(--main-white-muted);
+	}
+	.dropdown-menu .dropdown-item:hover { /* hover over menu item */
+		border-left: 5px solid rgb(197, 14, 31)!important;
+		margin-left: -5px;
+		background-color: transparent;
+	}
+	.dropdown-menu .dropdown-item:active { /* FIXME */
+		background-color: transparent!important;
+	}
+	
+	.usermenu .dropdown-menu.dropdown-menu-right.menu.align-tr-br.show { /* dropdown menu */
+		background-color: var(--main-navs-color);
+		box-shadow: 0px 0px 30px 10px var(--main-bg-color);
+	}
+	.dropdown-menu .dropdown-item.menu-action .menu-action-text { /* menu text */
+		color: var(--main-white);
+	}
+	.dropdown-menu .dropdown-item.menu-action .icon { /* icons */
+		color: var(--main-white);
+	}
+	
+
+	.user-navbar #nav-notification-popover-container, #nav-message-popover-container {
+		/* notification and message logo background */
+		background-color: var(--main-navs-color);
+	}
+
+	/*** header dark image ***/
+	.header.navbar {
+		/* upper navbar - normal */
+		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
+	}
+	.nephthys-night header.navbar {
+		/* upper navbar - dark */
+		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
+	}
 }
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-    /*** left navigation / navbar ***/
-    #nav-drawer .list-group .list-group-item { /* left navigation text container */
-        color: rgb(227, 227, 227)!important;
-    }
-    #nav-drawer .list-group .list-group-item-action.active { /* left active selection */
-        color: var(--main-bg-color)!important;
-        background-color: var(--main-white-muted)!important;
-    }
-    /*** arrow for search field ***/
-    #nav-drawer { /* arrow button for search field */
-        background-color: var(--main-navs-color);
-    }
-    .custom-drawer-toggle.nephthys-collapse > button { /* fix height and width for button */
-        top: 200px;
-        height: 35px;
-        width: 35px;
-    }
-    .custom-drawer-toggle.nephthys-collapse.nephthys-shrink > button { /* lock button to search field */
-        top: 0px;
-    }
-}
-@-moz-document regexp(".*isis.tu-berlin.de.*") {
-    /*** left lower / left right main block ***/
-    .hidden-print { /* 'Ankündigungen' block */
-        background-color: var(--main-navs-color)!important;
-    }
-    #block-region-side-pre .card-title { /* line below title */
-        border-bottom: 4px solid var(--main-white-muted);
-    }
-    [data-region="blocks-column"] { /* news text container padding left fixed */
-        padding: 0px;
-    }
-    .row.maincontent.clearfix { /* news text padding left fixed (same distance)*/
-        padding: 0px 0px;
-    }
-    .row.maincontent.clearfix .left { /* news text padding left fixed (same distance / remove useless container padding) */
-        width: 0px!important; 
-        padding: 0px 15px;
-    }
-    #block-site-news { /* hide useless white border at the lower bottom */
-        border-bottom: none!important;
-    }
-}
+	/*** left navigation / navbar ***/
+	#nav-drawer .list-group .list-group-item {
+		/* left navigation text container */
+		color: rgb(227, 227, 227)!important;
+	}
+	#nav-drawer .list-group .list-group-item-action.active {
+		/* left active selection */
+		color: var(--main-bg-color)!important;
+		background-color: var(--main-white-muted)!important;
+	}
 
+	/*** search box ***/
+	#navsearchbox.form-control {
+		/* search bar */
+		background-color: var(--main-bg-color);
+	}
+	#navsearchbox.form-control::placeholder {
+		/* search bar placeholder */
+		color: var(--main-white-muted);
+	}
+
+	/*** arrow for search field ***/
+	button.btn.pull-xs-left.m-r-1.btn-secondary {
+		/* button */
+		background-color: var(--main-white-muted);
+	}
+	.custom-drawer-toggle.nephthys-collapse > button {
+		/* fix height and width for button */
+		top: 200px;
+		height: 35px;
+		width: 35px;
+	}
+	.custom-drawer-toggle.nephthys-collapse.nephthys-shrink > button {
+		/* lock button to search field */
+		top: 0px;
+	}
+}
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-    /*** Main Site (middle block) ***/
-    /*** fix square for courses ***/
-    .no-progress {
-        /* remove white border from course squares */
-        -webkit-box-shadow: none!important;
-        -moz-box-shadow: none!important;
-        box-shadow: none!important;
-    }
-	.nav-link { /* main navigation 'Zeitliche Übersicht | Kurse ...' */
-        color: rgb(255, 255, 255)!important;
-        font-weight: bold;
-    }
-	.h5 a { /* course names main site */
-        color: rgb(255, 255, 255)!important;
-        font-weight: bold;
-    }
-    
-    /*** Course Site ***/
-    .instancename { /* resource names */
-        color: var(--main-white)!important;
-        border-left: 4px solid rgb(255, 34, 34)!important;
-    }	
-	a .instancename { /* add padding left from border to text */
-        padding-left: 4px!important;
-    }
+	/*** left lower / right main block ***/
+	/*** 'Diese Seite bearbeiten' button ***/	
+	.btn.btn-secondary { /* button border */
+		border: 2px solid var(--main-navs-color)!important;
+	}
+	.singlebutton .btn.btn-secondary { /* button */
+		background-color: var(--main-navs-color);
+	}
+	
+	/*** 'Ankündigungen' block ***/
+	.hidden-print {
+		/* 'Ankündigungen' main block */
+		background-color: var(--main-navs-color)!important;
+	}
+	#block-region-side-pre .card-title {
+		/* line below title */
+		border-bottom: 4px solid var(--main-white-muted);
+	}
+	[data-region="blocks-column"] {
+		/* news text container padding left fixed */
+		padding: 0px;
+	}
+	.row.maincontent.clearfix {
+		/* news text padding left fixed (same distance)*/
+		padding: 0px 0px;
+	}
+	.row.maincontent.clearfix .left {
+		/* news text padding left fixed (same distance / remove useless container padding) */
+		width: 0px!important;
+		padding: 0px 15px;
+	}
+	.link { /* 'Antworten' */
+		color: var(--main-white-muted);
+	}
+	.card-title.d-inline:before { /* icon FIXME: (doesn't work)*/
+		color: var(--main-white);
+	}
+	#block-site-news {
+		/* hide useless white border at the lower bottom */
+		border-bottom: none!important;
+	}
+	/*** 
+	TODOs:
+	Main Site:
+	main site: seite nach rechts / links new color
+	footer: Icon InnoCampus 
+	Systemnachrichten
+	
+	Course Site:
+	Allgemeines (Logik) border and color
+	
+	Allgemeine andere Seiten:
+	
+	Login Site:
+	
+	***/
+}
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+	/*** lower bottom / footer ***/
+	#page-footer .logininfo {
+		color: var(--main-white-muted);
+	}
+}
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+	/*** Main Site (middle block) ***/
+	/*** fix square for courses ***/
+	.no-progress {
+		/* remove white border from course squares */
+		-webkit-box-shadow: none!important;
+		-moz-box-shadow: none!important;
+		box-shadow: none!important;
+	}
+	.nav-link {
+		/* main navigation 'Zeitliche Übersicht | Kurse ...' */
+		color: rgb(255, 255, 255)!important;
+		font-weight: bold;
+		background-color: var(--main-navs-color); /* TODO: Farbe bischen heller machen */ 
+		border: 2px solid var(--main-navs-color)!important
+	}
+	.h5 a {
+		/* course names main site */
+		color: rgb(255, 255, 255)!important;
+		font-weight: bold;
+	}
+
+	/*** Course Site ***/
+	.row .breadcrumb-item {
+		/* text 'Meine Kurse' */
+		color: var(--main-white-muted);
+	}
+	.instancename {
+		/* resource names */
+		color: var(--main-white)!important;
+		border-left: 4px solid rgb(255, 34, 34)!important;
+	}
+	a .instancename {
+		/* add padding left from border to text */
+		padding-left: 4px!important;
+	}
+	.row p {
+		/* normal font */
+		color: var(--main-white);
+	}
+	.row a {
+		/* hyperlink font */
+		color: rgb(255, 60, 78);
+	}
+	.row ul.section .resourcelinkdetails {
+		/* annotation resource link details */
+		color: var(--main-white-muted);
+	}
+	.row td {
+		/* table font */
+		color: var(--main-white);
+	}
+	.row #toptext {
+		/* annotation text */
+		color: var(--main-white-muted);
+	}
+	.row .forumpost.unread .row.header, .path-course-view .unread, span.unread {
+		/* unred forum pots highlight */
+		background-color: rgb(245, 245, 223);
+	}
+	/*** right / lower middle 'Neue Ankündigungen' block ***/
+	.row .name {
+		/* posts author name */
+		color: rgb(255, 255, 255)
+	}
+	.row .date {
+		/* date text */
+		color: var(--main-white-muted);
+	}
+	.row .activityhead {
+		/* 'Aktivität seit...' */
+		color: var(--main-white-muted);
+	}
+	.row .icon.fa.fa-university.fa-fw {
+		/* 'Aktuelle Termine' icon */
+		color: var(--main-white-muted);
+	}
 }
