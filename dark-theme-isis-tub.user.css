@@ -6,11 +6,11 @@
 @author       B4rtware, Re-Krass
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
-@version      0.2.0
+@version      0.3.0
 ==/UserStyle== */
 }
 
-@-moz-document regexp(".*isis.tu-berlin.de.*") {
+@-moz-document regexp(".*isis.tu-berlin.de.*"), regexp(".*shibboleth.tubit.tu-berlin.de.*") {
 	:root {
 		--main-bg-color: rgb(20, 20, 20);
 		--main-navs-color: rgb(40, 40, 40);
@@ -59,6 +59,68 @@
 /* +                              +  */
 /* +------------------------------+  */
 
+@-moz-document regexp(".*isis.tu-berlin.de.*") {
+	/*** Main Login site https://isis.tu-berlin.de/login/ ***/
+	.custom-login-header { /* header image */
+		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
+	}
+	.login-header-logo { /* header logo block */
+		background-color: var(--main-navs-color);
+	}
+	#page-login-index .login-annotations { /* login annotation text */
+		color: var(--main-white);
+	}
+	#page-login-index #shibbolethbutton { /* 'TU-LOGIN' button */
+		background-color: rgb(100, 100, 100);
+		border: 2px solid rgb(100, 100, 100)!important
+	}
+	#page-login-index .mt-3 { /* Cookies text */
+		color: var(--main-white-muted);
+		
+	}
+	input.btn.btn-primary { /* 'Als Gast anmelden' button */
+		background-color: rgb(100, 100, 100);
+		border: 2px solid rgb(100, 100, 100)!important
+	}
+	#manual-login-button.btn.btn-tertiary { /* Login für temporäre ISIS-Konten */
+		color: var(--main-white-muted)!important;
+	}
+	.logininfo { /* login info */
+		color: var(--main-white-muted)!important;
+	}
+	/* FIXME: 
+	border color if select button
+	red color 
+	tu logo invert...
+	Maybe fix warning 'Ihre Session ist ungültig. ...'
+	*/
+}
+/* shibboleth.tubit.tu-berlin.de/*/
+@-moz-document regexp(".*shibboleth.tubit.tu-berlin.de.*") {
+	body { /* body main block */
+		background-color: var(--main-bg-color)!important;
+	}
+	body .sidebar { /* left sidebar */
+		background-color: var(--main-navs-color);
+	}
+	body .contentContainer div.box-centering { /* login block */
+		background-color: var(--main-navs-color)!important;
+	}
+	body .contentContainer div.box-centering h1 { /* login box header */
+		color: var(--main-white);
+	}
+	body .contentContainer div.box-centering div.user-input input.form-element.form-field { /* input fields */
+		background-color: var(--main-bg-color)!important;
+		color: var(--main-white-muted)!important;
+	}
+	body .contentContainer div.box-centering #loginform div.user-input label { /* login form title */
+		color: var(--main-white)!important;
+	}
+	/*** FIXME:
+	red colors
+	anmelde button bg
+	***/
+}
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** left upper logo ***/
 	.tub-nav .tub-logo {
