@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,gBAAgB,EAAE,KAAK;CAqB1B;;AAtBD,AAQ4B,YARhB,CAER,SAAS,CACL,cAAc,CACV,sBAAsB,CAClB,oBAAoB,CAChB,SAAS,CACL,WAAW,CACP,WAAW,CAAC;EACR,KAAK,EAAE,KAAK;CACf;;AAV7B,AAa4B,YAbhB,CAER,SAAS,CACL,cAAc,CACV,sBAAsB,CAClB,oBAAoB,CAChB,SAAS,CAML,mBAAmB,CACf,iBAAiB,CAAC;EACd,KAAK,EAAE,KAAK;CACf",
-    "sources": [
-        "dark-theme-isis-tub.scss.user.scss"
-    ],
-    "names": [],
-    "file": "dark-theme-isis-tub.scss.user.css"
-}
