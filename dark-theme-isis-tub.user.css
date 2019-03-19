@@ -656,4 +656,47 @@
 		/* load more icon */
 		color: var(--main-white)!important;
 	}
+
+    /*** +--------------+ ***/
+    /*** |  'Kalender'  | ***/
+    /*** +--------------+ ***/
+    /* block of the whole calendar */
+    /*.maincalendar {
+    }*/
+    
+    /* .calendartable are the tables on the right side */
+    
+    .maincalendar th, .calendartable th{
+        /* table header */
+        background-color: var(--main-white-muted)!important;
+        color: var(--main-bg-color);
+    }
+    
+    .maincalendar td, .calendartable td {
+        /* table body */
+        background-color: var(--main-navs-color)!important;
+    }
+    
+    .maincalendar tr, .calendartable tr {
+        /* make dark horizontal lines between the calendar tiles */
+        border-color: var(--main-bg-color)!important;
+    }
+    
+    /* FIXME: the calendar tile is scaled if its today */
+    .maincalendar td.today {
+        /* set calendar color to red if its today */
+        background-color: var(--main-red-tu)!important;
+    }
+    
+    /* FIXME: the dots when text is too large for the day tile are currently not beeing rendered black*/
+    .maincalendar td.today div > a  {
+        /* set calendar date number color to dark */
+        color: var(--main-navs-color)!important;
+    }
+
+    
+    .maincalendar td.today .icon {
+        /* color for the icons inside the today tile */
+        color: var(--main-navs-color);
+    }    
 }
