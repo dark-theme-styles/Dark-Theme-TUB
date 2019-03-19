@@ -1,0 +1,12 @@
+.user-navbar {
+  background-color: black;
+}
+
+.user-navbar .usermenu #action-menu-1 #action-menu-1-menubar .action-menu-trigger .dropdown #dropdown-1 .userbutton {
+  color: black;
+}
+
+.user-navbar .usermenu #action-menu-1 #action-menu-1-menubar .action-menu-trigger .dropdown #action-menu-1-menu .dropdown-divider {
+  color: black;
+}
+/*# sourceMappingURL=dark-theme-isis-tub.scss.user.css.map */

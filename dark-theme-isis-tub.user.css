@@ -47,10 +47,12 @@
 		background-color: var(--main-bg-color)!important;
 		color: rgb(238, 238, 238)!important;
 	}
-	li { /* li text elements */
+	li {
+		/* li text elements */
 		color: var(--main-white);
 	}
-	.form-inline .form-control { /* search form lower */
+	.form-inline .form-control {
+		/* search form lower */
 		background-color: var(--main-bg-color);
 		color: var(--main-white);
 	}
@@ -69,7 +71,10 @@
 /* +------------------------------+  */
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** Main Login site https://isis.tu-berlin.de/login/ ***/
+	/*** +----------------------+ ***/
+    /*** |    Main Login site   | ***/
+    /*** +----------------------+ ***/
+	/* -> https://isis.tu-berlin.de/login/ */
 	.custom-login-header { /* header image */
 		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
 	}
@@ -106,23 +111,29 @@
 }
 /* shibboleth.tubit.tu-berlin.de/*/
 @-moz-document regexp(".*shibboleth.tubit.tu-berlin.de.*") {
-	body { /* body main block */
+	body {
+		/* body main block */
 		background-color: var(--main-bg-color)!important;
 	}
-	body .sidebar { /* left sidebar */
+	body .sidebar {
+		/* left sidebar */
 		background-color: var(--main-navs-color);
 	}
-	body .contentContainer div.box-centering { /* login block */
+	body .contentContainer div.box-centering {
+		/* login block */
 		background-color: var(--main-navs-color)!important;
 	}
-	body .contentContainer div.box-centering h1 { /* login box header */
+	body .contentContainer div.box-centering h1 {
+		/* login box header */
 		color: var(--main-white);
 	}
-	body .contentContainer div.box-centering div.user-input input.form-element.form-field { /* input fields */
+	body .contentContainer div.box-centering div.user-input input.form-element.form-field {
+		/* input fields */
 		background-color: var(--main-bg-color)!important;
 		color: var(--main-white-muted)!important;
 	}
-	body .contentContainer div.box-centering #loginform div.user-input label { /* login form title */
+	body .contentContainer div.box-centering #loginform div.user-input label {
+		/* login form title */
 		color: var(--main-white)!important;
 	}
 	/*** FIXME:
@@ -131,7 +142,9 @@
 	***/
 }
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** left upper logo ***/
+	/*** +----------------------+ ***/
+    /*** |    left upper logo   | ***/
+    /*** +----------------------+ ***/
 	.tub-nav .tub-logo {
 		/* left upper logo block */
 		background-color: var(--main-navs-color)!important;
@@ -156,7 +169,9 @@
 /* everything is inside the header-right class which is the top header */
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** header upper right-middle ***/
+	/*** +--------------------------------+ ***/
+    /*** |    header upper right-middle   | ***/
+    /*** +--------------------------------+ ***/
 	.header-right {
 		/* middle-right upper logo main block */
 		background-color: var(--main-navs-color)!important;
@@ -181,7 +196,9 @@
 		background-color: transparent;
 	}
 
-	/*** header dark image ***/
+	/*** +------------------------+ ***/
+    /*** |    header dark image   | ***/
+    /*** +------------------------+ ***/
 	.header.navbar {
 		/* upper navbar - normal */
 		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
@@ -190,32 +207,42 @@
 		/* upper navbar - dark */
 		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_header_2_night)!important;
 	}
-	/*** user dropdown menu ***/
-	.usermenu .dropdown-menu.dropdown-menu-right.menu.align-tr-br.show .dropdown-item.menu-action { /* fix background color for dropbdown item (maybe find out active elemnt and readd bg) */
+	/*** +----------------------+ ***/
+    /*** |  user dropdown menu  | ***/
+    /*** +----------------------+ ***/
+	.usermenu .dropdown-menu.dropdown-menu-right.menu.align-tr-br.show .dropdown-item.menu-action {
+		/* fix background color for dropbdown item (maybe find out active elemnt and readd bg) */
 		background-color: transparent!important;
 	}
 	
-	.dropdown-menu .dropdown-item:hover { /* hover over menu item */
+	.dropdown-menu .dropdown-item:hover {
+		/* hover over menu item */
 		border-left: 5px solid rgb(197, 14, 31)!important;
 		margin-left: -5px;	
 		background-color: transparent!important;
 	}
-	.dropdown-menu .dropdown-item:active { /* FIXME */
+	.dropdown-menu .dropdown-item:active {
+		/* FIXME */
 		background-color: transparent!important;
 	}
 	
-	.usermenu .dropdown-menu.dropdown-menu-right.menu.align-tr-br.show { /* dropdown menu */
+	.usermenu .dropdown-menu.dropdown-menu-right.menu.align-tr-br.show {
+		/* dropdown menu */
 		background-color: var(--main-navs-color);
 		box-shadow: 0px 0px 30px 10px var(--main-bg-color);
 	}
-	.dropdown-menu .dropdown-item.menu-action .menu-action-text { /* menu text */
+	.dropdown-menu .dropdown-item.menu-action .menu-action-text {
+		/* menu text */
 		color: var(--main-white);
 	}
-	.dropdown-menu .dropdown-item.menu-action .icon { /* icons */
+	.dropdown-menu .dropdown-item.menu-action .icon {
+		/* icons */
 		color: var(--main-white);
 	}
-	
-	/*** Systemnachrichten, Mitteilungen  -> popover-region-container ***/
+	/*** +----------------------------------------+ ***/
+    /*** |    'Systemnachrichten, Mitteilungen'   | ***/
+    /*** +----------------------------------------+ ***/
+	/*** +-> popover-region-container ***/
 	.popover-region-container .content-item-container { 
 		/* main dropdwon container */
 		background-color: var(--main-bg-color);
@@ -244,12 +271,16 @@
 		background-color: var(--main-navs-color);
 		color: var(--main-white-muted);
 	}
-	/*** Systemnachrichten ***/
+	/*** +--------------------------+ ***/
+    /*** |    'Systemnachrichten'   | ***/
+    /*** +--------------------------+ ***/
 	.notification-message { 
 		/* message title text */
 		color: var(--main-white);
 	}
-	/*** Mitteilungen ***/
+	/*** +------------------------+ ***/
+    /*** |    'Mitteilungen'      | ***/
+    /*** +------------------------+ ***/
 	.popover-region-container .content-item-container .content-item-body p {
 		color: var(--main-white-muted)!important;
 	}
@@ -269,7 +300,9 @@
 /* +------------------------------+  */
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** left navigation / navbar ***/
+	/*** +---------------------------+ ***/
+    /*** | left navigation / navbar  | ***/
+    /*** +---------------------------+ ***/
 	#nav-drawer .list-group .list-group-item {
 		/* left navigation text container */
 		color: rgb(227, 227, 227)!important;
@@ -280,7 +313,9 @@
 		background-color: var(--main-white-muted)!important;
 	}
 
-	/*** search box ***/
+	/*** +-----------------+ ***/
+    /*** |    search bar   | ***/
+    /*** +-----------------+ ***/
 	#navsearchbox.form-control {
 		/* search bar */
 		background-color: var(--main-bg-color);
@@ -290,7 +325,9 @@
 		color: var(--main-white-muted);
 	}
 
-	/*** arrow for search field ***/
+	/*** +---------------------------+ ***/
+    /*** |  arrow for search field   | ***/
+    /*** +---------------------------+ ***/
 	button.btn.pull-xs-left.m-r-1.btn-secondary {
 		/* button */
 		background-color: var(--main-white-muted);
@@ -321,16 +358,22 @@
 /* +------------------------------+  */
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** left lower / right main block ***/
-	/*** 'Diese Seite bearbeiten' button ***/	
-	.btn.btn-secondary { /* button border */
+	/*** +-----------------------------------+ ***/
+    /*** |   left lower / right main block   | ***/
+	/*** |  'Diese Seite bearbeiten' button  | ***/
+    /*** +-----------------------------------+ ***/	
+	.btn.btn-secondary {
+		/* button border */
 		border: 2px solid var(--main-navs-color)!important;
 	}
-	.singlebutton .btn.btn-secondary { /* button */
+	.singlebutton .btn.btn-secondary {
+		/* button */
 		background-color: var(--main-navs-color);
 	}
 	
-	/*** 'Ankündigungen' block ***/
+	/*** +--------------------------+ ***/
+    /*** |   'Ankündigungen' block  | ***/
+    /*** +--------------------------+ ***/
 	.hidden-print {
 		/* 'Ankündigungen' main block */
 		background-color: var(--main-navs-color)!important;
@@ -343,11 +386,13 @@
 		/* button bg 2 */
 		background-color: var(--main-navs-color)!important;
 	}
-	#page-mod-forum-discuss .custom-select { /* button text */
+	#page-mod-forum-discuss .custom-select {
+		/* button text */
 		color: var(--main-white-muted);
 		border: 1px solid var(--main-navs-color);
 	}
-	.form-control { /* buttons */
+	.form-control {
+		/* buttons */
 		background-color: var(--main-navs-color);
 	}
 	span {
@@ -372,10 +417,12 @@
 		width: 0px!important;
 		padding: 0px 15px;
 	}
-	.link { /* 'Antworten' */
+	.link {
+		/* 'Antworten' */
 		color: var(--main-white-muted);
 	}
-	.card-title.d-inline:before { /* icon FIXME: (doesn't work)*/
+	.card-title.d-inline:before {
+		/* icon FIXME: (doesn't work)*/
 		color: var(--main-white);
 	}
 	#block-site-news {
@@ -411,7 +458,9 @@
 /* +------------------------------+  */
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** lower bottom / footer ***/
+	/*** +--------------------------+ ***/
+    /*** |  lower bottom / footer   | ***/
+    /*** +--------------------------+ ***/
 	#page-footer .logininfo {
 		color: var(--main-white-muted);
 	}
@@ -427,17 +476,18 @@
 /* +      #################       +  */
 /* +      #################       +  */
 /* +------------------------------+  */
-
-/* #region-main */
+/* |-> #region-main */
 
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
-	/*** Main Site (middle block) ***/
+	/*** +----------------------------+ ***/
+    /*** |   main site middle-block   | ***/
+    /*** +----------------------------+ ***/
 	/* captions for weeks and main caption of course */
 	h3.sectionname {
 		border: none!important;
 		background-color: var(--main-navs-color)!important;
 	}
-	/*** fix square for courses ***/
+
 	.no-progress {
 		/* remove white border from course squares */
 		-webkit-box-shadow: none!important;
@@ -457,7 +507,9 @@
 		font-weight: bold;
 	}
 
-	/*** Course Site ***/
+	/*** +--------------------+ ***/
+    /*** |    course site     | ***/
+    /*** +--------------------+ ***/
 	.row .breadcrumb-item {
 		/* text 'Meine Kurse' */
 		color: var(--main-white-muted);
@@ -495,7 +547,9 @@
 		/* unred forum pots highlight */
 		background-color: rgb(245, 245, 223);
 	}
-	/*** right / lower middle 'Neue Ankündigungen' block ***/
+	/*** +------------------------------------------------------+ ***/
+    /*** |    right / lower middle 'Neue Ankündigungen' block   | ***/
+    /*** +------------------------------------------------------+ ***/
 	.row .name {
 		/* posts author name */
 		color: rgb(255, 255, 255)
@@ -517,68 +571,89 @@
         color: var(--main-white-muted);
     }
 	
-	/*** 'Mitteilungen' site ***/
-	.tabimage { /* nav block */
+	/*** +-------------------------+ ***/
+    /*** |   'Mitteilungen' site   | ***/
+    /*** +-------------------------+ ***/
+	.tabimage {
+		/* nav block */
 		background-color: var(--main-navs-color);
 	}
-	i.icon.fa.fa-comment.fa-fw { /* comment icon */
+	i.icon.fa.fa-comment.fa-fw {
+		/* comment icon */
 		color: var(--main-red-tu)!important;
 	}
-	i.icon.fa.fa-users.fa-fw { /* users icon */
+	i.icon.fa.fa-users.fa-fw {
+		/* users icon */
 		color: var(--main-white-muted)!important;
 	}
-	.messages-header { /* header message block */
+	.messages-header {
+		/* header message block */
 		background-color: var(--main-navs-color)!important;
 	}
-	.messages .blocktime { /* message date and time text */
+	.messages .blocktime {
+		/* message date and time text */
 		color: rgb(61, 41, 41)!important;
 	}
-	.messaging-area-container .message .content.left .timesent { /* */
+	.messaging-area-container .message .content.left .timesent {
+		/* */
 		color: rgb(69, 45, 45)!important;
 	}
-	.messaging-area-container .messages { /* messages bg */
+	.messaging-area-container .messages {
+		/* messages bg */
 		background-image: url(/theme/image.php/nephthys/theme/1552409344/isis_chat_pattern)!important;
 		filter: grayscale(100%) invert(100%)!important;
 	}
-	.messaging-area-container .message .content.left { /* message block */
+	.messaging-area-container .message .content.left {
+		/* message block */
 		background-color: rgb(255, 201, 201)!important;
 	}
-	.messages p { /* message text */
+	.messages p {
+		/* message text */
 		color: var(--main-bg-color)!important;
 	}
-	div.name { /* user names */
+	div.name {
+		/* user names */
 		color: var(--main-white)!important;
 	}
-	.messaging-area-container .messaging-area .contacts-area .contacts .contact.selected .name { /* selected user name */
+	.messaging-area-container .messaging-area .contacts-area .contacts .contact.selected .name {
+		/* selected user name */
 		color: var(--main-red-tu)!important;
 	}
-	.contacts-area { /* left block */
+	.contacts-area {
+		/* left block */
 		background-color: var(--main-navs-color);
 	}
-	.messaging-area-container .messaging-area .contacts-area .searchtextarea { /* search bar */
+	.messaging-area-container .messaging-area .contacts-area .searchtextarea {
+		/* search bar */
 		background-color: var(--main-bg-color);
 		margin: 0rem 1rem 1rem 1rem;
 	}
-	.messaging-area-container .messaging-area .contacts-area .searchtextarea.searching { /* search bar clicked FIXME*/
+	.messaging-area-container .messaging-area .contacts-area .searchtextarea.searching {
+		/* search bar clicked FIXME*/
 		background-color: var(--main-bg-color)!important;
 	}
-	p.lastmessage { /* last message text */
+	p.lastmessage {
+		/* last message text */
 		color: var(--main-white-muted)!important;
 	}
-	.messaging-area-container .messaging-area .messages-area .response .message-box .message-text-container textarea { /* messagte text not clicked */
+	.messaging-area-container .messaging-area .messages-area .response .message-box .message-text-container textarea {
+		/* messagte text not clicked */
 		background-color: var(--main-navs-color);
 		color: var(--main-white)!important;
 		margin: 0rem 0rem 1.25rem 0.5rem;
 	}
-		.messaging-area-container .messaging-area .messages-area .response.messaging .message-box .message-text-container textarea { /* message clicked */
+		.messaging-area-container .messaging-area .messages-area .response.messaging .message-box .message-text-container textarea {
+		/* message clicked */
 		background-color: var(--main-navs-color);
 		color: var(--main-white)!important;
 	}
-	.btn-primary, .btn-secondary, .btn-default, #shibbolethbutton, .messaging-area-container .messaging-area .messages-area .response .message-box .send-button-container button { /* button send */
+	.btn-primary, .btn-secondary, .btn-default, #shibbolethbutton, .messaging-area-container .messaging-area .messages-area .response .message-box .send-button-container button {
+		/* button send */
 		background-color: var(--main-navs-color);
 		border: 2px solid var(--main-navs-color)!important;
 	}
-	i.icon.fa.fa-circle-o-notch.fa-spin.fa-fw { /* load more icon */
+	i.icon.fa.fa-circle-o-notch.fa-spin.fa-fw {
+		/* load more icon */
 		color: var(--main-white)!important;
 	}
 }
