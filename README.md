@@ -12,10 +12,19 @@ First download a plug-in for your web browser to install the CSS. We prefer '[St
   - for Opera: <br>
 [Install Opera extension](https://addons.opera.com/extensions/details/stylus/) <br>
 
-For Mac I recomment '[Cascadea](https://cascadea.app/)'.
+For Mac we recomment '[Cascadea](https://cascadea.app/)'.
 
 ### Install user style:
-[Install the usercss](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](MY.USER.CSS) 
 
 ## Links
 - [Github](https://github.com/Re-Krass/Dark-Theme-ISIS-TUB) <br>
+
+## Authors 
+- <img src="https://avatars1.githubusercontent.com/u/34386047?s=460&v=4" height="15" alt="B4rtware profile picture"> [B4rtware](https://github.com/B4rtware) <br>
+- <img src="https://avatars0.githubusercontent.com/u/38668040?s=460&v=4" height="15" alt="Re-Krass profile picture"> [Re-Krass](https://github.com/Re-Krass)
+
+
+
+
+
