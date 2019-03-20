@@ -6,9 +6,16 @@ $--main-red-tu: rgb(255, 60, 78);
 $--main-success: rgb(57, 181, 74);
 $--main-blue: #319ae3;
 
+body {
+  background-color: #444444;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
 .info {
-  width: 300px;
-  font-family: 'Source Code Pro', monospace;
+  //width: 300px;
+  font-family: "Source Code Pro", monospace;
 }
 
 %todos__item {
@@ -17,22 +24,30 @@ $--main-blue: #319ae3;
 
 .todos {
   background-color: $--main-bg-color;
+  -webkit-box-shadow: 0px 0px 64px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 64px 3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.75);
+
   &__header {
     background-color: $--main-success;
     font-weight: bold;
+    padding: 10px;
+    font-size: 1.5rem;
   }
   &__file {
     border-bottom: 2px solid $--main-white-muted;
     color: $--main-white-muted;
-    padding: 5px;
+    padding: 8px;
+    font-size: 1.2rem;
   }
   &__item-container {
+    padding: 10px;
   }
-  
+
   &__item {
     display: flex;
     justify-content: flex-start;
-    
+    padding: 5px 0px 5px 0px;
     &__line {
       @extend %todos__item;
       color: $--main-white-muted;
@@ -44,9 +59,9 @@ $--main-blue: #319ae3;
       @extend %todos__item;
       color: $--main-success;
       font-weight: bold;
-      width: 8rem;
+      width: 5rem;
     }
-    
+
     &__message {
       @extend %todos__item;
       color: $--main-blue;
