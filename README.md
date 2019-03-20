@@ -15,7 +15,7 @@ First download a plug-in for your web browser to install the CSS. We prefer '[St
 For Mac we recomment '[Cascadea](https://cascadea.app/)'.
 
 ### Install user style:
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](MY.USER.CSS) 
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css) 
 
 ## Links
 - [Github](https://github.com/Re-Krass/Dark-Theme-ISIS-TUB) <br>
