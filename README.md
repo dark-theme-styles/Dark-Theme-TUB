@@ -8,11 +8,11 @@ First download a plug-in for your web browser to install the CSS. We prefer '[St
   - for Chrome: <br>
 [Install Chrome extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) <br>
   - for Firefox: <br>
-[Install Chrome extension](https://addons.mozilla.org/firefox/addon/styl-us/) <br>
+[Install Firefox extension](https://addons.mozilla.org/firefox/addon/styl-us/) <br>
   - for Opera: <br>
 [Install Opera extension](https://addons.opera.com/extensions/details/stylus/) <br>
 
-For Mac Safari we recomment '[Cascadea](https://cascadea.app/)'.
+For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 
 ### Install user style:
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css) 

@@ -1,17 +1,11 @@
-$--main-bg-color: #303030;
-$--main-navs-color: rgb(45, 45, 45);
-$--main-white: rgb(245, 245, 245);
-$--main-white-muted: rgb(200, 200, 200);
-$--main-red-tu: rgb(255, 60, 78);
-$--main-success: rgb(57, 181, 74);
-$--main-blue: #319ae3;
+@import '../abstracts/variables';
 
-body {
+/* body {
   background-color: #444444;
   display: flex;
   justify-content: center;
   height: 100%;
-}
+} */
 
 .info {
   //width: 300px;

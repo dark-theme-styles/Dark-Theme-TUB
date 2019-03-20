@@ -1,0 +1,8 @@
+{
+    "liveSassCompile.settings.formats":[
+    // You can add more
+    {
+        "savePath": "/docs/styles/css"
+    }
+    ]
+}

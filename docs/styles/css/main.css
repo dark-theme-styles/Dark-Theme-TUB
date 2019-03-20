@@ -1,14 +1,11 @@
-body {
+/* abstracts */
+/* pages */
+/* body {
   background-color: #444444;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
-}
-
+} */
 .info {
   font-family: "Source Code Pro", monospace;
 }
@@ -66,4 +63,27 @@ body {
 .todos__item__message {
   color: #319ae3;
 }
-/*# sourceMappingURL=todos.css.map */
+
+/* base */
+body {
+  background-color: #303030;
+  color: whitesmoke;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  color: whitesmoke;
+}
+
+p {
+  color: whitesmoke;
+}
+
+li {
+  color: whitesmoke;
+}
+
+a {
+  color: #319ae3;
+}
+/*# sourceMappingURL=main.css.map */

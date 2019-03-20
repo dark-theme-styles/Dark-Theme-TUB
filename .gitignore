@@ -1,1 +1,11 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 *.scss.user.*
