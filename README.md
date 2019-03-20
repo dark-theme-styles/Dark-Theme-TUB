@@ -31,7 +31,46 @@ For Mac we recomment '[Cascadea](https://cascadea.app/)'.
     <img style="height:15px; vertical-align: middle;" src="https://avatars0.githubusercontent.com/u/38668040?s=460&v=4" alt="centered image" />
     addsd
 </p>
+<style>
+.info {
+  width: 300px;
+  font-family: 'Source Code Pro', monospace;
+}
 
+.todos__item__line, .todos__item__type, .todos__item__message {
+  padding: 5px;
+}
+
+.todos {
+  background-color: #303030;
+}
+.todos__header {
+  background-color: #39b54a;
+  font-weight: bold;
+}
+.todos__file {
+  border-bottom: 2px solid #c8c8c8;
+  color: #c8c8c8;
+  padding: 5px;
+}
+.todos__item {
+  display: flex;
+  justify-content: flex-start;
+}
+.todos__item__line {
+  color: #c8c8c8;
+  width: 20%;
+  text-align: right;
+}
+.todos__item__type {
+  color: #39b54a;
+  font-weight: bold;
+  width: 8rem;
+}
+.todos__item__message {
+  color: #319ae3;
+}
+</style>
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
 <section class="info">
   <div class="todos">
