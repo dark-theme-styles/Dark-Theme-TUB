@@ -6,7 +6,7 @@
 @author       B4rtware (https://github.com/B4rtware), Re-Krass (https://github.com/Re-Krass)
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
-@version      0.7.2
+@version      0.7.3
 ==/UserStyle== */
 }
 
@@ -396,6 +396,12 @@
 	.popover-region-container .content-item-container .content-item-body p {
 		color: var(--main-white-muted)!important;
 	}
+    #conversations-tab-panel {
+        margin: 15px 0px 15px 15px!important;
+    }
+    #searchtext {
+        margin-top: 0px!important;
+    }
 	/*** +----------------------------------------+ ***/
 	/*** |    'Systemnmitteilungen'   | ***/
 	/*** +----------------------------------------+ ***/
@@ -462,7 +468,7 @@
 	/*** +---------------------------+ ***/
 	button.btn.pull-xs-left.m-r-1.btn-secondary {
 		/* button */
-		background-color: var(--main-white-muted);
+		background-color: var(--main-navs-color);
 		border: none!important;
 	}
 	.custom-drawer-toggle.nephthys-collapse > button {
@@ -757,6 +763,10 @@
 		/* nav block */
 		background-color: var(--main-navs-color);
 	}
+    .messaging-area-container .messages-header {
+        /* make message box title same height as search bar */
+        padding: .58rem 1rem !important;
+    }
 	i.icon.fa.fa-comment.fa-fw {
 		/* comment icon */
 		color: var(--main-red-tu)!important;
