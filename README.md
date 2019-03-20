@@ -19,7 +19,7 @@ For Mac Safari we recomment '[Cascadea](https://cascadea.app/)'.
 
 ## Links
 - <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="15" alt="Re-Krass profile picture"> [Github](https://github.com/Re-Krass/Dark-Theme-ISIS-TUB) <br>
-- [Website(]https://re-krass.github.io/Dark-Theme-ISIS-TUB/)
+- [Website](https://re-krass.github.io/Dark-Theme-ISIS-TUB/)
 
 ## Authors 
 - <img src="https://avatars1.githubusercontent.com/u/34386047?s=460&v=4" height="15" alt="B4rtware profile picture"> [B4rtware](https://github.com/B4rtware) <br>
