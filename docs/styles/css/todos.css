@@ -1,0 +1,38 @@
+.info {
+  width: 300px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.todos__item__line, .todos__item__type, .todos__item__message {
+  padding: 5px;
+}
+
+.todos {
+  background-color: #303030;
+}
+.todos__header {
+  background-color: #39b54a;
+  font-weight: bold;
+}
+.todos__file {
+  border-bottom: 2px solid #c8c8c8;
+  color: #c8c8c8;
+  padding: 5px;
+}
+.todos__item {
+  display: flex;
+  justify-content: flex-start;
+}
+.todos__item__line {
+  color: #c8c8c8;
+  width: 20%;
+  text-align: right;
+}
+.todos__item__type {
+  color: #39b54a;
+  font-weight: bold;
+  width: 8rem;
+}
+.todos__item__message {
+  color: #319ae3;
+}

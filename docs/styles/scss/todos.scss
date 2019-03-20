@@ -1,0 +1,55 @@
+$--main-bg-color: #303030;
+$--main-navs-color: rgb(45, 45, 45);
+$--main-white: rgb(245, 245, 245);
+$--main-white-muted: rgb(200, 200, 200);
+$--main-red-tu: rgb(255, 60, 78);
+$--main-success: rgb(57, 181, 74);
+$--main-blue: #319ae3;
+
+.info {
+  width: 300px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+%todos__item {
+  padding: 5px;
+}
+
+.todos {
+  background-color: $--main-bg-color;
+  &__header {
+    background-color: $--main-success;
+    font-weight: bold;
+  }
+  &__file {
+    border-bottom: 2px solid $--main-white-muted;
+    color: $--main-white-muted;
+    padding: 5px;
+  }
+  &__item-container {
+  }
+  
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    
+    &__line {
+      @extend %todos__item;
+      color: $--main-white-muted;
+      //flex:0.1;
+      width: 20%;
+      text-align: right;
+    }
+    &__type {
+      @extend %todos__item;
+      color: $--main-success;
+      font-weight: bold;
+      width: 8rem;
+    }
+    
+    &__message {
+      @extend %todos__item;
+      color: $--main-blue;
+    }
+  }
+}
