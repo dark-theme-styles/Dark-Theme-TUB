@@ -18,7 +18,7 @@ For Mac we recomment '[Cascadea](https://cascadea.app/)'.
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css) 
 
 ## Links
-- [Github](https://github.com/Re-Krass/Dark-Theme-ISIS-TUB) <br>
+- <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="15" alt="Re-Krass profile picture"> [Github](https://github.com/Re-Krass/Dark-Theme-ISIS-TUB) <br>
 
 ## Authors 
 - <img src="https://avatars1.githubusercontent.com/u/34386047?s=460&v=4" height="15" alt="B4rtware profile picture"> [B4rtware](https://github.com/B4rtware) <br>
@@ -27,4 +27,8 @@ For Mac we recomment '[Cascadea](https://cascadea.app/)'.
 
 
 
+<p style="">
+    <img style="height:15px; vertical-align: middle;" src="https://avatars0.githubusercontent.com/u/38668040?s=460&v=4" alt="centered image" />
+    addsd
+</p>
 
