@@ -2,6 +2,8 @@
 
 Dark theme for TUB-ISIS website.
 
+<img src="/images/Screenshot_1.png" alt="YDL Logo">
+
 ## Installation
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
 - Stylus <br>
@@ -15,7 +17,7 @@ First download a plug-in for your web browser to install the CSS. We prefer '[St
 For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 
 ### Install user style
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css) 
+[Install with user CSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css)
 
 ## Links
 - [Website](https://re-krass.github.io/Dark-Theme-ISIS-TUB/)
