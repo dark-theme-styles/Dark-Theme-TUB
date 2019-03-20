@@ -1,1 +1,21 @@
 @import '../abstracts/variables';
+
+#main_site_section, #footer_section {
+    margin-left: 60px
+}
+#icons {
+    max-width:100%;
+    height:17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+#bottom_site {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+#site_title {
+    font-size: 2.3em;
+}

@@ -1,5 +1,5 @@
-# TUB-ISIS dark theme
-## *Make TUB-ISIS design great again*
+# Dark theme for TUB ISIS website
+
 Dark theme for TUB-ISIS website.
 
 ## Installation
@@ -14,11 +14,10 @@ First download a plug-in for your web browser to install the CSS. We prefer '[St
 
 For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 
-### Install user style:
+### Install user style
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css) 
 
 ## Links
-- <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="15" alt="Re-Krass profile picture"> [Github](https://github.com/Re-Krass/Dark-Theme-ISIS-TUB) <br>
 - [Website](https://re-krass.github.io/Dark-Theme-ISIS-TUB/)
 
 ## Authors 
