@@ -6,9 +6,9 @@ error_emoji="❌ "
 
 # create the todos json file
 echo "$work_emoji creating todos ..."
-leasot --reporter json **/*.css > todos.json
+leasot --reporter json **/*.css > docs/todos.json
 # check if json file exists
-if [ ! -f todos.json ] ; then
+if [ ! -f docs/todos.json ] ; then
 	echo "$error_emoji <todos.json> file not found!"
 	exit 1
 fi
