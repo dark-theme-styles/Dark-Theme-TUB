@@ -82,7 +82,7 @@
 		/* shibboleth hyperlinks */
 		color: var(--main-white-muted);
 	}
-	/* FIXME shibboleth bg pattern */
+	/* FIXME: shibboleth bg pattern */
 }
 
 /* +------------------------------+  */
@@ -167,11 +167,11 @@
 		/* password placeholder */
 		color: var(--main-white)!important;
 	}
-	/* FIXME: 
-	border color if select button
-	red color 
-	tu logo invert...
-	Maybe fix warning 'Ihre Session ist ungültig. ...'
+	/* 
+	FIXME: border color if select button
+	FIXME: red color 
+	FIXME: tu logo invert...
+	FIXME: Maybe fix warning 'Ihre Session ist ungültig. ...' 
 	*/
 }
 /* shibboleth.tubit.tu-berlin.de/*/
@@ -219,7 +219,8 @@
 		color: var(--main-white)!important;
 	}
 	/* FIXME: red colors*/
-	/* FIXME:anmelde button bg */
+	/* FIXME: anmelde button bg */
+	/* FIXME: background on shibboleth */
 }
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** +----------------------+ ***/
@@ -246,7 +247,8 @@
 		auto!important;
 		cursor: pointer!important;
 	}
-	/* FIXME Suche in Forem bg */
+	/* FIXME: Suche in Forem bg */
+
 	.tub-nav .return-home {
 		/* left upper 'Startseite der TUB' block*/
 		background-color: var(--main-bg-color)!important;
@@ -260,7 +262,6 @@
 		background-size: auto !important;
 	}
 }
-
 
 /* everything is inside the header-right class which is the top header */
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
@@ -301,10 +302,6 @@
 		background-attachment: scroll !important;
 		background-size: auto !important;
 	}
-	/*.header-right a.home { */
-	/* ISIS logo 'ISIS INFORMATION SYSTEM FOR INSTRUCTORS AND STUDENTS' FIXME */
-	/*	filter: grayscale(100%) invert(100%)!important;
-	}*/
 	.site-isis header .home {
 		/*background-color: var(--main-white);*/
 		background-image: var(--url-bg-ISIS);
@@ -345,7 +342,7 @@
 	/*** |  user dropdown menu  | ***/
 	/*** +----------------------+ ***/
 	.usermenu .dropdown-menu.dropdown-menu-right.menu.align-tr-br.show .dropdown-item.menu-action {
-		/* fix background color for dropbdown item (maybe find out active elemnt and readd bg) */
+		/* FIXME: fix background color for dropdown item (maybe find out active element and read bg) */
 		background-color: transparent!important;
 	}
 	.nav-item {
@@ -412,6 +409,7 @@
 		color: var(--main-white-muted);
 	}
 	.popover-region-footer-container {
+		/* ?????? */
 		border: none;
 		background-color: var(--main-navs-color);
 		color: var(--main-white-muted);
@@ -443,9 +441,9 @@
 	#searchtext {
 		margin-top: 0px!important;
 	}
-	/*** +----------------------------------------+ ***/
-	/*** |    'Systemnmitteilungen'   | ***/
-	/*** +----------------------------------------+ ***/
+	/*** +---------------------------+ ***/
+	/*** |    'Systemmitteilungen'   | ***/
+	/*** +---------------------------+ ***/
 	.checkbox-container {
 		/* disable notifications text */
 		color: var(--main-white);
@@ -534,6 +532,7 @@
 	/* +                             #+  */
 	/* +                             #+  */
 	/* +------------------------------+  */
+	
 	/*** +-----------------------------------+ ***/
 	/*** |   left lower / right main block   | ***/
 	/*** |  'Diese Seite bearbeiten' button  | ***/
@@ -575,7 +574,6 @@
 		color: var(--main-white)
 	}
 
-
 	#block-region-side-pre .card-title {
 		/* line below title */
 		border-bottom: 4px solid var(--main-white-muted);
@@ -611,49 +609,43 @@
 		border-bottom: none!important;
 	}
 	/*** 
-	TODOs:
-	Main Site:
-	main site: seite nach rechts / links new color
-	footer: Icon InnoCampus 
-	Systemnachrichten
+	TODOs Main Site:
+	TODO: main site: seite nach rechts / links new color
+	TODO: footer: Icon InnoCampus 
 	
-	Course Site:
-	Allgemeines (Logik) border and color
-	
-	Allgemeine andere Seiten:
-	
-	Login Site:
-	
+	TODOs Course Site:
+	TODO: Allgemeines (Logik) border and color
 	***/
 }
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/* +------------------------------+  */
-	/* +           footer             +  */
+	/* |           footer             |  */
 	/* +------------------------------+  */
-	/* +                              +  */
-	/* +                              +  */
-	/* +                              +  */
-	/* +                              +  */
-	/* +                              +  */
-	/* +        ################      +  */
+	/* |                              |  */
+	/* |                              |  */
+	/* |                              |  */
+	/* |                              |  */
+	/* |                              |  */
+	/* |        ################      |  */
 	/* +------------------------------+  */
-	/*** +--------------------------+ ***/
-	/*** |  lower bottom / footer   | ***/
-	/*** +--------------------------+ ***/
+
+	/*** +----------------------------+ ***/
+	/*** |   lower bottom / footer    | ***/
+	/*** +----------------------------+ ***/
 	#page-footer .logininfo {
 		color: var(--main-white-muted);
 	}
 }
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/* +------------------------------+  */
-	/* +          main block          +  */
+	/* |          main block          |  */
 	/* +------------------------------+  */
-	/* +                              +  */
-	/* +      #################       +  */
-	/* +      #################       +  */
-	/* +      #################       +  */
-	/* +      #################       +  */
-	/* +      #################       +  */
+	/* |                              |  */
+	/* |      #################       |  */
+	/* |      #################       |  */
+	/* |      #################       |  */
+	/* |      #################       |  */
+	/* |      #################       |  */
 	/* +------------------------------+  */
 	/* |-> #region-main */
 	/*** +----------------------------+ ***/
@@ -884,9 +876,9 @@
 		color: var(--main-white)!important;
 	}
 
-	/*** +-------------------------+ ***/
+	/*** +-----------------------------+ ***/
 	/*** |   'Erweiterte Suche' site   | ***/
-	/*** +-------------------------+ ***/
+	/*** +-----------------------------+ ***/
 	.box.searchbox.boxaligncenter {
 		color: var(--main-white-muted);
 	}
@@ -923,14 +915,14 @@
 		/* make dark horizontal lines between the calendar tiles */
 		border-color: var(--main-bg-color)!important;
 	}
-
 	/* FIXME: the calendar tile is scaled if its today */
+
 	.maincalendar td.today {
 		/* set calendar color to red if its today */
 		background-color: var(--main-red-tu)!important;
 	}
+	/* FIXME: the dots when text is too large for the day tile are currently not being rendered black */
 
-	/* FIXME: the dots when text is too large for the day tile are currently not beeing rendered black*/
 	.maincalendar td.today div > a {
 		/* set calendar date number color to dark */
 		color: var(--main-navs-color)!important;

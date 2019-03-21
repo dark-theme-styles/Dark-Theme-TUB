@@ -6,7 +6,7 @@ error_emoji="❌ "
 
 # create the todos json file
 echo "$work_emoji creating todos ..."
-leasot --reporter json **/*.css > docs/todos.json
+./node_modules/.bin/leasot --reporter json **/*.css > docs/todos.json
 # move into docs direcory
 cd docs
 # check if json file exists
