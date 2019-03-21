@@ -74,7 +74,7 @@
   // get the header of the json file to get the last modified date
   // src: http://youmightnotneedjquery.com/
   var last_modified_request = new XMLHttpRequest();
-  last_modified_request.open("HEAD", '/docs/todos.json', true);
+  last_modified_request.open("HEAD", 'todos.json', true);
   last_modified_request.onload = () => {
     if (last_modified_request.status >= 200 && last_modified_request.status < 400) {
       // get the last modified date 
@@ -93,7 +93,7 @@
 
   // get the json files content through an async request
   var request = new XMLHttpRequest();
-  request.open('GET', '/docs/todos.json', true);
+  request.open('GET', 'todos.json', true);
 
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
