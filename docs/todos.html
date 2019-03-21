@@ -5,7 +5,20 @@
     <meta charset="utf-8" />
 
     <title>Todos</title>
+
+    <!-- Meta Tags -->
+    <meta name="author" content="B4rtware, Re-Krass">
+    <meta name="publisher" content="B4rtware, Re-Krass">
+    <meta name="copyright" content="B4rtware, Re-Krass">
     <meta name="description" content="todos for dark theme" />
+    <meta name="keywords" content="dark theme isis todo">
+    <meta name="page-topic" content="Dienstleistung">
+    <meta name="page-type" content="Software Download">
+    <meta name="audience" content="Alle">
+    <meta http-equiv="content-language" content="en">
+    <meta name="robots" content="index, follow">
+
+    <!-- Links -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
       rel="stylesheet"
@@ -15,22 +28,37 @@
       rel="stylesheet"
     />
     <link href="styles/css/main.css" rel="stylesheet" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <!--<header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="todos.html">Todo</a></li>
-        </ul>
-      </nav>
-    </header>-->
+    <header>
+      <div class="topnav" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="todos.html" class="active">Todo</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+      <script>
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+      </script>
+    </header>
     <main>
       <section class="info">
         <div class="todos">
           <div class="todos__header">$: Todos
-            <span class="todos__header__icon"><i class="material-icons">close</i>
+            <span class="todos__header__icon">
+              <a href="index.html"><i class="material-icons">close</i></a>
           </div>
           <div class="todos__file">
             <span class="todos__file__icon">
