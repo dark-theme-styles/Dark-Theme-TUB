@@ -10,46 +10,123 @@
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
       rel="stylesheet"
     />
-    <link href="styles/css/main.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="styles/css/main.css" rel="stylesheet" />
   </head>
 
   <body>
-      <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="todos.html">Todo</a></li>
-            </ul>
-        </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="todos.html">Todo</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-    <section class="info">
-      <div class="todos">
-        <div class="todos__header">Todos:</div>
-        <div class="todos__file">dark-theme-isis-tub.user.css</div>
-        <div class="todos__item-container">
-          <div class="todos__item">
-            <div class="todos__item__line">line 138</div>
-            <div class="todos__item__type">TODO</div>
-            <div class="todos__item__message">
-              the calendar tile is scaled if its today
+      <section class="info">
+        <div class="todos">
+          <div class="todos__header">$: Todos
+            <span class="todos__header__icon"><i class="material-icons">close</i>
+          </div>
+          <div class="todos__file">
+            <span class="todos__file__icon">
+              <i class="material-icons">folder</i>
+            </span>
+            dark-theme-isis-tub.user.css
+          </div>
+          <div id="todos-item-container" class="todos__item-container">
+            <!-- todo items get inserted here via javascript -->
+          </div>
+          <div class="todos__footer">
+            <div class="todos__meta">
+              <div id="todos-meta-last-modified" class="todos__meta__last-modified">
+                <!-- this date gets set by javascript -->>
+              </div>
             </div>
           </div>
         </div>
-        <div class="todos__item-container">
-          <div class="todos__item">
-            <div class="todos__item__line">line 208</div>
-            <div class="todos__item__type">FIXME</div>
-            <div class="todos__item__message">
-              the calendar tile is scaled if its today
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     <p> <a href="/docs/index.html"> Homepage</a> </p>
+      </section>
+      <p><a href="/docs/index.html"> Homepage</a></p>
     </main>
 
     <footer></footer>
   </body>
+  <script language="javascript" type="text/javascript">
+
+  /**
+   * @param {String} HTML representing a single element
+   * @return {Element}
+   * src: https://stackoverflow.com/questions/494143/creating-a-new-dom-element-from-an-html-string-using-built-in-dom-methods-or-pro/35385518#35385518
+   */
+  function htmlToElement(html) {
+      var template = document.createElement('template');
+      html = html.trim(); // Never return a text node of whitespace as the result
+      template.innerHTML = html;
+      return template.content.firstChild;
+  }
+
+  // get the header of the json file to get the last modified date
+  // src: http://youmightnotneedjquery.com/
+  var last_modified_request = new XMLHttpRequest();
+  last_modified_request.open("HEAD", '/docs/todos.json', true);
+  last_modified_request.onload = () => {
+    if (last_modified_request.status >= 200 && last_modified_request.status < 400) {
+      // get the last modified date 
+      var last_modified = last_modified_request.getResponseHeader("Last-Modified");
+      var last_modified_elem = document.getElementById("todos-meta-last-modified");
+      // set the last modified date in the associated element by id
+      last_modified_elem.innerText = "last updated: " + last_modified;
+      
+    } else {
+      console.log("error getting todos.json file!");
+    }
+  }
+  last_modified_request.onerror = () => {
+    console.log("error getting todos.json file!");
+  };
+
+  // get the json files content through an async request
+  var request = new XMLHttpRequest();
+  request.open('GET', '/docs/todos.json', true);
+
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      var data = JSON.parse(request.responseText);
+      var item_container = document.getElementById("todos-item-container")
+      data.forEach(todo => {
+        // use the modifier if its an empty message
+        var modifier = "";
+        // if the message if empty output a warning message to the user
+        if (!todo["text"]) {
+          todo["text"] = "&#60;no message provided&#62;";
+          modifier = "todos__item__message--empty";
+        }
+        var todo = htmlToElement(
+          `
+          <div class="todos__item">
+            <div class='todos__item__line'>line ${todo["line"]}</div>
+            <div class='todos__item__type'>${todo["tag"]}</div>
+            <div class='todos__item__message ${modifier}'>${todo["text"]}</div>
+          </div>
+          `
+        )
+        // append the new created todo item into the container
+        item_container.appendChild(todo)
+      });
+    } else {
+      console.log("error while trying to read the todo.json file!")
+    }
+  };
+
+  request.onerror = function() {
+    // There was a connection error of some sort
+  };
+  // call those async functions
+  last_modified_request.send();
+  request.send();
+  </script> 
 </html>
