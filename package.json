@@ -1,0 +1,27 @@
+{
+  "name": "dark-theme-isis-tub",
+  "version": "0.7.4",
+  "description": "dark theme for TUB-ISIS website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^1.3.1",
+    "leasot": "^7.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Re-Krass/Dark-Theme-ISIS-TUB.git"
+  },
+  "author": "Re-Krass, B4rtware",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Re-Krass/Dark-Theme-ISIS-TUB/issues"
+  },
+  "homepage": "https://github.com/Re-Krass/Dark-Theme-ISIS-TUB#readme"
+}
