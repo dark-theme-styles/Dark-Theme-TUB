@@ -218,10 +218,8 @@
 		/* login form title */
 		color: var(--main-white)!important;
 	}
-	/*** FIXME:
-	red colors
-	anmelde button bg
-	***/
+	/* FIXME: red colors*/
+	/* FIXME:anmelde button bg */
 }
 @-moz-document regexp(".*isis.tu-berlin.de.*") {
 	/*** +----------------------+ ***/
