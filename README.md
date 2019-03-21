@@ -2,7 +2,7 @@
 
 Dark theme for TUB-ISIS website.
 
-<img src="/images/Screenshot_1.png" alt="YDL Logo">
+<img src="/images/Screenshot_1.png" alt="Screenshot 1">
 
 ## Installation
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
