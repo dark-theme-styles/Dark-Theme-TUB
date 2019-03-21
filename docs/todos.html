@@ -55,25 +55,25 @@
     </header>
     <main>
       <section class="info">
-        <div class="todos">
-          <div class="todos__header">$: Todos
-            <span class="todos__header__icon">
+        <div class="window">
+          <div class="window__header">$: Todos
+            <span class="window__header__icon">
               <a href="index.html"><i class="material-icons">close</i></a>
           </div>
-          <div class="todos__file">
-            <span class="todos__file__icon">
+          <div class="window__file">
+            <span class="window__file__icon">
               <i class="material-icons">folder</i>
             </span>
             dark-theme-isis-tub.user.css
           </div>
-          <div id="todos-item-container" class="todos__item-container">
+          <div id="todos-item-container" class="window__item-container">
             <!-- todo items get inserted here via javascript -->
           </div>
-          <div class="todos__footer">
-            <div class="todos__footer__icon">
+          <div class="window__footer">
+            <div class="window__footer__icon">
             </div>
-            <div class="todos__meta">
-              <div id="todos-meta-last-modified" class="todos__meta__last-modified">
+            <div class="window__meta">
+              <div id="todos-meta-last-modified" class="window__meta__last-modified">
                 <!-- this date gets set by javascript -->
               </div>
             </div>
@@ -133,14 +133,14 @@
         // if the message if empty output a warning message to the user
         if (!todo["text"]) {
           todo["text"] = "&#60;no message provided&#62;";
-          modifier = "todos__item__message--empty";
+          modifier = "window__item__message--empty";
         }
         var todo = htmlToElement(
           `
-          <div class="todos__item">
-            <div class='todos__item__line'>line ${todo["line"]}</div>
-            <div class='todos__item__type'>${todo["tag"]}</div>
-            <div class='todos__item__message ${modifier}'>${todo["text"]}</div>
+          <div class="window__item">
+            <div class='window__item__line'>line ${todo["line"]}</div>
+            <div class='window__item__type'>${todo["tag"]}</div>
+            <div class='window__item__message ${modifier}'>${todo["text"]}</div>
           </div>
           `
         )

@@ -86,3 +86,14 @@ a {
     text-align: left;
   }
 }
+
+ul {
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li {
+  color: $--main-white;
+  list-style-type: circle;
+}

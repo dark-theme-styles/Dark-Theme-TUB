@@ -1,10 +1,8 @@
 # Dark theme for TUB ISIS website
 
-Dark theme for TUB-ISIS website.
-
 <img src="/images/Screenshot_1.png" alt="Screenshot 1">
 
-## Installation
+## Plugin for UserCSS
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
 - Stylus <br>
   - for Chrome: <br>
@@ -16,8 +14,8 @@ First download a plug-in for your web browser to install the CSS. We prefer '[St
 
 For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 
-### Install user style
-[Install with user CSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css)
+### Install UserCSS style
+[Install with UserCSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css)
 
 ## Links
 - [Website](https://re-krass.github.io/Dark-Theme-ISIS-TUB/)

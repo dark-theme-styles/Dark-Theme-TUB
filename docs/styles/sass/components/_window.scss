@@ -89,6 +89,23 @@
     }
   }
 
+  &__content {
+      // border-bottom: 2px solid $--main-white-muted;
+      //
+      padding: 5px 0px 5px 20px;
+
+      &__text {
+        color: $--main-white-muted;
+        font-size: 1rem;
+      }
+      &__link {
+        color: $--main-blue;
+      }
+  }
+  &__list {
+
+  }
+
   &__item-container {
     padding: 10px;
   }
