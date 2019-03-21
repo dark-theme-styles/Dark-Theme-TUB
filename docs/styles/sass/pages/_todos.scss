@@ -29,6 +29,7 @@
   -moz-box-shadow: 0px 0px 64px 3px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.75);
   flex: 0.8;
+  margin-top: 50px;
 
   &__header {
     background-color: $--main-success;
@@ -47,10 +48,22 @@
   &__footer {
     background-color: $--main-navs-color;
     padding: 8px;
+    display: flex;
+
+    &__icon {
+      margin: 0px;
+      padding: 0px;
+      line-height: normal;
+      > i {
+        vertical-align: baseline;
+        font-size: 12px;
+      }
+    }
   }
 
   &__meta {
     font-size: 10px;
+    flex: 1;
 
     &__last-modified {
       text-align: right;
