@@ -18,6 +18,8 @@ with open("main.scss", "w") as scssFile:
                 fileEnding = file.split(".")[-1]
                 if fileEnding in valid_file_endings:
                     if not commentPrinted:
+                        print("/* {} */".format(currentDir))
                         print("/* {0} */".format(currentDir), file = scssFile)
                         commentPrinted = True
+                    print("@import '{}/{}';".format(dirpath, file.split(".")[0][1:]))
                     print("@import '{0}/{1}';".format(dirpath, file.split(".")[0][1:]), file = scssFile)
