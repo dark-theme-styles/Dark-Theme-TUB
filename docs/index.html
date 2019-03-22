@@ -52,13 +52,11 @@
     </header>
 
     <main>
-        <!-- TODO: card shaking if close is clicked -->
-        <!-- TODO: close animation for close button if you are not on the homepage -->
         <section class="info">
-            <div class="window">
+            <div class="window shake-animation">
                 <div class="window__header">$: Dark theme for TUB ISIS website
                     <span class="window__header__icon">
-                        <a href="index.html"><i class="material-icons">close</i></a>
+                        <i id="icon_clicked" class="material-icons">close</i>
                 </div>
                 <div class="window__sub-header">
                     <span class="window__file__icon">
@@ -172,5 +170,6 @@
 </body>
 
 <script src="scripts/index.js" language="javascript" type="text/javascript"></script>
+<script src="scripts/shake-animation.js" language="javascript" type="text/javascript"></script>
 
 </html>
