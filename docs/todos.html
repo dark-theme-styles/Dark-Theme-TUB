@@ -55,25 +55,25 @@
     </header>
     <main>
       <section class="info">
-        <div class="todos">
-          <div class="todos__header">$: Todos
-            <span class="todos__header__icon">
+        <div class="window">
+          <div class="window__header">$: Todos
+            <span class="window__header__icon">
               <a href="index.html"><i class="material-icons">close</i></a>
           </div>
-          <div class="todos__file">
-            <span class="todos__file__icon">
+          <div class="window__file">
+            <span class="window__file__icon">
               <i class="material-icons">folder</i>
             </span>
             dark-theme-isis-tub.user.css
           </div>
-          <div id="todos-item-container" class="todos__item-container">
+          <div id="todos-item-container" class="window__item-container">
             <!-- todo items get inserted here via javascript -->
           </div>
-          <div class="todos__footer">
-            <div class="todos__footer__icon">
+          <div class="window__footer">
+            <div class="window__footer__icon">
             </div>
-            <div class="todos__meta">
-              <div id="todos-meta-last-modified" class="todos__meta__last-modified">
+            <div class="window__meta">
+              <div id="todos-meta-last-modified" class="window__meta__last-modified">
                 <!-- this date gets set by javascript -->
               </div>
             </div>
@@ -85,6 +85,78 @@
 
     <footer></footer>
   </body>
-  <script src="scripts/todos.js" language="javascript" type="text/javascript"></script>
-  <script src="scripts/collapsible.js" lang="javascript" type="text/javascript"></script>
+  <script language="javascript" type="text/javascript">
+
+  /**
+   * @param {String} HTML representing a single element
+   * @return {Element}
+   * src: https://stackoverflow.com/questions/494143/creating-a-new-dom-element-from-an-html-string-using-built-in-dom-methods-or-pro/35385518#35385518
+   */
+  function htmlToElement(html) {
+      var template = document.createElement('template');
+      html = html.trim(); // Never return a text node of whitespace as the result
+      template.innerHTML = html;
+      return template.content.firstChild;
+  }
+
+  // get the header of the json file to get the last modified date
+  // src: http://youmightnotneedjquery.com/
+  var last_modified_request = new XMLHttpRequest();
+  last_modified_request.open("HEAD", 'todos.json', true);
+  last_modified_request.onload = () => {
+    if (last_modified_request.status >= 200 && last_modified_request.status < 400) {
+      // get the last modified date 
+      var last_modified = last_modified_request.getResponseHeader("Last-Modified");
+      var last_modified_elem = document.getElementById("todos-meta-last-modified");
+      // set the last modified date in the associated element by id
+      last_modified_elem.innerText = "last updated: " + last_modified;
+      
+    } else {
+      console.log("error getting todos.json file!");
+    }
+  }
+  last_modified_request.onerror = () => {
+    console.log("error getting todos.json file!");
+  };
+
+  // get the json files content through an async request
+  var request = new XMLHttpRequest();
+  request.open('GET', 'todos.json', true);
+
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      var data = JSON.parse(request.responseText);
+      var item_container = document.getElementById("todos-item-container")
+      data.forEach(todo => {
+        // use the modifier if its an empty message
+        var modifier = "";
+        // if the message if empty output a warning message to the user
+        if (!todo["text"]) {
+          todo["text"] = "&#60;no message provided&#62;";
+          modifier = "window__item__message--empty";
+        }
+        var todo = htmlToElement(
+          `
+          <div class="window__item">
+            <div class='window__item__line'>line ${todo["line"]}</div>
+            <div class='window__item__type'>${todo["tag"]}</div>
+            <div class='window__item__message ${modifier}'>${todo["text"]}</div>
+          </div>
+          `
+        )
+        // append the new created todo item into the container
+        item_container.appendChild(todo)
+      });
+    } else {
+      console.log("error while trying to read the todo.json file!")
+    }
+  };
+
+  request.onerror = function() {
+    // There was a connection error of some sort
+  };
+  // call those async functions
+  last_modified_request.send();
+  request.send();
+  </script> 
 </html>

@@ -51,67 +51,147 @@
     </header>
 
     <main>
-        <section id="main_site_section">
-            <h1 id="site_title">Dark theme for TUB ISIS website</h1>
-            <p>Dark theme for TUB-ISIS website.</p>
-            <h2>Installation</h2>
-            <p>First download a plug-in for your web browser to install the CSS. We prefer '<a
-                    href="https://github.com/openstyles/stylus">Stylus</a>'. </p>
-            <ul>
-                <li>Stylus</li>
-                <ul>
-                    <li>for Chrome: <br>
-                        <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">
-                            Install
-                            Chrome extension </a></li>
-                    <li>for Firefox: <br>
-                        <a href="https://addons.mozilla.org/firefox/addon/styl-us/"> Install Firefox extension </a></li>
-                    <li>for Opera: <br>
-                        <a href="https://addons.opera.com/extensions/details/stylus/"> Install Opera extension </a></li>
-                </ul>
-            </ul>
-            <p> For Safari on Mac, we recommend '<a href="https://cascadea.app/">Cascadea</a>'. </p>
+        <!-- TODO: card shaking if close is clicked -->
+        <!-- TODO: close animation for close button if you are not on the homepage -->
+        <section class="info">
+            <div class="window">
+                <div class="window__header">$: Dark theme for TUB ISIS website
+                    <span class="window__header__icon">
+                        <a href="index.html"><i class="material-icons">close</i></a>
+                </div>
+                <div class="window__sub-header">
+                    <span class="window__file__icon">
+                        <i class="material-icons"></i>
+                    </span>
+                    Plugin for UserCSS
+                </div>
+                <div class="window__item-container">
+                    <div class="window__content">
+                        <span class="window__content__text">First download a plug-in for your web browser to install
+                            the CSS. <br>
+                            We prefer '<a href="https://github.com/openstyles/stylus">Stylus</a>'.
+                        </span>
+                        <ul>
+                            <li>Stylus</li>
+                            <ul>
+                                <li>for Chrome: <br>
+                                    <a
+                                        href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">
+                                        Install Chrome extension </a></li>
+                                <li>for Firefox: <br>
+                                    <a href="https://addons.mozilla.org/firefox/addon/styl-us/"> Install Firefox
+                                        extension
+                                    </a></li>
+                                <li>for Opera: <br>
+                                    <a href="https://addons.opera.com/extensions/details/stylus/"> Install Opera
+                                        extension
+                                    </a></li>
+                            </ul>
+                        </ul>
+                        <div class="window__content__text">
+                            For Safari on Mac, we recommend '<a href="https://cascadea.app/">Cascadea</a>'.
+                        </div>
+                    </div>
+                </div>
+                <div class="window__file">
+                    <span class="window__file__icon">
+                        <i class="material-icons">code</i>
+                    </span>
+                    Install UserCSS style
+                </div>
+                <div class="window__item-container">
+                    <div class="window__content">
+                        <a href="https://github.com/openstyles/stylus">Install with UserCSS</a>
+                    </div>
+                </div>
 
-            <h2>Install user style</h2>
-            <a
-                href="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css">Install
-                with user CSS </a>
+                <div class="window__file">
+                    <span class="window__file__icon">
+                        <i class="material-icons">link</i>
+                    </span>
+                    Links
+                </div>
+                <div class="window__item-container">
+                    <div class="window__content">
+                        <ul>
+                            <li>
+                                <p> <img id="icons"
+                                        src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
+                                        alt="github logo">
+                                    <a href="https://github.com/Re-Krass/Dark-Theme-ISIS-TUB">GitHub site</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            <h2>Links</h2>
-            <ul>
-                <li>
-                    <p> <img id="icons"
-                            src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
-                            alt="github logo">
-                        <a href="https://github.com/Re-Krass/Dark-Theme-ISIS-TUB">GitHub site</a>
-                    </p>
-                </li>
-            </ul>
+                <div class="window__file">
+                    <span class="window__file__icon">
+                        <i class="material-icons">account_box</i>
+                    </span>
+                    Authors
+                </div>
+                <div class="window__item-container">
+                    <div class="window__content">
+                        <ul>
+                            <li>
+                                <p>
+                                    <img id="icons"
+                                        src="https://avatars1.githubusercontent.com/u/34386047?s=460&amp;v=4"
+                                        alt="B4rtware profile picture">
+                                    <a href="https://github.com/B4rtware">B4rtware</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p> <img id="icons" src="https://avatars0.githubusercontent.com/u/38668040?s=460&v=4"
+                                        alt="Re-Krass profile picture">
+                                    <a href="https://github.com/Re-Krass">Re-Krass</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="window__footer">
+                    <div class="window__footer__icon">
+                    </div>
+                    <div class="window__meta">
+                        <div id="index-meta-last-modified" class="window__meta__last-modified">
+                            <!-- this date gets set by javascript -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <section id="footer_section">
-            <h2>Authors</h2>
-            <ul>
-                <li>
-                    <p>
-                        <img id="icons" src="https://avatars1.githubusercontent.com/u/34386047?s=460&amp;v=4"
-                            alt="B4rtware profile picture">
-                        <a href="https://github.com/B4rtware">B4rtware</a>
-                    </p>
-                </li>
-                <li>
-                    <p> <img id="icons" src="https://avatars0.githubusercontent.com/u/38668040?s=460&v=4"
-                            alt="Re-Krass profile picture">
-                        <a href="https://github.com/Re-Krass">Re-Krass</a>
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-
     </footer>
 </body>
+
+<!-- TODO: outsource to file -->
+<script language="javascript" type="text/javascript">
+    // get the header of the json file to get the last modified date
+    // src: http://youmightnotneedjquery.com/
+    var last_modified_request = new XMLHttpRequest();
+    last_modified_request.open("HEAD", 'index.html', true);
+    last_modified_request.onload = () => {
+        if (last_modified_request.status >= 200 && last_modified_request.status < 400) {
+            // get the last modified date 
+            var last_modified = last_modified_request.getResponseHeader("Last-Modified");
+            var last_modified_elem = document.getElementById("index-meta-last-modified");
+            // set the last modified date in the associated element by id
+            last_modified_elem.innerText = "last updated: " + last_modified;
+        } else {
+            console.log("error getting index.html file!");
+        }
+    }
+    last_modified_request.onerror = () => {
+        console.log("error getting index.html file!");
+    };
+    // call those async functions
+    last_modified_request.send();
+</script>
 
 </html>
