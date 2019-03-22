@@ -1,10 +1,12 @@
-/* components */
-@import './components/window';
 /* abstracts */
 @import './abstracts/variables';
+/* base */
+@import './base/base';
+@import './base/reset';
+/* components */
+@import './components/collapsible';
+@import './components/script-box';
+@import './components/window';
 /* pages */
 @import './pages/index';
 @import './pages/todos';
-/* base */
-/* @import './base/reset'; */
-@import './base/base';
