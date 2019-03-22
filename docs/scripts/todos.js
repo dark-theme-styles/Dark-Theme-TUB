@@ -12,7 +12,7 @@ function setup_collapse_components() {
       }
 
       console.log(this.firstElementChild);
-      this.firstElementChild.classList.toggle("active");
+      this.firstElementChild.classList.toggle("collapsible--active");
       console.log(this.children);
       if (collapsible_content.style.display === "flex") {
         collapsible_content.style.display = "none";
@@ -55,7 +55,9 @@ function create_todo_item(todo, line_contents_obj) {
             </div>
             <div class="window__line-content">
               <div class="script-box">
-                ${todo_lineContent}
+                <div class="script-box__item-container">
+                  ${todo_lineContent}
+                </div>
               </div>
             </div>
         </div>

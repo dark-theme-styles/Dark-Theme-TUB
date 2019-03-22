@@ -468,11 +468,20 @@ textarea {
 }
 
 /* components */
+.collapsible--active {
+  background-color: #303030;
+}
+
 .script-box {
+  width: 70%;
   margin: 0 auto;
-  width: 80%;
-  border: 2px dashed whitesmoke;
+}
+
+.script-box__item-container {
+  margin: 10px;
+  padding: 5px;
   border-radius: 4px;
+  border: 1px dashed whitesmoke;
 }
 
 .script-box__item {
