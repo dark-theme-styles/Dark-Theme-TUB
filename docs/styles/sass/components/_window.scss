@@ -1,4 +1,5 @@
 @import '../abstracts/variables';
+@import '../vendor/include-media';
 
 .info {
   display: flex;
@@ -30,6 +31,10 @@
     padding: 10px;
     font-size: 1.5rem;
     display: flex;
+
+    @include media("<tablet") {
+      background-color: red;
+    }
 
     &__icon {
       color: $--main-red-tu !important;

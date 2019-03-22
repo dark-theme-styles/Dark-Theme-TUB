@@ -18,6 +18,7 @@
     <meta name="audience" content="Alle">
     <meta http-equiv="content-language" content="en">
     <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Links -->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
@@ -34,12 +35,12 @@
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="todos.html">Todo</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="topnavResponsive()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
         <script>
-            function myFunction() {
+            function topnavResponsive() {
                 var x = document.getElementById("myTopnav");
                 if (x.className === "topnav") {
                     x.className += " responsive";
@@ -61,7 +62,7 @@
                 </div>
                 <div class="window__sub-header">
                     <span class="window__file__icon">
-                        <i class="material-icons"></i>
+                        <i class="material-icons">extension</i>
                     </span>
                     Plugin for UserCSS
                 </div>
@@ -170,28 +171,6 @@
     </footer>
 </body>
 
-<!-- TODO: outsource to file -->
-<script language="javascript" type="text/javascript">
-    // get the header of the json file to get the last modified date
-    // src: http://youmightnotneedjquery.com/
-    var last_modified_request = new XMLHttpRequest();
-    last_modified_request.open("HEAD", 'index.html', true);
-    last_modified_request.onload = () => {
-        if (last_modified_request.status >= 200 && last_modified_request.status < 400) {
-            // get the last modified date 
-            var last_modified = last_modified_request.getResponseHeader("Last-Modified");
-            var last_modified_elem = document.getElementById("index-meta-last-modified");
-            // set the last modified date in the associated element by id
-            last_modified_elem.innerText = "last updated: " + last_modified;
-        } else {
-            console.log("error getting index.html file!");
-        }
-    }
-    last_modified_request.onerror = () => {
-        console.log("error getting index.html file!");
-    };
-    // call those async functions
-    last_modified_request.send();
-</script>
+<script src="scripts/index.js" language="javascript" type="text/javascript"></script>
 
 </html>

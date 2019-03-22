@@ -4,7 +4,15 @@ body {
   background-color: $--main-bg-color;
   color: $--main-white;
   // FIXME: font-family didnt worked without important anymore
-  font-family: "Source Code Pro", monospace!important;
+  font-family: "Source Code Pro", monospace !important;
+  /* bg theme url-bg*/
+  background-image: url(/docs/images/bg_pattern.png) !important;
+  background-origin: padding-box !important;
+  background-position: left top !important;
+  background-clip: border-box !important;
+  background-repeat: repeat !important;
+  background-attachment: scroll !important;
+  background-size: auto !important;
 }
 h1,
 h2,

@@ -17,6 +17,7 @@
     <meta name="audience" content="Alle">
     <meta http-equiv="content-language" content="en">
     <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Links -->
     <link
@@ -42,12 +43,12 @@
       <div class="topnav" id="myTopnav">
           <a href="index.html">Home</a>
           <a href="todos.html" class="active">Todo</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="topnavResponsive()">
               <i class="fa fa-bars"></i>
           </a>
       </div>
       <script>
-          function myFunction() {
+          function topnavResponsive() {
               var x = document.getElementById("myTopnav");
               if (x.className === "topnav") {
                   x.className += " responsive";
