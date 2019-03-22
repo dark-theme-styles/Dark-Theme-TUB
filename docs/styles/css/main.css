@@ -471,6 +471,8 @@ textarea {
 .script-box {
   margin: 0 auto;
   width: 80%;
+  border: 2px dashed whitesmoke;
+  border-radius: 4px;
 }
 
 .script-box__item {
