@@ -567,12 +567,6 @@ li {
   display: flex;
 }
 
-@media (max-width: 767px) {
-  .window__header {
-    background-color: red;
-  }
-}
-
 .window__header__icon {
   color: #ff3c4e !important;
   -webkit-box-flex: 1;
