@@ -28,15 +28,15 @@ function create_todo_item(todo) {
   // if the message if empty output a warning message to the user
   if (!todo["text"]) {
     todo["text"] = "&#60;no message provided&#62;";
-    modifier = "todos__item__message--empty";
+    modifier = "window__item__message--empty";
   }
   var todo_elem = htmlToElement(
     `
         <div class="collapsible">
-            <div class="todos__item">
-                <div class='todos__item__line'>line ${todo["line"]}</div>
-                <div class='todos__item__type'>${todo["tag"]}</div>
-                <div class='todos__item__message ${modifier}'>${
+            <div class="window__item">
+                <div class='window__item__line'>line ${todo["line"]}</div>
+                <div class='window__item__type'>${todo["tag"]}</div>
+                <div class='window__item__message ${modifier}'>${
       todo["text"]
     }</div>
             </div>
