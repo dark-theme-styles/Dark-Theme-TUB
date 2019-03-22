@@ -24,7 +24,7 @@ git add docs/todos.json
 echo "$check_emoji added <todos.json> to commit"
 # create line content
 echo "$work_emoji extracting line content ..."
-if python3.6 extract_file_lines.py; then
+if python3 extract_file_lines.py; then
 	# add created file to commit
 	git add docs/todos_line_extractions.json
 	echo "$check_emoji added <todos_line_extractions.json> to commit"
