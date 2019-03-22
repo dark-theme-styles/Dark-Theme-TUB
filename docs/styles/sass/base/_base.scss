@@ -3,7 +3,8 @@
 body {
   background-color: $--main-bg-color;
   color: $--main-white;
-  font-family: "Source Code Pro", monospace;
+  // FIXME: font-family didnt worked without important anymore
+  font-family: "Source Code Pro", monospace!important;
 }
 h1,
 h2,

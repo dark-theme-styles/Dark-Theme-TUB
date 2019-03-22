@@ -1,11 +1,21 @@
 .script-box {
+    margin: 0 auto;
+  width: 80%;
+
+  &__item {
     display: flex;
+    padding: 1px;
 
     &__line-number {
-
+      padding: 2px 4px;
+      background-color: #303030;
+      text-align: right;
+      flex: 0 0 45px;
     }
 
     &__content {
-
+      //padding: 2 4px;
+      margin-left: 5px;
     }
+  }
 }

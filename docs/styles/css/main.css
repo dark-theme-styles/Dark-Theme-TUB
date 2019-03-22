@@ -3,7 +3,7 @@
 body {
   background-color: #1e1e1e;
   color: whitesmoke;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", monospace !important;
 }
 
 h1,
@@ -469,9 +469,28 @@ textarea {
 
 /* components */
 .script-box {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.script-box__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1px;
+}
+
+.script-box__item__line-number {
+  padding: 2px 4px;
+  background-color: #303030;
+  text-align: right;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45px;
+          flex: 0 0 45px;
+}
+
+.script-box__item__content {
+  margin-left: 5px;
 }
 
 .info {

@@ -29,6 +29,10 @@
     />
     <link href="styles/css/main.css" rel="stylesheet" />
 
+    <!-- Syntax Highlighting Package (highlight.js) 22 languages (default)-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -85,5 +89,7 @@
 
     <footer></footer>
   </body>
-  <script src="scripts/todos.js" language="javascript" type="text/javascript"></script> 
+  <script src="scripts/todos.js" language="javascript" type="text/javascript"></script>
+  <!-- run syntax hightlight inside (<pre><code>) tag -->
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

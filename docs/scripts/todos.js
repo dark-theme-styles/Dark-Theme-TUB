@@ -2,6 +2,8 @@
 function setup_collapse_components() {
   var collapsible_elements = document.getElementsByClassName("collapsible");
   for (let collapsible_element of collapsible_elements) {
+    // hide the line content
+    collapsible_element.children[1].style.display = "none";
     collapsible_element.addEventListener("click", function() {
       var collapsible_content = this.children[1];
 
@@ -36,9 +38,9 @@ function create_todo_item(todo, line_contents_obj) {
     line_content = line[1];
     todo_lineContent_items +=
     `
-      <div class="script-box">
-        <div class="script-box__line-number">${line_number}</div>
-        <div class="script-box__content">${line_content}</div>
+      <div class="script-box__item">
+        <div class="script-box__item__line-number">${line_number}</div>
+        <div class="script-box__item__content">${line_content}</div>
       </div>
     `;
   }
@@ -51,8 +53,10 @@ function create_todo_item(todo, line_contents_obj) {
                 <div class='window__item__type'>${todo["tag"]}</div>
                 <div class='window__item__message ${modifier}'>${todo["text"]}</div>
             </div>
-            <div class="todos__line-content">
+            <div class="window__line-content">
+              <div class="script-box">
                 ${todo_lineContent}
+              </div>
             </div>
         </div>
         `
