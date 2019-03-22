@@ -22,7 +22,7 @@ function setup_collapse_components() {
 }
 
 // creates a todo item from given json object
-function create_todo_item(todo) {
+function create_todo_item(todo, line_contents_obj) {
   // use the modifier if its an empty message
   var modifier = "";
   // if the message if empty output a warning message to the user
@@ -30,15 +30,29 @@ function create_todo_item(todo) {
     todo["text"] = "&#60;no message provided&#62;";
     modifier = "window__item__message--empty";
   }
+  var todo_lineContent_items = "";
+  for (let line of line_contents_obj["line_content"]) {
+    line_number = line[0];
+    line_content = line[1];
+    todo_lineContent_items +=
+    `
+      <div class="script-box">
+        <div class="script-box__line-number">${line_number}</div>
+        <div class="script-box__content">${line_content}</div>
+      </div>
+    `;
+  }
+  var todo_lineContent = `<div class="window__line-content">${todo_lineContent_items}</div>`;
   var todo_elem = htmlToElement(
     `
         <div class="collapsible">
             <div class="window__item">
                 <div class='window__item__line'>line ${todo["line"]}</div>
                 <div class='window__item__type'>${todo["tag"]}</div>
-                <div class='window__item__message ${modifier}'>${
-      todo["text"]
-    }</div>
+                <div class='window__item__message ${modifier}'>${todo["text"]}</div>
+            </div>
+            <div class="todos__line-content">
+                ${todo_lineContent}
             </div>
         </div>
         `
@@ -84,65 +98,30 @@ last_modified_request.onerror = () => {
   console.log("error getting todos.json file!");
 };
 
-function getJsonFileContentFromServer(fileName, callback) {
-  // get the json files content through an async request
-  var request = new XMLHttpRequest();
-  request.open("GET", fileName, true);
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-      var data = JSON.parse(request.responseText);
-      callback.apply(null, [data]);
-    } else {
-      console.log("error while trying to read the todo.json file!");
-    }
-  };
-  request.onerror = function() {
-    // There was a connection error of some sort
-  };
-  // call those async functions
-  last_modified_request.send();
-  request.send();
+function getJsonContentFromServer(fileName) {
+  return fetch(fileName).then(data => {
+    return data.json();
+  })
 }
 
-function create_todos(data) {
-    //getJsonFileContentFromServer("todos_line_extractions.json", create_todos);
-    console.log(data)
+function create_todos(data, lines) {
     var item_container = document.getElementById("todos-item-container");
     for (let todo of data) {
-    //create new todo item
-    var todo_elem = create_todo_item(todo);
-    // append the new created todo item into the container
-    item_container.appendChild(todo_elem);
+      //create new todo item
+      var query_string = `${todo["file"]} ${todo["line"]}`
+      var lines_content = lines[query_string]
+      var todo_elem = create_todo_item(todo, lines_content);
+      // append the new created todo item into the container
+      item_container.appendChild(todo_elem);
     }
 }
 
-getJsonFileContentFromServer("todos.json", create_todos);
-
-// // get the json files content through an async request
-// var request = new XMLHttpRequest();
-// request.open("GET", "todos.json", true);
-
-// request.onload = function() {
-//   if (request.status >= 200 && request.status < 400) {
-//     var data = JSON.parse(request.responseText);
-//     var item_container = document.getElementById("todos-item-container");
-//     // now create all todos items
-//     for (let todo of data) {
-//       // create new todo item
-//       var todo_elem = create_todo_item(todo);
-//       // append the new created todo item into the container
-//       item_container.appendChild(todo_elem);
-//     }
-//     // after todos created we call assign the function
-//     setup_collapse_components();
-//   } else {
-//     console.log("error while trying to read the todo.json file!");
-//   }
-// };
-
-// request.onerror = function() {
-//   // There was a connection error of some sort
-// };
-// // call those async functions
-// last_modified_request.send();
-// request.send();
+getJsonContentFromServer("todos.json")
+  .then(data => {
+    getJsonContentFromServer("todos_line_extractions.json")
+      .then(lines => {
+        create_todos(data, lines);
+        setup_collapse_components();
+      })
+  })
+  .catch(error => console.error(error))

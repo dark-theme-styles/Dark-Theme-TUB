@@ -8,7 +8,7 @@ with open("docs/todos.json", "r") as file:
 
 json_todo = json.loads(todo_file_content)
 
-todo_extract = []
+todo_extract = {}
 for todo in json_todo:
     with open(todo["file"], "r") as file:
         file_lines = file.readlines()
@@ -18,11 +18,12 @@ for todo in json_todo:
         line_index = todo["line"] - line_threshold + index
         line_list.append((line_index, file_lines[line_index - 1]))
 
-    todo_extract.append({
+    key = "{} {}".format(todo["file"], todo["line"])
+    todo_extract[key] = {
         "file": todo["file"],
         "line": todo["line"],
         "line_content": line_list
-    })
+    }
 
 with open("docs/todos_line_extractions.json", "w") as file:
     file.write(json.dumps(todo_extract))
