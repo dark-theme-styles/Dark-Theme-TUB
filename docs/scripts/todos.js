@@ -33,14 +33,20 @@ function create_todo_item(todo, line_contents_obj) {
     modifier = "window__item__message--empty";
   }
   var todo_lineContent_items = "";
+  var split_file_string = todo["file"].split(".");
+  var type = split_file_string[split_file_string.length - 1];
   for (let line of line_contents_obj["line_content"]) {
-    line_number = line[0];
-    line_content = line[1];
+    var line_number = line[0];
+    var line_content = line[1];
+    var current_modifier = "";
+    if (todo["line"] == line_number) {
+      current_modifier = "script-box__item__line-number--current"
+    }
     todo_lineContent_items +=
     `
       <div class="script-box__item">
-        <div class="script-box__item__line-number">${line_number}</div>
-        <div class="script-box__item__content">${line_content}</div>
+        <div class="script-box__item__line-number ${current_modifier}">${line_number}</div>
+        <div class="script-box__item__content"><pre><code class="${type}">${line_content}</pre></code></div>
       </div>
     `;
   }
@@ -126,8 +132,12 @@ getJsonContentFromServer("todos.json")
   .then(data => {
     getJsonContentFromServer("todos_line_extractions.json")
       .then(lines => {
+        // create todos
         create_todos(data, lines);
+        // apply collabsible functionality
         setup_collapse_components();
+        // apply syntax highlighting
+        hljs.initHighlightingOnLoad();
       })
   })
   .catch(error => console.error(error))
