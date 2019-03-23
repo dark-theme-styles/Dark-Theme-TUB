@@ -187,6 +187,7 @@
 		background-repeat: repeat !important;
 		background-attachment: scroll !important;
 		background-size: auto !important; */
+		color: var(--main-white);
 	}
 	body .sidebar {
 		/* left sidebar */
