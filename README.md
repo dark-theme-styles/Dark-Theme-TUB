@@ -18,8 +18,12 @@ First download a plug-in for your web browser to install the CSS. We prefer '[St
 
 For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 
-### Install UserCSS style
-[Install with UserCSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css)
+## Install UserCSS style
+- Install dark theme for 
+  - TUB ISIS <br>
+  [Install with UserCSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css)
+  - TUB MOSES <br>
+  [Install with UserCSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-moses-tub.user.css)
 
 ## Links
 - [Website](https://re-krass.github.io/Dark-Theme-ISIS-TUB/)
