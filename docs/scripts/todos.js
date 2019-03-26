@@ -24,8 +24,8 @@ function setup_collapse_components() {
 }
 
 // FIXME: todos-item-container doesnt get created
-function create_todo_container(file) {
-    var container = htmlToElement(
+function create_todo_file(file) {
+    var file_elem = htmlToElement(
         `
         <div class="window__file">
             <span class="window__file__icon">
@@ -33,10 +33,18 @@ function create_todo_container(file) {
             </span>
             ${file}
         </div>
-        <div id="todos-item-container-${file}" class="window__item-container">
+        `
+    )
+    return file_elem
+}
+
+function create_todo_item_container() {
+    var container = htmlToElement(
+    `
+        <div class="window__item-container">
             <!-- todo items get inserted here via javascript -->
         </div>
-        `
+    `
     )
     return container
 }
@@ -136,27 +144,28 @@ function create_todos(data, lines) {
     var todo_window = document.getElementById("todo-window");
     var todo_footer = todo_window.lastElementChild;
     // holds the caption for each file
-    var file_elements = {};
+    var item_container = {};
     for (let todo of data) {
         var file_name = todo["file"];
         // check if the container for the todo items with the desired file already exists
-        if (!file_elements.hasOwnProperty(file_name)) {
+        if (!item_container.hasOwnProperty(file_name)) {
             // create new container
-            var container_elem = create_todo_container(file_name);
-            file_elements[file_name] = container_elem;
-            console.log(file_elements)
+            var file_elem = create_todo_file(file_name);
+            var container_elem = create_todo_item_container();
+            item_container[file_name] = container_elem;
             todo_window.insertBefore(container_elem, todo_footer);
+            todo_window.insertBefore(file_elem, container_elem);
         }
 
         // get the container reference
-        var container = file_elements[file_name];
+        var container = item_container[file_name];
 
         //create new todo item
         var query_string = `${todo["file"]} ${todo["line"]}`;
         var lines_content = lines[query_string];
         var todo_elem = create_todo_item(todo, lines_content);
-        // insert the new created todo element after the file container
-        insertAfter(todo_elem, container);
+        // insert the new created todo element into the container
+        container.appendChild(todo_elem);
     }
 }
 
