@@ -181,3 +181,5 @@ getJsonContentFromServer("todos.json")
         });
     })
     .catch(error => console.error(error));
+
+last_modified_request.send();
