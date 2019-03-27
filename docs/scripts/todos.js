@@ -4,7 +4,7 @@ function setup_collapse_components() {
     for (let collapsible_element of collapsible_elements) {
         // hide the line content
         collapsible_element.children[1].style.display = "none";
-        collapsible_element.addEventListener("click", function() {
+        collapsible_element.addEventListener("click", function () {
             var collapsible_content = this.children[1];
 
             if (!collapsible_content) {
@@ -40,7 +40,7 @@ function create_todo_file(file) {
 
 function create_todo_item_container() {
     var container = htmlToElement(
-    `
+        `
         <div class="window__item-container">
             <!-- todo items get inserted here via javascript -->
         </div>
@@ -109,24 +109,13 @@ function htmlToElement(html) {
     return template.content.firstChild;
 }
 
-// get the header of the json file to get the last modified date
-// src: http://youmightnotneedjquery.com/
-var last_modified_request = new XMLHttpRequest();
-last_modified_request.open("HEAD", "todos.json", true);
-last_modified_request.onload = () => {
-    if (last_modified_request.status >= 200 && last_modified_request.status < 400) {
-        // get the last modified date
-        var last_modified = last_modified_request.getResponseHeader("Last-Modified");
-        var last_modified_elem = document.getElementById("todos-meta-last-modified");
-        // set the last modified date in the associated element by id
-        last_modified_elem.innerText = "last updated: " + last_modified;
-    } else {
-        console.log("error getting todos.json file!");
-    }
-};
-last_modified_request.onerror = () => {
-    console.log("error getting todos.json file!");
-};
+function getLastModifiedDate(fileName) {
+    return fetch(fileName, {
+        method: "HEAD"
+    }).then(response => {
+        return response.headers.get('last-modified');
+    })
+}
 
 function getJsonContentFromServer(fileName) {
     return fetch(fileName).then(data => {
@@ -182,4 +171,10 @@ getJsonContentFromServer("todos.json")
     })
     .catch(error => console.error(error));
 
-last_modified_request.send();
+getLastModifiedDate("todos.json")
+    .then(last_modified => {
+        var last_modified_elem = document.getElementById("todos-meta-last-modified");
+        last_modified_elem.innerText = "last updated: " + last_modified;
+    })
+    .catch(error => console.error(error));
+
