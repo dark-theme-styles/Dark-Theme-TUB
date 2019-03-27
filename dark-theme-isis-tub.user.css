@@ -13,7 +13,7 @@
 @-moz-document regexp(".*isis.tu-berlin.de.*"), regexp(".*shibboleth.tubit.tu-berlin.de.*") {
 	:root {
 		--main-bg-color: rgb(20, 20, 20);
-		--main-navs-color: rgb(45, 45, 45);
+		--main-navs-color: rgb(45, 45, 45); 
 		--main-white: rgb(245, 245, 245);
 		--main-white-muted: rgb(200, 200, 200);
 		--main-red-tu: rgb(255, 60, 78);
