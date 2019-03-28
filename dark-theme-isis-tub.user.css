@@ -6,7 +6,7 @@
 @author       B4rtware (https://github.com/B4rtware), Re-Krass (https://github.com/Re-Krass)
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
-@version      0.7.5
+@version      0.7.6
 ==/UserStyle== */
 }
 
@@ -169,10 +169,14 @@
 		/* password placeholder */
 		color: var(--main-white)!important;
 	}
+	#shibbolethbutton {
+		background-color: var(--main-red-tu)!important;
+	}
+	#login-isis-manual .btn-tertiary {
+		border: 1px var(--main-red-tu) solid
+	}
+	
 	/* 
-	FIXME: border color if select button
-	FIXME: red color 
-	FIXME: tu logo invert...
 	FIXME: Maybe fix warning 'Ihre Session ist ungültig. ...' 
 	*/
 }
@@ -713,7 +717,7 @@
 	.instancename {
 		/* resource names */
 		color: var(--main-white)!important;
-		border-left: 4px solid rgb(255, 34, 34)!important;
+		border-left: 4px solid var(--main-red-tu)!important;
 	}
 	a .instancename {
 		/* add padding left from border to text */
@@ -725,7 +729,7 @@
 	}
 	.row a {
 		/* hyperlink font */
-		color: rgb(255, 60, 78);
+		color: var(--main-red-tu);
 	}
 	.row ul.section .resourcelinkdetails {
 		/* annotation resource link details */
@@ -753,7 +757,8 @@
 	}
 	.row .forumpost.unread .row.header, .path-course-view .unread, span.unread {
 		/* unred forum pots highlight */
-		background-color: rgb(245, 245, 223);
+		/*background-color: rgb(245, 245, 223);*/
+		background-color: var(--main-white);
 	}
 	/*** comments area */
 	.comment-area {
@@ -788,7 +793,7 @@
 	/*** +------------------------------------------------------+ ***/
 	.row .name {
 		/* posts author name */
-		color: rgb(255, 255, 255)
+		color: var(--main-white);
 	}
 	.row .date {
 		/* date text */
@@ -845,7 +850,7 @@
 	}
 	.messaging-area-container .message .content.left {
 		/* message block */
-		background-color: rgb(255, 201, 201)!important;
+		background-color: var(--main-white)!important;
 	}
 	.messages p {
 		/* message text */
