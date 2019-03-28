@@ -6,7 +6,7 @@
 @author       B4rtware (https://github.com/B4rtware), Re-Krass (https://github.com/Re-Krass)
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css
-@version      0.8.0
+@version      0.8.1
 ==/UserStyle== */
 }
 
@@ -401,8 +401,13 @@
 		margin-right: -4px;
 	}
 	.popover-region-header-container {
-		/* TODO: fix messages (i dont have messages) */
+		/* 'Systemnachrichten' header container */
 		border: none;
+	}
+	.all-notifications div.content-item-container.notification.unread:nth-child(1) {
+		/* border top unread messages */
+		border-top: 1px var(--main-white-muted) solid!important;
+		
 	}
 	.user-navbar .popover-region {
 		background-color: transparent;
@@ -415,6 +420,7 @@
 	.popover-region-content-container {
 		/* ?????? */
 		background-color: var(--main-bg-color);
+		color: var(--main-white)!important;
 	}
 	.empty-message {
 		/* empty message */
@@ -426,6 +432,17 @@
 		border: none;
 		background-color: var(--main-navs-color);
 		color: var(--main-white-muted);
+	}
+	.popover-region-container .content-item-container.unread {
+		/* unread message */
+		background-color: rgb(197, 14, 31);
+	}
+	div.content-item-container.notification.unread > a.view-more {
+		/* unrea message 'Mitteilung vollständig anzeigen' */
+		color: var(--main-white)!important;
+	}
+	.view-more {
+		color: var(--main-bg-color)!important;
 	}
 	/*** +--------------------------+ ***/
 	/*** |    'Systemnachrichten'   | ***/
@@ -452,8 +469,8 @@
 		/* main message box */
 /* 		border-left: 10px var(--main-bg-color) solid!important; */
 /* 		box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.75); */
-		box-shadow: rgba(20, 20, 20, 1) -31px 0px 60px 5px;
-		-webkit-box-shadow: rgba(20, 20, 20, 1) -31px 0px 60px 5px;
+/* 		box-shadow: rgba(20, 20, 20, 1) -31px 0px 60px 5px; */
+/* 		-webkit-box-shadow: rgba(20, 20, 20, 1) -31px 0px 60px 5px; */
 	}
 	.bg-white {
 		/* bg white to black */
@@ -537,6 +554,22 @@
 	.m-0.font-weight-light.text-truncate.last-message, .m-0.font-weight-light.text-truncate.last-message .text-muted {
 		/* message text */
 		color: var(--main-white)!important;	
+	}
+	.moodle-dialogue-base.moodle-dialogue-exception > div > div {
+		/* exception box */
+		background-color: var(--main-navs-color)!important;
+	}
+	.moodle-exception-message {
+		/* exception message */
+		color: var(--main-white);
+	}
+	.yui3-button.closebutton {
+		/* close button */
+		color: var(--main-white)!important;
+	}
+	.modal-content {
+		/* tour boxes */
+		background-color: var(--main-bg-color)!important ;
 	}
 	
 	/*** +---------------------------+ ***/
