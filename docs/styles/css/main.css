@@ -573,6 +573,7 @@ li {
       -ms-flex: 1;
           flex: 1;
   text-align: end;
+  cursor: pointer;
 }
 
 .window__header__icon > a {
