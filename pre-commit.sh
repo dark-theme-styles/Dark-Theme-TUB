@@ -3,6 +3,7 @@
 work_emoji="⚙️ "
 check_emoji="✔️ "
 error_emoji="❌ "
+warning_emoji="⚠️ "
 
 commit_abort="commit abort." 
 
@@ -24,6 +25,22 @@ git add docs/todos.json
 echo "$check_emoji added <todos.json> to commit"
 # create line content
 echo "$work_emoji extracting line content ..."
+
+# check if to use the other python command
+if ! type "python3" > /dev/null; then
+	echo "$warning_emoji <python3> command not exists using <python>"
+	if python extract_file_lines.py; then
+		# add created file to commit
+		git add docs/todos_line_extractions.json
+		echo "$check_emoji added <todos_line_extractions.json> to commit"
+		exit 1
+	else
+		echo "$error_emoji error while running python line extractor!"
+		echo "$error_emoji $commit_abort"
+		exit 1
+	fi
+fi
+
 if python3 extract_file_lines.py; then
 	# add created file to commit
 	git add docs/todos_line_extractions.json
