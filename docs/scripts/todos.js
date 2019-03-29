@@ -152,6 +152,10 @@ function create_todos(data, lines) {
         //create new todo item
         var query_string = `${todo["file"]} ${todo["line"]}`;
         var lines_content = lines[query_string];
+        if (!lines_content) {
+            alert("line_content not found!\nPlease run manually the script <todos_lines_extraction.py> to extract lines and upload the file!\n(todos.json is newer than todos_line_extractions.json)")
+            console.error("line_content not found!\n Please run manually the script to extract lines and upload the file!\n(todos.json is newer than todos_line_extractions.json)")
+        }
         var todo_elem = create_todo_item(todo, lines_content);
         // insert the new created todo element into the container
         container.appendChild(todo_elem);
@@ -160,6 +164,7 @@ function create_todos(data, lines) {
 
 getJsonContentFromServer("todos.json")
     .then(data => {
+        console.log(data);
         getJsonContentFromServer("todos_line_extractions.json").then(lines => {
             // create todos
             create_todos(data, lines);
