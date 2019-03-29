@@ -16,6 +16,8 @@ for todo in json_todo:
     line_list = []
     for index in range(line_threshold * 2 + 1):
         line_index = todo["line"] - line_threshold + index
+        if line_index < 1:
+            continue
         line_list.append((line_index, file_lines[line_index - 1]))
 
     key = "{} {}".format(todo["file"], todo["line"])
