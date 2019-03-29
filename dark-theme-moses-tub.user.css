@@ -6,7 +6,7 @@
 @author       B4rtware (https://github.com/B4rtware), Re-Krass (https://github.com/Re-Krass)
 @homepageURL  https://github.com/Re-Krass/Dark-Theme-ISIS-TUB
 @updateURL    https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-moses-tub.user.css
-@version      0.0.2
+@version      0.0.3
 ==/UserStyle== */
 }
 
@@ -75,6 +75,9 @@
 		background-repeat: repeat !important;
 		background-attachment: scroll !important;
 		background-size: auto !important;
+	}
+	.fa-space {
+		color: var(--main-white);
 	}
 
 	label {
