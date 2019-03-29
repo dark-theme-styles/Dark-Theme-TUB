@@ -33,7 +33,7 @@ if ! type "python3" > /dev/null; then
 		# add created file to commit
 		git add docs/todos_line_extractions.json
 		echo "$check_emoji added <todos_line_extractions.json> to commit"
-		exit 1
+		exit 0
 	else
 		echo "$error_emoji error while running python line extractor!"
 		echo "$error_emoji $commit_abort"
