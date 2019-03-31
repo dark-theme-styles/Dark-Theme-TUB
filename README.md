@@ -1,4 +1,4 @@
-# Dark theme for TUB ISIS website
+# Dark theme for TUB ISIS / MOSES website
 
 <img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_1.png" alt="Screenshot main page"/>
 
