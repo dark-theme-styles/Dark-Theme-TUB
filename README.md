@@ -1,10 +1,10 @@
 # Dark theme for TUB ISIS / MOSES website
 
-<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_1.png" alt="Screenshot main page"/>
+<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_1.png target="_blank"" alt="Screenshot main page"/>
 
 -----
 
-<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_2-3.png" alt="Screenshot login pages"/>
+<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_2-3.png target="_blank"" alt="Screenshot login pages"/>
 
 ## Plugin for UserCSS
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
@@ -26,8 +26,15 @@ For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
   [Install with UserCSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-moses-tub.user.css)
 
 ## Links
-- [Website](https://re-krass.github.io/Dark-Theme-ISIS-TUB/)
+- Visit our Dark-Theme-TUB website for more informations: <br>
+[visit project website](https://dark-theme-styles.github.io/Dark-Theme-TUB) <br>
+- Visit our Homepage for more dark theme projects: <br>
+[visit Homepage](https://dark-theme-styles.github.io) <br>
+- GitHub Dark-Theme-TUB project: <br>
+[visit on GitHub](https://github.com/dark-theme-styles/Dark-Theme-TUB) 
+- GitHub _**Dark Theme Styles**_ Organization page: <br>
+[visit on GitHub](https://github.com/dark-theme-styles) 
 
 ## Authors 
-- <img src="https://avatars1.githubusercontent.com/u/34386047" height="15" alt="B4rtware profile picture"> [B4rtware](https://github.com/B4rtware) <br>
-- <img src="https://avatars1.githubusercontent.com/u/38668040" height="15" alt="Re-Krass profile picture"> [Re-Krass](https://github.com/Re-Krass)
+- <img src="https://avatars1.githubusercontent.com/u/34386047" height="15" alt="B4rtware profile picture" target="_blank"> [B4rtware](https://github.com/B4rtware) <br>
+- <img src="https://avatars1.githubusercontent.com/u/38668040" height="15" alt="Re-Krass profile picture" target="_blank"> [Re-Krass](https://github.com/Re-Krass)

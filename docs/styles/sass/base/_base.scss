@@ -6,7 +6,7 @@ body {
   // FIXME: font-family didnt worked without important anymore
   font-family: "Source Code Pro", monospace !important;
   /* bg theme url-bg*/
-  background-image: url(/docs/images/bg_pattern.png) !important;
+  background-image: $--url-bg-pattern!important;
   background-origin: padding-box !important;
   background-position: left top !important;
   background-clip: border-box !important;
