@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Re-Krass/Dark-Theme-ISIS-TUB.git"
+    "url": "git+https://github.com/dark-theme-styles/Dark-Theme-TUB.git"
   },
   "author": "Re-Krass, B4rtware",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Re-Krass/Dark-Theme-ISIS-TUB/issues"
+    "url": "https://github.com/dark-theme-styles/Dark-Theme-TUB/issues"
   },
-  "homepage": "https://github.com/Re-Krass/Dark-Theme-ISIS-TUB#readme"
+  "homepage": "https://github.com/dark-theme-styles/Dark-Theme-TUB#readme"
 }

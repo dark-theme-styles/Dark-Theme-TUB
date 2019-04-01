@@ -29,5 +29,5 @@ For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 - [Website](https://re-krass.github.io/Dark-Theme-ISIS-TUB/)
 
 ## Authors 
-- <img src="https://avatars1.githubusercontent.com/u/34386047?s=460&v=4" height="15" alt="B4rtware profile picture"> [B4rtware](https://github.com/B4rtware) <br>
-- <img src="https://avatars0.githubusercontent.com/u/38668040?s=460&v=4" height="15" alt="Re-Krass profile picture"> [Re-Krass](https://github.com/Re-Krass)
+- <img src="https://avatars1.githubusercontent.com/u/34386047" height="15" alt="B4rtware profile picture"> [B4rtware](https://github.com/B4rtware) <br>
+- <img src="https://avatars1.githubusercontent.com/u/38668040" height="15" alt="Re-Krass profile picture"> [Re-Krass](https://github.com/Re-Krass)
