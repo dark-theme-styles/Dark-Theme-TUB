@@ -476,6 +476,11 @@ li {
   list-style-type: circle;
 }
 
+.screenshot {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
 /* components */
 .collapsible--active {
   background-color: #303030;
