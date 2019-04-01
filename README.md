@@ -1,10 +1,10 @@
 # Dark theme for TUB ISIS / MOSES website
 
-<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_1.png target="_blank"" alt="Screenshot main page"/>
+<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_1.png" target="_blank" alt="Screenshot main page"/>
 
 -----
 
-<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_2-3.png target="_blank"" alt="Screenshot login pages"/>
+<img src="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/images/Screenshot_2-3.png" target="_blank" alt="Screenshot login pages"/>
 
 ## Plugin for UserCSS
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
