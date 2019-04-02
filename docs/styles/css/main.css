@@ -792,6 +792,41 @@ li {
   }
 }
 
+/* own scrollbar */
+html {
+  /* scrollbar firefox */
+  scrollbar-color: #010101 #6e6e6e;
+}
+
+/* Note: The -webkit-scrollbar is not supported by Firefox or IE and Edge. */
+::-webkit-scrollbar {
+  /* width */
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  /* Track */
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* Handle */
+  background: #6e6e6e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* Handle on hover */
+  background: #6e6e6e;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* not handle on */
+  background: #010101;
+}
+
 /* pages */
 #main_site_section, #footer_section {
   margin-left: 60px;

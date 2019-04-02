@@ -1,0 +1,34 @@
+/* own scrollbar */
+html {
+    /* scrollbar firefox */
+    scrollbar-color: rgb(1, 1, 1) rgb(110, 110, 110);
+}
+
+/* Note: The -webkit-scrollbar is not supported by Firefox or IE and Edge. */
+
+::-webkit-scrollbar {
+    /* width */
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    /* Track */
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: rgb(110, 110, 110);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Handle on hover */
+    background: rgb(110, 110, 110);
+}
+
+::-webkit-scrollbar-track-piece {
+    /* not handle on */
+    background: rgb(1, 1, 1);
+}
