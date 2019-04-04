@@ -10,13 +10,15 @@ Vue.config.productionTip = false;
 
 Vue.use(Vuetify,
     {
-        primary: '#1976D2',
-        secondary: '#424242',
-        accent: '#82B1FF',
-        error: '#FF5252',
-        info: '#2196F3',
-        success: '#4CAF50',
-        warning: '#FFC107'
+        theme: {
+            primary: '#1e1e1e',
+            secondary: '#f5f5f5',
+            accent: '#2d2d2d',
+            error: '#ff3c4e',
+            info: '#c8c8c8',
+            success: '#39b54a',
+            warning: '#319ae3'
+        }
     });
 
 new Vue({

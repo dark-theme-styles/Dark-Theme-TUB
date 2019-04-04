@@ -2,8 +2,49 @@
   <div class="home">
     <v-container grid-list-md>
       <v-layout>
+        <v-flex xs12>
+          <div class="window__sub-header">
+            <span class="window__file__icon">
+              <i class="material-icons">extension</i>
+            </span>
+            Plugin for UserCSS
+          </div>
+          <div class="window__item-container">
+            <div class="window__content">
+              <span class="window__content__text">First download a plug-in for your web browser to install
+                the CSS. <br>
+                We prefer '<a href="https://github.com/openstyles/stylus">Stylus</a>'.
+              </span>
+              <ul>
+                <li>Stylus</li>
+                <ul>
+                  <li>for Chrome: <br>
+                    <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">
+                      Install Chrome extension
+                    </a>
+                  </li> <br>
+                  <li>for Firefox: <br>
+                    <a href="https://addons.mozilla.org/firefox/addon/styl-us/"> Install Firefox
+                      extension
+                    </a>
+                  </li> <br>
+                  <li>for Opera: <br>
+                    <a href="https://addons.opera.com/extensions/details/stylus/"> Install Opera
+                      extension
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+              <div class="window__content__text">
+                For Safari on Mac, we recommend '<a href="https://cascadea.app/">Cascadea</a>'.
+              </div>
+            </div>
+          </div>
+        </v-flex>
+      </v-layout>
+      <v-layout>
         <v-flex xs4>
-          <v-card color="primary">
+          <v-card color="accent">
             <v-img
               class="white--text"
               height="200px"
@@ -33,13 +74,13 @@
             <v-card-actions>
               <v-btn
                 flat
-                color="orange"
+                color="success"
               >Install</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
         <v-flex xs4>
-          <v-card color="primary">
+          <v-card color="accent">
             <v-img
               class="white--text"
               height="200px"
@@ -69,13 +110,13 @@
             <v-card-actions>
               <v-btn
                 flat
-                color="orange"
+                color="success"
               >Install</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
         <v-flex xs4>
-          <v-card color="primary">
+          <v-card color="accent">
             <v-img
               class="white--text"
               height="200px"
@@ -105,7 +146,7 @@
             <v-card-actions>
               <v-btn
                 flat
-                color="orange"
+                color="success"
               >Install</v-btn>
             </v-card-actions>
           </v-card>

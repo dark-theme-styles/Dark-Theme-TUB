@@ -1,18 +1,29 @@
 <template>
-  <v-app id="app" dark>
+  <v-app
+    id="app"
+    dark
+  >
+  <v-card id="window" color="primary">
     <div id="nav">
-      <v-toolbar>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar flat color="success">
         <v-toolbar-title>Dark Theme TUB</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn flat><router-link to="/">Home</router-link></v-btn>
-          <v-btn flat><router-link to="/preview">Preview</router-link></v-btn>
-          <v-btn flat><router-link to="/todo">Todo</router-link></v-btn>
+          <v-btn flat>
+            <router-link to="/">Home</router-link>
+          </v-btn>
+          <v-btn flat>
+            <router-link to="/preview">Preview</router-link>
+          </v-btn>
+          <v-btn flat>
+            <router-link to="/todo">Todo</router-link>
+          </v-btn>
         </v-toolbar-items>
+        <v-toolbar-side-icon></v-toolbar-side-icon>
       </v-toolbar>
     </div>
     <router-view />
+  </v-card>
   </v-app>
 </template>
 
@@ -26,7 +37,6 @@
     // color: #2c3e50;
 }
 #nav {
-    padding: 30px;
     a {
         font-weight: bold;
         color: #2c3e50;
@@ -34,5 +44,9 @@
             color: #42b983;
         }
     }
+}
+
+#window {
+  margin: 40px;
 }
 </style>
