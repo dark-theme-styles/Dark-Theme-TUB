@@ -3,18 +3,19 @@
     <v-container grid-list-md>
       <v-layout>
         <v-flex xs12>
-          <div class="window__sub-header">
-            <span class="window__file__icon">
-              <i class="material-icons">extension</i>
-            </span>
-            Plugin for UserCSS
-          </div>
-          <div class="window__item-container">
-            <div class="window__content">
-              <span class="window__content__text">First download a plug-in for your web browser to install
-                the CSS. <br>
-                We prefer '<a href="https://github.com/openstyles/stylus">Stylus</a>'.
-              </span>
+          <v-list>
+            <v-list-tile>
+              <v-list-tile-avatar>
+                <v-icon>extension</v-icon>
+              </v-list-tile-avatar>
+              <v-list-tile-content>
+                <v-list-tile-title>Plugin for UserCSS</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+            <v-divider></v-divider>
+            <div>
+              First download a plug-in for your web browser to install the CSS. <br>
+              We prefer '<a href="https://github.com/openstyles/stylus">Stylus</a>'.
               <ul>
                 <li>Stylus</li>
                 <ul>
@@ -39,7 +40,7 @@
                 For Safari on Mac, we recommend '<a href="https://cascadea.app/">Cascadea</a>'.
               </div>
             </div>
-          </div>
+          </v-list>
         </v-flex>
       </v-layout>
       <v-layout>
@@ -167,3 +168,10 @@ export default {
     }
 };
 </script>
+
+<style lang="scss" scoped>
+a {
+    color: #319ae3;
+}
+</style>
+
