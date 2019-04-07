@@ -74,14 +74,14 @@
               class="white--text"
               width="207px"
               :src="require('@/assets/img/screenshots/isis-tub/ISIS-TUB_Screenshot_1.jpg')"
-            > -->
-             <!-- <v-container fill-height fluid> -->
-                <!-- <v-layout fill-height> -->
-                  <v-flex xs12 align-end flexbox>
-                    <span class="headline">ISIS TUB</span>
-                  </v-flex>
-                <!-- </v-layout> -->
-              <!-- </v-container> -->
+            >-->
+            <!-- <v-container fill-height fluid> -->
+            <!-- <v-layout fill-height> -->
+            <v-flex xs12 align-end flexbox>
+              <span class="headline">ISIS TUB</span>
+            </v-flex>
+            <!-- </v-layout> -->
+            <!-- </v-container> -->
             <!-- </v-img> -->
             <v-card-title>
               <div>
@@ -91,7 +91,13 @@
               </div>
             </v-card-title>
             <v-card-actions>
-              <v-btn block raised color="success">Install UserCSS</v-btn>
+              <v-btn
+                block
+                raised
+                color="success"
+                href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css"
+                target="_blank"
+              >Install UserCSS</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -101,14 +107,14 @@
               class="white--text"
               height="200px"
               src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-            > -->
-              <!-- <v-container fill-height fluid>
-                <v-layout fill-height> -->
-                  <v-flex xs12 align-end flexbox>
-                    <span class="headline">MOSES TUB</span>
-                  </v-flex>
-                <!-- </v-layout>
-              </v-container> -->
+            >-->
+            <!-- <v-container fill-height fluid>
+            <v-layout fill-height>-->
+            <v-flex xs12 align-end flexbox>
+              <span class="headline">MOSES TUB</span>
+            </v-flex>
+            <!-- </v-layout>
+            </v-container>-->
             <!-- </v-img> -->
             <v-card-title>
               <div>
@@ -118,7 +124,13 @@
               </div>
             </v-card-title>
             <v-card-actions>
-              <v-btn block raised color="success">Install UserCSS</v-btn>
+              <v-btn
+                block
+                raised
+                color="success"
+                href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
+                target="_blank"
+              >Install UserCSS</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -128,14 +140,14 @@
               class="white--text"
               height="200px"
               src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-            > -->
-              <!-- <v-container fill-height fluid>
-                <v-layout fill-height> -->
-                  <v-flex xs12 align-end flexbox>
-                    <span class="headline">Homepage TUB</span>
-                  </v-flex>
-                <!-- </v-layout>
-              </v-container> -->
+            >-->
+            <!-- <v-container fill-height fluid>
+            <v-layout fill-height>-->
+            <v-flex xs12 align-end flexbox>
+              <span class="headline">Homepage TUB</span>
+            </v-flex>
+            <!-- </v-layout>
+            </v-container>-->
             <!-- </v-img> -->
             <v-card-title>
               <div>
@@ -145,12 +157,113 @@
               </div>
             </v-card-title>
             <v-card-actions id="v-card-actions">
-              <v-btn block raised color="success">Install UserCSS</v-btn>
+              <v-btn block raised color="success">soon™</v-btn>
             </v-card-actions>
             <!-- <v-footer>
               Hi
             </v-footer>-->
           </v-card>
+        </v-flex>
+      </v-layout>
+      <v-layout>
+        <v-flex xs12>
+          <v-list>
+            <v-list-tile>
+              <v-list-tile-avatar id="v-list-tile-avatar">
+                <v-icon>link</v-icon>
+              </v-list-tile-avatar>
+              <v-list-tile-content>
+                <v-list-tile-title>Links</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+            <div class="text-container">
+              <ul>
+                <li>
+                  Visit our Dark-Theme-TUB website for more informations:
+                  <p>
+                    <img
+                      id="icons"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
+                      alt="homepage favicon"
+                    >
+                    <a href="https://dark-theme-styles.github.io/Dark-Theme-TUB" target="_blank">visit project website
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  Visit our Homepage for more dark theme projects:
+                  <p>
+                    <img
+                      id="icons"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
+                      alt="homepage favicon"
+                    >
+                    <a href="https://dark-theme-styles.github.io" target="_blank">visit Homepage</a>
+                  </p>
+                </li>
+                <li>
+                  GitHub Dark-Theme-TUB project:
+                  <p>
+                    <!-- <img
+                      id="icons"
+                      src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
+                      alt="github logo"
+                    > -->
+                    <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB" target=" _blank">visit on GitHub
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  GitHub Dark Theme Styles Organization page:
+                  <p>
+                    <!-- <img
+                      id="icons"
+                      src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
+                      alt="github logo"
+                    > -->
+                    <a href="https://github.com/dark-theme-styles" target="_blank">visit on GitHub</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <br>
+            <v-list-tile id="v-list-tile">
+              <v-list-tile-avatar id="v-list-tile-avatar">
+                <v-icon>code</v-icon>
+              </v-list-tile-avatar>
+              <v-list-tile-content>
+                <v-list-tile-title>Authors</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+            <div class="text-container">
+              <div class="window__item-container">
+                <div class="window__content">
+                  <ul>
+                    <li>
+                      <p>
+                        <img
+                          id="icons"
+                          src="https://avatars1.githubusercontent.com/u/34386047"
+                          alt="B4rtware profile picture"
+                        >
+                        <a href="https://github.com/B4rtware" target="_blank">B4rtware</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <img
+                          id="icons"
+                          src="https://avatars1.githubusercontent.com/u/38668040"
+                          alt="Re-Krass profile picture"
+                        >
+                        <a href="https://github.com/Re-Krass" target="_blank">Re-Krass</a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </v-list>
         </v-flex>
       </v-layout>
     </v-container>
@@ -239,6 +352,14 @@ ul ul li {
     }
     #img-isis-tub {
         border-bottom: 2px solid white;
+    }
+    #icons {
+        height: 17px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        padding-right: 5px;
     }
 }
 </style>
