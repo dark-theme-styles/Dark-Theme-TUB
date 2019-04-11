@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuetify from "vuetify";
+import VueHighlightJS from 'vue-highlightjs';
 import App from "./App.vue";
 import router from "./router";
 // index.js or main.js
@@ -20,6 +21,8 @@ Vue.use(Vuetify,
             warning: '#319ae3'
         }
     });
+
+Vue.use(VueHighlightJS);
 
 new Vue({
     router,

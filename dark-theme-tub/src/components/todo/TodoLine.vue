@@ -44,7 +44,7 @@
         </v-container>
       </template>
       <v-card color="info">
-        <pre><code>Das ist code</code></pre>
+        <pre v-highlightjs="code"><code class="javascript"></code></pre>
       </v-card>
     </v-expansion-panel-content>
   </v-expansion-panel>
@@ -59,7 +59,8 @@ export default {
             type: String,
             validator: val => ["TODO", "FIXME"].includes(val)
         },
-        comment: String
+        comment: String,
+        code: String
     }
 };
 </script>
