@@ -7,7 +7,7 @@
       >
         <v-expansion-panel-content>
           <template v-slot:header>
-            <div>Item</div>
+            <div>{{todo.path}}</div>
           </template>
           <TodoLine
             :line="'s'"
@@ -47,7 +47,7 @@ async function getLineData() {
     const lines = (await lineExtractions).data;
     const todos = (await todo).data;
 
-    var combinedTodoList = [];
+    var combinedTodoList = {};
 
     // combine todos and lines
     for (let todo of todos) {
@@ -65,18 +65,26 @@ async function getLineData() {
         var split_file_string = todo["file"].split(".");
         var type = split_file_string[split_file_string.length - 1];
 
-        console.log(lineContent);
-
-        combinedTodoList.push({
+var todo = {
             id: queryString,
+            path: todo["file"],
             line: todo["line"],
             todoType: todo["tag"],
             comment: todo["text"],
             code: ""
-        });
+        }
+
+        // check if the container for the todo items with the desired file already exists
+        if (!combinedTodoList.hasOwnProperty(file_name)) {
+            combinedTodoList[file_name] = [todo];
+        }
+
+        combinedTodoList[todo["file"]].push(todo);
     }
 
     console.log(combinedTodoList);
+
+    return combinedTodoList
 }
 
 export default {
@@ -90,7 +98,8 @@ export default {
         };
     },
     mounted() {
-        this.todoList = getLineData();
+        getLineData()
+          .then(data => (this.todoList = data))
     }
 };
 </script>
