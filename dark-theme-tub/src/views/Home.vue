@@ -186,8 +186,10 @@
                       src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
                       alt="homepage favicon"
                     >
-                    <a href="https://dark-theme-styles.github.io/Dark-Theme-TUB" target="_blank">visit project website
-                    </a>
+                    <a
+                      href="https://dark-theme-styles.github.io/Dark-Theme-TUB"
+                      target="_blank"
+                    >visit project website</a>
                   </p>
                 </li>
                 <li>
@@ -208,9 +210,11 @@
                       id="icons"
                       src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
                       alt="github logo"
-                    > -->
-                    <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB" target=" _blank">visit on GitHub
-                    </a>
+                    >-->
+                    <a
+                      href="https://github.com/dark-theme-styles/Dark-Theme-TUB"
+                      target=" _blank"
+                    >visit on GitHub</a>
                   </p>
                 </li>
                 <li>
@@ -220,7 +224,7 @@
                       id="icons"
                       src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
                       alt="github logo"
-                    > -->
+                    >-->
                     <a href="https://github.com/dark-theme-styles" target="_blank">visit on GitHub</a>
                   </p>
                 </li>
@@ -235,33 +239,47 @@
                 <v-list-tile-title>Authors</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
-            <div class="text-container">
-              <div class="window__item-container">
-                <div class="window__content">
-                  <ul>
-                    <li>
-                      <p>
-                        <img
-                          id="icons"
-                          src="https://avatars1.githubusercontent.com/u/34386047"
-                          alt="B4rtware profile picture"
-                        >
-                        <a href="https://github.com/B4rtware" target="_blank">B4rtware</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <img
-                          id="icons"
-                          src="https://avatars1.githubusercontent.com/u/38668040"
-                          alt="Re-Krass profile picture"
-                        >
-                        <a href="https://github.com/Re-Krass" target="_blank">Re-Krass</a>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+
+            <div class="window__content">
+              
+              <v-layout id="users-card">
+                <v-layout>
+                  <v-flex xs6 offset-xs3>
+                    <v-card id="image-cards" color="accent">
+                      <v-img
+                        src="https://avatars1.githubusercontent.com/u/34386047"
+                        width="200px"
+                        height="200px"
+                        alt="B4rtware profile picture"
+                      ></v-img>
+
+                      <v-card-title primary-title id="v-card-title">
+                        <div>
+                          <h3 class="headline mb-0">B4rtware <a href="https://github.com/B4rtware" target="_blank"><v-icon id="user-link">link</v-icon></a></h3>
+                        </div>
+                      </v-card-title>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+
+                <v-layout>
+                  <v-flex xs6 offset-xs3>
+                    <v-card id="image-cards" color="accent">
+                      <v-img
+                        src="https://avatars1.githubusercontent.com/u/38668040"
+                        width="200px"
+                        alt="Re-Krass profile picture"
+                      ></v-img>
+
+                      <v-card-title primary-title id="v-card-title">
+                        <div>
+                          <h3 class="headline mb-0">Re-Krass <a href="https://github.com/Re-Krass" target="_blank"><v-icon id="user-link">link</v-icon></a></h3>
+                        </div>
+                      </v-card-title>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-layout>
             </div>
           </v-list>
         </v-flex>
@@ -301,9 +319,41 @@ ul ul li {
     padding-bottom: 10px;
 }
 
+#users-card {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
 .headline {
     padding-left: 10px;
     // color: #ff3c4e;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image {
+    margin: 20px;
+}
+
+#image {
+    height: 200px;
+    width: 100%;
+}
+
+#image-cards {
+ width: 200px;
+}
+
+#v-card-title {
+  height: 80px;
+}
+
+#user-link {
+  color: rgb(49, 154, 227);
 }
 
 // ::v-deep .v-list__tile {
