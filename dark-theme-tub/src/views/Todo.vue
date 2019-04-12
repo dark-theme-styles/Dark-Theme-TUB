@@ -2,35 +2,39 @@
   <div id="todo">
     <div v-if="todoList">
       <v-expansion-panel
-        v-for="todo in todoList"
-        :key="todo.id"
+        v-model="openPanels"
+        expand
       >
-        <v-expansion-panel-content>
+        <v-expansion-panel-content
+          hide-actions
+          class="primary"
+          v-for="(todos, name, index) in todoList"
+          :key="name"
+        >
           <template v-slot:header>
-            <div>{{todo.path}}</div>
+            <span>
+              <v-icon>{{openPanels[index] ? "folder_open" : "folder"}}</v-icon> {{name}}
+            </span>
           </template>
-          <TodoLine
-            :line="'s'"
-            :todo-type="'TODO'"
-            :comment="'Das ist ein kleines Kommentar mal sehen wie es ist wenn es zu lang ist'"
-          />
+          <div
+            v-for="todo in todos"
+            :key="todo.id"
+          >
+            <TodoLine
+              :line="todo.line"
+              :todo-type="todo.type"
+              :comment="todo.comment"
+            />
+          </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
     </div>
     <div v-else>
-      <v-container>
-        <v-layout
-          justify-center
-          fill-height
-        >
-          <v-flex shrink>
-            <v-progress-circular
-              indeterminate
-              color="warning"
-            ></v-progress-circular>
-          </v-flex>
-        </v-layout>
-      </v-container>
+      <v-progress-linear
+        color="error"
+        :indeterminate="true"
+        class="ma-0"
+      ></v-progress-linear>
     </div>
   </div>
 </template>
@@ -65,26 +69,27 @@ async function getLineData() {
         var split_file_string = todo["file"].split(".");
         var type = split_file_string[split_file_string.length - 1];
 
-var todo = {
+        var todo_obj = {
             id: queryString,
             path: todo["file"],
             line: todo["line"],
-            todoType: todo["tag"],
+            type: todo["tag"],
             comment: todo["text"],
             code: ""
-        }
+        };
 
         // check if the container for the todo items with the desired file already exists
-        if (!combinedTodoList.hasOwnProperty(file_name)) {
-            combinedTodoList[file_name] = [todo];
+        if (!combinedTodoList.hasOwnProperty(fileName)) {
+            combinedTodoList[fileName] = [todo_obj];
+            continue;
         }
 
-        combinedTodoList[todo["file"]].push(todo);
+        combinedTodoList[fileName].push(todo_obj);
     }
 
     console.log(combinedTodoList);
 
-    return combinedTodoList
+    return combinedTodoList;
 }
 
 export default {
@@ -94,12 +99,15 @@ export default {
     },
     data() {
         return {
-            todoList: null
+            todoList: null,
+            openPanels: [false, false, false, false, false, false, false]
         };
     },
     mounted() {
-        getLineData()
-          .then(data => (this.todoList = data))
+        getLineData().then(data => (this.todoList = data));
+    },
+    beforeRouteUpdate(to, from, next) {
+        console.log("from todo");
     }
 };
 </script>

@@ -1,10 +1,21 @@
 <template>
-  <v-app id="app" dark>
+  <v-app
+    id="app"
+    dark
+  >
     <v-content id="v-content">
-      <v-card id="window" color="primary" class="shake-animation">
+      <v-card
+        id="window"
+        color="primary"
+        class="shake-animation"
+      >
         <div id="nav">
-          <v-toolbar flat color="success">
-            <v-toolbar-title>$: Dark Theme TUB</v-toolbar-title>
+          <v-toolbar
+            flat
+            color="success"
+          >
+            <v-toolbar-title>$: {{headerTextCurrent}}<transition name="cursor-fade"><span v-if="typingText">_</span></transition>
+            </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">
               <v-btn flat>
@@ -18,21 +29,32 @@
               </v-btn>
             </v-toolbar-items>
             <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-            <v-btn flat icon color="error" @click="shakeAnimationF">
+            <v-btn
+              flat
+              icon
+              color="error"
+              @click="shakeAnimationF"
+            >
               <v-icon>close</v-icon>
             </v-btn>
           </v-toolbar>
         </div>
-        <router-view/>
+        <router-view />
+        <v-footer height="23" class="pa-2 caption">
+          <v-spacer></v-spacer>
+          <div>&copy; {{ new Date().getFullYear() }}</div>
+        </v-footer>
       </v-card>
     </v-content>
   </v-app>
 </template>
 
 <script>
+import { setInterval, clearInterval, setTimeout } from "timers";
 export default {
+    name: "App",
     methods: {
-        shakeAnimationF: () => {
+        shakeAnimationF() {
             var animation_elements = [document.getElementById("window")];
             for (let anim_elem of animation_elements) {
                 anim_elem.classList.toggle("shake-animation-active");
@@ -41,12 +63,53 @@ export default {
                 }, 300);
             }
         }
+    },
+    data() {
+        return {
+            headerText: this.$route.name,
+            headerTextCurrent: "",
+            intervallID: null,
+            typingText: true
+        };
+    },
+    watch: {
+        $route: function() {
+            // reset interval and string
+            clearInterval(this.intervallID);
+            this.typingText = true;
+            this.headerTextCurrent = "";
+            this.headerText = this.$route.name;
+            var maxLen = this.headerText.length;
+            var delay = 200 / maxLen;
+            // using es6 shorthand function declaration ovverides the this var to local so the parent this will be overriden
+            var self = this;
+            this.intervallID = setInterval(() => {
+                var curLen = self.headerTextCurrent.length;
+                self.headerTextCurrent += self.headerText[curLen];
+
+                if (self.headerTextCurrent.length >= maxLen) {
+                    clearInterval(self.intervallID);
+                    setTimeout(() => {
+                        self.typingText = false;
+                    }, 500);
+                }
+            }, delay);
+        }
     }
 };
 </script>
 
 
 <style lang="scss">
+.cursor-fade-leave-active {
+    transition: all 0.8s ease;
+}
+
+.cursor-fade-enter,
+.cursor-fade-leave-to {
+    opacity: 0;
+}
+
 #app {
     // font-family: "Avenir", Helvetica, Arial, sans-serif;
     font-family: "Source Code Pro", monospace !important;
@@ -64,15 +127,6 @@ export default {
     background-attachment: scroll;
     background-size: auto;
 }
-// #nav {
-//     a {
-//         font-weight: bold;
-//         color: #2c3e50;
-//         &.router-link-exact-active {
-//             color: #42b983;
-//         }
-//     }
-// }
 
 #window {
     margin-left: 10%;

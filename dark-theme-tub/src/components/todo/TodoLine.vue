@@ -1,53 +1,44 @@
 <template>
-  <v-expansion-panel>
-    <v-expansion-panel-content>
-      <template v-slot:header>
-        <v-container
-          fluid
-          pa-0
+  <v-container
+    fluid
+    pa-0
+  >
+    <v-layout>
+      <v-flex
+        xs1
+        grow
+      >
+        <v-card
+          color="primary"
+          height="100%"
+          flat
+          tile
         >
-          <v-layout>
-            <v-flex
-              xs1
-              offset-xs2
-            >
-              <v-card
-                color="error"
-                height="100%"
-                flat
-                tile
-              >
-                <v-card-text>line {{line}}</v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs1>
-              <v-card
-                color="success"
-                height="100%"
-                flat
-                tile
-              >
-                <v-card-text>{{todoType}}</v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs8>
-              <v-card
-                color="info"
-                height="100%"
-                flat
-                tile
-              >
-                <v-card-text>{{comment}}</v-card-text>
-              </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </template>
-      <v-card color="info">
-        <pre v-highlightjs="code"><code class="javascript"></code></pre>
-      </v-card>
-    </v-expansion-panel-content>
-  </v-expansion-panel>
+          <v-card-text class="pa-2 error--text text-xs-right" >{{line}}.</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs1>
+        <v-card
+          color="primary"
+          height="100%"
+          flat
+          tile
+        >
+          <v-card-text class="pa-2 success--text text-xs-center">{{todoType}}</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs10>
+        <v-card
+          color="primary"
+          height="100%"
+          flat
+          tile
+        >
+          <v-card-text class="pa-2 info--text">{{comment}}</v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -71,7 +62,7 @@ export default {
 }
 
 ::deep .v-expansion-panel__header {
-  padding: 0;
+    padding: 0;
 }
 </style>
 
