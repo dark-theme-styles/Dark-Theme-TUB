@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <v-container grid-list-md fluid>
+    <v-container
+      grid-list-md
+      fluid
+    >
       <v-layout>
         <v-flex xs12>
           <v-list>
@@ -22,9 +25,7 @@
                   <li>
                     for Chrome:
                     <br>
-                    <a
-                      href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
-                    >Install Chrome extension</a>
+                    <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Install Chrome extension</a>
                   </li>
                   <li>
                     for Firefox:
@@ -68,70 +69,28 @@
       </v-layout>
       <v-layout id="install-card">
         <v-flex xs4>
-          <ThemeCard headline="Hellssso" content="kkkk"></ThemeCard>
+          <ThemeCard
+            headline="ISIS TUB"
+            content="Dark theme for most ISIS TUB modules and overall ISIS TUB site."
+            link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css"
+            buttonText="Install UserCSS"
+          ></ThemeCard>
         </v-flex>
         <v-flex xs4>
-          <v-card color="accent">
-            <!-- <v-img
-              class="white--text"
-              height="200px"
-              src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-            >-->
-            <!-- <v-container fill-height fluid>
-            <v-layout fill-height>-->
-            <v-flex xs12 align-end flexbox>
-              <span class="headline">MOSES TUB</span>
-            </v-flex>
-            <!-- </v-layout>
-            </v-container>-->
-            <!-- </v-img> -->
-            <v-card-title>
-              <div>
-                <!-- <span>ISIS TUB</span>
-                <br>-->
-                <span>Dark theme for most MOSES TUB modules and overall MOSES TUB site.</span>
-              </div>
-            </v-card-title>
-            <v-card-actions>
-              <v-btn
-                block
-                raised
-                color="success"
-                href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
-                target="_blank"
-              >Install UserCSS</v-btn>
-            </v-card-actions>
-          </v-card>
+          <ThemeCard
+            headline="MOSES TUB"
+            content="Dark theme for most MOSES TUB modules and overall MOSES TUB site."
+            link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
+            buttonText="Install UserCSS"
+          ></ThemeCard>
         </v-flex>
         <v-flex xs4>
-          <v-card color="accent">
-            <!-- <v-img
-              class="white--text"
-              height="200px"
-              src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-            >-->
-            <!-- <v-container fill-height fluid>
-            <v-layout fill-height>-->
-            <v-flex xs12 align-end flexbox>
-              <span class="headline">Homepage TUB</span>
-            </v-flex>
-            <!-- </v-layout>
-            </v-container>-->
-            <!-- </v-img> -->
-            <v-card-title>
-              <div>
-                <!-- <span>ISIS TUB</span>
-                <br>-->
-                <span>Dark theme for TUB homepage.</span>
-              </div>
-            </v-card-title>
-            <v-card-actions id="v-card-actions">
-              <v-btn block raised color="success">soon™</v-btn>
-            </v-card-actions>
-            <!-- <v-footer>
-              Hi
-            </v-footer>-->
-          </v-card>
+          <ThemeCard
+            headline="Homepage TUB"
+            content="Dark theme for TUB homepage."
+            link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
+            buttonText="soon™"
+          ></ThemeCard>
         </v-flex>
       </v-layout>
       <v-layout>
@@ -169,7 +128,10 @@
                       src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
                       alt="homepage favicon"
                     >
-                    <a href="https://dark-theme-styles.github.io" target="_blank">visit Homepage</a>
+                    <a
+                      href="https://dark-theme-styles.github.io"
+                      target="_blank"
+                    >visit Homepage</a>
                   </p>
                 </li>
                 <li>
@@ -194,7 +156,10 @@
                       src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
                       alt="github logo"
                     >-->
-                    <a href="https://github.com/dark-theme-styles" target="_blank">visit on GitHub</a>
+                    <a
+                      href="https://github.com/dark-theme-styles"
+                      target="_blank"
+                    >visit on GitHub</a>
                   </p>
                 </li>
               </ul>
@@ -210,11 +175,17 @@
             </v-list-tile>
 
             <div class="window__content">
-              
+
               <v-layout id="users-card">
                 <v-layout>
-                  <v-flex xs6 offset-xs3>
-                    <v-card id="image-cards" color="accent">
+                  <v-flex
+                    xs6
+                    offset-xs3
+                  >
+                    <v-card
+                      id="image-cards"
+                      color="accent"
+                    >
                       <v-img
                         src="https://avatars1.githubusercontent.com/u/34386047"
                         width="200px"
@@ -222,9 +193,17 @@
                         alt="B4rtware profile picture"
                       ></v-img>
 
-                      <v-card-title primary-title id="v-card-title">
+                      <v-card-title
+                        primary-title
+                        id="v-card-title"
+                      >
                         <div>
-                          <h3 class="headline mb-0">B4rtware <a href="https://github.com/B4rtware" target="_blank"><v-icon id="user-link">link</v-icon></a></h3>
+                          <h3 class="headline mb-0">B4rtware <a
+                              href="https://github.com/B4rtware"
+                              target="_blank"
+                            >
+                              <v-icon id="user-link">link</v-icon>
+                            </a></h3>
                         </div>
                       </v-card-title>
                     </v-card>
@@ -232,17 +211,31 @@
                 </v-layout>
 
                 <v-layout>
-                  <v-flex xs6 offset-xs3>
-                    <v-card id="image-cards" color="accent">
+                  <v-flex
+                    xs6
+                    offset-xs3
+                  >
+                    <v-card
+                      id="image-cards"
+                      color="accent"
+                    >
                       <v-img
                         src="https://avatars1.githubusercontent.com/u/38668040"
                         width="200px"
                         alt="Re-Krass profile picture"
                       ></v-img>
 
-                      <v-card-title primary-title id="v-card-title">
+                      <v-card-title
+                        primary-title
+                        id="v-card-title"
+                      >
                         <div>
-                          <h3 class="headline mb-0">Re-Krass <a href="https://github.com/Re-Krass" target="_blank"><v-icon id="user-link">link</v-icon></a></h3>
+                          <h3 class="headline mb-0">Re-Krass <a
+                              href="https://github.com/Re-Krass"
+                              target="_blank"
+                            >
+                              <v-icon id="user-link">link</v-icon>
+                            </a></h3>
                         </div>
                       </v-card-title>
                     </v-card>
@@ -263,7 +256,7 @@ import ThemeCard from "@/components/home/ThemeCard";
 export default {
     name: "home",
     components: {
-      "ThemeCard": ThemeCard
+        ThemeCard: ThemeCard
     }
 };
 </script>
@@ -313,15 +306,15 @@ ul ul li {
 }
 
 #image-cards {
- width: 200px;
+    width: 200px;
 }
 
 #v-card-title {
-  height: 80px;
+    height: 80px;
 }
 
 #user-link {
-  color: rgb(49, 154, 227);
+    color: rgb(49, 154, 227);
 }
 
 // ::v-deep .v-list__tile {
