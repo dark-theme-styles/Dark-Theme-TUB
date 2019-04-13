@@ -68,38 +68,7 @@
       </v-layout>
       <v-layout id="install-card">
         <v-flex xs4>
-          <v-card color="accent">
-            <!-- <v-img
-              id="img-isis-tub"
-              class="white--text"
-              width="207px"
-              :src="require('@/assets/img/screenshots/isis-tub/ISIS-TUB_Screenshot_1.jpg')"
-            >-->
-            <!-- <v-container fill-height fluid> -->
-            <!-- <v-layout fill-height> -->
-            <v-flex xs12 align-end flexbox>
-              <span class="headline">ISIS TUB</span>
-            </v-flex>
-            <!-- </v-layout> -->
-            <!-- </v-container> -->
-            <!-- </v-img> -->
-            <v-card-title>
-              <div>
-                <!-- <h3>ISIS TUB</h3> -->
-                <span>Dark theme for most ISIS TUB modules and overall ISIS TUB site.</span>
-                <br>
-              </div>
-            </v-card-title>
-            <v-card-actions>
-              <v-btn
-                block
-                raised
-                color="success"
-                href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css"
-                target="_blank"
-              >Install UserCSS</v-btn>
-            </v-card-actions>
-          </v-card>
+          <ThemeCard headline="Hellssso" content="kkkk"></ThemeCard>
         </v-flex>
         <v-flex xs4>
           <v-card color="accent">
@@ -289,11 +258,13 @@
 </template>
 
 <script>
+import ThemeCard from "@/components/home/ThemeCard";
 // @ is an alias to /src
-
-
 export default {
     name: "home",
+    components: {
+      "ThemeCard": ThemeCard
+    }
 };
 </script>
 
