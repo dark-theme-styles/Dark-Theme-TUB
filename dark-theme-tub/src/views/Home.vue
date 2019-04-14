@@ -1,9 +1,6 @@
 <template>
   <div class="home">
-    <v-container
-      grid-list-md
-      fluid
-    >
+    <v-container grid-list-md fluid>
       <v-layout>
         <v-flex xs12>
           <v-list>
@@ -25,7 +22,9 @@
                   <li>
                     for Chrome:
                     <br>
-                    <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Install Chrome extension</a>
+                    <a
+                      href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
+                    >Install Chrome extension</a>
                   </li>
                   <li>
                     for Firefox:
@@ -79,7 +78,7 @@
         <v-flex xs4>
           <ThemeCard
             headline="MOSES TUB"
-            content="Dark theme for most MOSES TUB modules and overall MOSES TUB site."
+            content="Dark theme for most MOSES TUB modules and overall MOSES TUB site. "
             link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
             buttonText="Install UserCSS"
           ></ThemeCard>
@@ -128,10 +127,7 @@
                       src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
                       alt="homepage favicon"
                     >
-                    <a
-                      href="https://dark-theme-styles.github.io"
-                      target="_blank"
-                    >visit Homepage</a>
+                    <a href="https://dark-theme-styles.github.io" target="_blank">visit Homepage</a>
                   </p>
                 </li>
                 <li>
@@ -156,10 +152,7 @@
                       src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
                       alt="github logo"
                     >-->
-                    <a
-                      href="https://github.com/dark-theme-styles"
-                      target="_blank"
-                    >visit on GitHub</a>
+                    <a href="https://github.com/dark-theme-styles" target="_blank">visit on GitHub</a>
                   </p>
                 </li>
               </ul>
@@ -175,17 +168,10 @@
             </v-list-tile>
 
             <div class="window__content">
-
               <v-layout id="users-card">
                 <v-layout>
-                  <v-flex
-                    xs6
-                    offset-xs3
-                  >
-                    <v-card
-                      id="image-cards"
-                      color="accent"
-                    >
+                  <v-flex xs6 offset-xs3>
+                    <v-card id="image-cards" color="accent">
                       <v-img
                         src="https://avatars1.githubusercontent.com/u/34386047"
                         width="200px"
@@ -193,17 +179,14 @@
                         alt="B4rtware profile picture"
                       ></v-img>
 
-                      <v-card-title
-                        primary-title
-                        id="v-card-title"
-                      >
+                      <v-card-title primary-title id="v-card-title">
                         <div>
-                          <h3 class="headline mb-0">B4rtware <a
-                              href="https://github.com/B4rtware"
-                              target="_blank"
-                            >
+                          <h3 class="headline mb-0">
+                            B4rtware
+                            <a href="https://github.com/B4rtware" target="_blank">
                               <v-icon id="user-link">link</v-icon>
-                            </a></h3>
+                            </a>
+                          </h3>
                         </div>
                       </v-card-title>
                     </v-card>
@@ -211,31 +194,22 @@
                 </v-layout>
 
                 <v-layout>
-                  <v-flex
-                    xs6
-                    offset-xs3
-                  >
-                    <v-card
-                      id="image-cards"
-                      color="accent"
-                    >
+                  <v-flex xs6 offset-xs3>
+                    <v-card id="image-cards" color="accent">
                       <v-img
                         src="https://avatars1.githubusercontent.com/u/38668040"
                         width="200px"
                         alt="Re-Krass profile picture"
                       ></v-img>
 
-                      <v-card-title
-                        primary-title
-                        id="v-card-title"
-                      >
+                      <v-card-title primary-title id="v-card-title">
                         <div>
-                          <h3 class="headline mb-0">Re-Krass <a
-                              href="https://github.com/Re-Krass"
-                              target="_blank"
-                            >
+                          <h3 class="headline mb-0">
+                            Re-Krass
+                            <a href="https://github.com/Re-Krass" target="_blank">
                               <v-icon id="user-link">link</v-icon>
-                            </a></h3>
+                            </a>
+                          </h3>
                         </div>
                       </v-card-title>
                     </v-card>
@@ -288,7 +262,7 @@ ul ul li {
 }
 
 .headline {
-    padding-left: 10px;
+    // padding-left: 10px;
     // color: #ff3c4e;
 }
 
@@ -310,7 +284,7 @@ ul ul li {
 }
 
 #v-card-title {
-    height: 80px;
+    // height: 80px;
 }
 
 #user-link {
@@ -355,8 +329,8 @@ ul ul li {
     .v-card {
         height: 100%;
     }
-    .v-card__title {
-        height: 110px;
+    .v-card {
+        height: 190px;
     }
     #v-card-actions {
         bottom: 0;
