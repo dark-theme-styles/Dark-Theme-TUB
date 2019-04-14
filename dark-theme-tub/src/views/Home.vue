@@ -87,7 +87,7 @@
           <ThemeCard
             headline="Homepage TUB"
             content="Dark theme for TUB homepage."
-            link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
+            link
             buttonText="soon™"
           ></ThemeCard>
         </v-flex>
@@ -133,25 +133,15 @@
                 <li>
                   GitHub Dark-Theme-TUB project:
                   <p>
-                    <!-- <img
-                      id="icons"
-                      src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
-                      alt="github logo"
-                    >-->
                     <a
                       href="https://github.com/dark-theme-styles/Dark-Theme-TUB"
-                      target=" _blank"
+                      target="_blank"
                     >visit on GitHub</a>
                   </p>
                 </li>
                 <li>
                   GitHub Dark Theme Styles Organization page:
                   <p>
-                    <!-- <img
-                      id="icons"
-                      src="https://camo.githubusercontent.com/338c94ae4c561c07911004dffb4455bf39f10155/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4d61726b2e706e67"
-                      alt="github logo"
-                    >-->
                     <a href="https://github.com/dark-theme-styles" target="_blank">visit on GitHub</a>
                   </p>
                 </li>
@@ -171,48 +161,21 @@
               <v-layout id="users-card">
                 <v-layout>
                   <v-flex xs6 offset-xs3>
-                    <v-card id="image-cards" color="accent">
-                      <v-img
-                        src="https://avatars1.githubusercontent.com/u/34386047"
-                        width="200px"
-                        height="200px"
-                        alt="B4rtware profile picture"
-                      ></v-img>
-
-                      <v-card-title primary-title id="v-card-title">
-                        <div>
-                          <h3 class="headline mb-0">
-                            B4rtware
-                            <a href="https://github.com/B4rtware" target="_blank">
-                              <v-icon id="user-link">link</v-icon>
-                            </a>
-                          </h3>
-                        </div>
-                      </v-card-title>
-                    </v-card>
+                    <ImageCard
+                      imageSrc="https://avatars1.githubusercontent.com/u/34386047"
+                      titleName="B4rtware"
+                      linkHref="https://github.com/B4rtware"
+                    ></ImageCard>
                   </v-flex>
                 </v-layout>
 
                 <v-layout>
                   <v-flex xs6 offset-xs3>
-                    <v-card id="image-cards" color="accent">
-                      <v-img
-                        src="https://avatars1.githubusercontent.com/u/38668040"
-                        width="200px"
-                        alt="Re-Krass profile picture"
-                      ></v-img>
-
-                      <v-card-title primary-title id="v-card-title">
-                        <div>
-                          <h3 class="headline mb-0">
-                            Re-Krass
-                            <a href="https://github.com/Re-Krass" target="_blank">
-                              <v-icon id="user-link">link</v-icon>
-                            </a>
-                          </h3>
-                        </div>
-                      </v-card-title>
-                    </v-card>
+                    <ImageCard
+                      imageSrc="https://avatars1.githubusercontent.com/u/38668040"
+                      titleName="Re-Krass"
+                      linkHref="https://github.com/Re-Krass"
+                    ></ImageCard>
                   </v-flex>
                 </v-layout>
               </v-layout>
@@ -226,11 +189,15 @@
 
 <script>
 import ThemeCard from "@/components/home/ThemeCard";
+import ImageCard from "@/components/home/ImageCard";
+import DialogWindow from "@/components/home/DialogWindow";
 // @ is an alias to /src
 export default {
     name: "home",
     components: {
-        ThemeCard: ThemeCard
+        ThemeCard: ThemeCard,
+        ImageCard: ImageCard,
+        DialogWindow: DialogWindow
     }
 };
 </script>
@@ -261,34 +228,12 @@ ul ul li {
     padding-bottom: 10px;
 }
 
-.headline {
-    // padding-left: 10px;
-    // color: #ff3c4e;
-}
-
 .image-container {
     display: flex;
 }
 
 .image {
     margin: 20px;
-}
-
-#image {
-    height: 200px;
-    width: 100%;
-}
-
-#image-cards {
-    width: 200px;
-}
-
-#v-card-title {
-    // height: 80px;
-}
-
-#user-link {
-    color: rgb(49, 154, 227);
 }
 
 // ::v-deep .v-list__tile {
