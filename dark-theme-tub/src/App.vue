@@ -1,20 +1,14 @@
 <template>
-  <v-app
-    id="app"
-    dark
-  >
+  <v-app id="app" dark>
     <v-content id="v-content">
-      <v-card
-        id="window"
-        color="primary"
-        class="shake-animation"
-      >
+      <v-card id="window" color="primary" class="shake-animation">
         <div id="nav">
-          <v-toolbar
-            flat
-            color="success"
-          >
-            <v-toolbar-title>$: {{headerTextCurrent}}<transition name="cursor-fade"><span v-if="typingText">_</span></transition>
+          <v-toolbar flat color="success">
+            <v-toolbar-title>
+              $: {{headerTextCurrent}}
+              <transition name="cursor-fade">
+                <span v-if="typingText">_</span>
+              </transition>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">
@@ -29,17 +23,12 @@
               </v-btn>
             </v-toolbar-items>
             <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-            <v-btn
-              flat
-              icon
-              color="error"
-              @click="shakeAnimationF"
-            >
+            <v-btn flat icon color="error" @click="shakeAnimationF">
               <v-icon>close</v-icon>
             </v-btn>
           </v-toolbar>
         </div>
-        <router-view />
+        <router-view/>
         <v-footer height="23" class="pa-2 caption">
           <v-spacer></v-spacer>
           <div>&copy; {{ new Date().getFullYear() }}</div>
@@ -101,6 +90,12 @@ export default {
 
 
 <style lang="scss">
+html {
+    /* own scrollbar */
+    /* scrollbar firefox */
+    scrollbar-color: rgb(110, 110, 110) rgb(1, 1, 1);
+}
+
 .cursor-fade-leave-active {
     transition: all 0.8s ease;
 }
@@ -182,6 +177,31 @@ export default {
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
+}
+
+/* own scrollbar */
+/* Note: The -webkit-scrollbar is not supported by Firefox or IE and Edge. */
+::-webkit-scrollbar {
+    /* width */
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    /* Track */
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: rgb(110, 110, 110);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    /* Handle on hover */
+    background: rgb(110, 110, 110);
+}
+::-webkit-scrollbar-track-piece {
+    /* not handle on */
+    background: rgb(1, 1, 1);
 }
 </style>
 
