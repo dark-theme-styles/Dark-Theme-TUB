@@ -66,29 +66,32 @@
           </v-list>
         </v-flex>
       </v-layout>
-      <v-layout id="install-card">
-        <v-flex xs4>
+      <v-layout id="install-card" wrap>
+        <v-flex xs12 sm6 md4>
           <ThemeCard
             headline="ISIS TUB"
             content="Dark theme for most ISIS TUB modules and overall ISIS TUB site."
             link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css"
             buttonText="Install UserCSS"
+            :showTooltip="false"
           ></ThemeCard>
         </v-flex>
-        <v-flex xs4>
+        <v-flex xs12 sm6 md4> 
           <ThemeCard
             headline="MOSES TUB"
             content="Dark theme for most MOSES TUB modules and overall MOSES TUB site. "
             link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
             buttonText="Install UserCSS"
+            :showTooltip="false"
           ></ThemeCard>
         </v-flex>
-        <v-flex xs4>
+        <v-flex xs12 sm6 md4>
           <ThemeCard
             headline="Homepage TUB"
             content="Dark theme for TUB homepage."
             link
             buttonText="soon™"
+            :showTooltip="true"
           ></ThemeCard>
         </v-flex>
       </v-layout>
@@ -158,9 +161,10 @@
             </v-list-tile>
 
             <div class="window__content">
-              <v-layout id="users-card">
-                <v-layout>
-                  <v-flex xs6 offset-xs3>
+              <v-layout id="users-card" wrap justify-content-center>
+                <v-layout justify-content-center>
+                  <!-- <v-flex xs12 offset-xs2 offset-sm1 sm12 offset-md3> -->
+                  <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
                     <ImageCard
                       imageSrc="https://avatars1.githubusercontent.com/u/34386047"
                       titleName="B4rtware"
@@ -169,8 +173,8 @@
                   </v-flex>
                 </v-layout>
 
-                <v-layout>
-                  <v-flex xs6 offset-xs3>
+                <v-layout justify-content-center>
+                  <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
                     <ImageCard
                       imageSrc="https://avatars1.githubusercontent.com/u/38668040"
                       titleName="Re-Krass"
@@ -293,5 +297,3 @@ ul ul li {
     }
 }
 </style>
-
-
