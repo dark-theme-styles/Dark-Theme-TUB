@@ -1,10 +1,19 @@
-# Dark theme for TUB ISIS / MOSES website
+<p align="center">
+  <h1>Dark theme for TUB ISIS / MOSES website</h1>
+  <img alt="Website" src="https://img.shields.io/website/https/dark-theme-styles.github.io/Dark-Theme-TUB.svg?down_message=offline&style=popout-square">
+<img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/uptimerobot/ratio/7/m782458020-1b26bc32279274168a804f88.svg?style=popout-square">
+  <br>
+</p>
 
-<img src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/Screenshots_ISIS/ISIS_Screenshot_1.png" target="_blank" alt="Screenshot main page"/>
+Bla
+
+
+
+<img src="/images/Screenshots_ISIS/ISIS_Screenshot_1.png" target="_blank" alt="Screenshot main page"/>
 
 -----
 
-<img src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/Screenshots_ISIS/ISIS_Screenshot_2-3.png" target="_blank" alt="Screenshot login pages"/>
+<img src="/images/Screenshots_ISIS/ISIS_Screenshot_2-3.png" target="_blank" alt="Screenshot login pages"/>
 
 ## Plugin for UserCSS
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
@@ -27,7 +36,7 @@ For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 
 ## Edit UserCSS style
 Customize the theme like you want. You can change the colors or the background pattern.
-<img src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.png" target="_blank" alt="Screenshot edit UserCSS"/>
+<img src="/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG" target="_blank" alt="Screenshot edit UserCSS"/>
 
 ## Links
 - Visit our Dark-Theme-TUB website for more informations: <br>
