@@ -1,11 +1,4 @@
 {
-    "version": "0.8.5",
-    "dark-theme-isis-tub": {
-        "version": "0.8.5",
-        "description": "dark theme for TUB-ISIS website"
-    },
-    "dark-theme-moses-tub": {
-        "version": "0.1.2",
-        "description": "dark theme for TUB-MOSES website"
-    }
+    "version-dark-theme-isis-tub": "0.8.5",
+    "version-dark-theme-moses-tub": "0.1.2"
 }
