@@ -1,6 +1,6 @@
 module.exports = {
   assetsDir: undefined,
-  publicPath: '',
+  publicPath: 'Dark-Theme-TUB/',
   outputDir: undefined,
   runtimeCompiler: undefined,
   productionSourceMap: undefined,
