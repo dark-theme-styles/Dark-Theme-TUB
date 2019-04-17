@@ -9,7 +9,7 @@ commit_abort="commit abort."
 
 # create the todos json file
 echo "$work_emoji creating todos ..."
-./node_modules/.bin/leasot --reporter json "*.css" "./docs/**/*.scss" "./docs/**/*.html" "./docs/**/*.js" --ignore "docs/styles/css/" > docs/todos.json
+./node_modules/.bin/leasot --reporter json "./*.css" "./dark-theme-tub/**/*.js" "./dark-theme-tub/**/*.html" "./dark-theme-tub/**/*.vue" --ignore "./dark-theme-tub/node_modules" > docs/todos.json
 # move into docs direcory
 cd docs
 # check if json file exists
