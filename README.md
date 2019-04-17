@@ -27,7 +27,7 @@ For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
 
 ## Edit UserCSS style
 Customize the theme like you want. You can change the colors or the background pattern.
-<img src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG" target="_blank" alt="Screenshot login pages"/>
+<img src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG" target="_blank" alt="Screenshot edit UserCSS"/>
 
 ## Links
 - Visit our Dark-Theme-TUB website for more informations: <br>

@@ -154,7 +154,7 @@
               <div class="image-container">
                 <v-flex xs12>
                   <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.png"
+                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG"
                     target="_blank"
                   >
                     <img
