@@ -57,12 +57,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#first {
-    background-color: red;
-}
+// #first {
+//     background-color: red;
+// }
 
-::deep .v-expansion-panel__header {
-    padding: 0;
-}
+// ::v-deep .v-expansion-panel__header {
+//     padding: 0;
+// }
 </style>
 
