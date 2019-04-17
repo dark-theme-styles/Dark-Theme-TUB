@@ -8,20 +8,23 @@
     <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/uptimerobot/ratio/7/m782458020-1b26bc32279274168a804f88.svg?style=for-the-badge">
   </a>
   <br>
-  <!-- <a>
-    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/dark-theme-styles/Dark-Theme-TUB.svg?label=VERSION%20DARK-THEME%20ISIS&style=for-the-badge">
+  <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
+    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/badge/vue-V3.3.5-brightgreen.svg?&style=for-the-badge">
   </a>
-  <a>
-    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/dark-theme-styles/Dark-Theme-TUB.svg?label=VERSION%20DARK-THEME%20MOSES&style=for-the-badge">
+  <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
+    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/npm/v/npm.svg?color=brightgreen&style=for-the-badge">
   </a>
-  <br> -->
+
+  <br>
   <a href="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css">
-    <img alt="GitHub package.json version" src="https://img.shields.io/badge/dynamic/json.svg?label=VERSION%20DARK-THEME%20ISIS&color=orange&query=%24$.dark-theme-isis-tub.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdark-theme-styles%2FDark-Theme-TUB%2Fmaster%2Fversions.json&style=for-the-badge">
+    <img alt="GitHub package.json version" src="https://img.shields.io/badge/dynamic/json.svg?color=orange&label=VERSION%20DARK-THEME%20ISIS&query=%24.versionDarkThemeIsisTub&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdark-theme-styles%2FDark-Theme-TUB%2Fmaster%2Fversions.json&style=for-the-badge">
   </a>
   <a href="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-moses-tub.user.css">
-    <img alt="GitHub package.json version" src="https://img.shields.io/badge/dynamic/json.svg?label=VERSION%20DARK-THEME%20ISIS&color=orange&query=%24$$.dark-theme-moses-tub.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdark-theme-styles%2FDark-Theme-TUB%2Fmaster%2Fversions.json&style=for-the-badge">
+    <img alt="GitHub package.json version" src="https://img.shields.io/badge/dynamic/json.svg?color=orange&label=VERSION%20DARK-THEME%20MOSES&query=%24.versionDarkThemeMosesTub&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdark-theme-styles%2FDark-Theme-TUB%2Fmaster%2Fversions.json&style=for-the-badge">
   </a>
 </p>
+
+-----
 
 <img src="/images/Screenshots_ISIS/ISIS_Screenshot_1.png" target="_blank" alt="Screenshot main page"/>
 
