@@ -1,6 +1,7 @@
 <template>
   <div class="preview">
     <v-container grid-list-md fluid>
+      <!-- Section TUB-ISIS screenshots -->
       <v-layout>
         <v-flex xs12>
           <v-list>
@@ -22,7 +23,7 @@
                     <img
                       src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/Screenshot_1.jpg"
                       class="screenshot"
-                      alt="Screenshot-1"
+                      alt="Screenshot-TUB-ISIS-1"
                     >
                   </a>
                   <a
@@ -32,7 +33,7 @@
                     <img
                       src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/Screenshot_2.jpg"
                       class="screenshot"
-                      alt="Screenshot-2"
+                      alt="Screenshot-TUB-ISIS-2"
                     >
                   </a>
                 </v-flex>
@@ -42,6 +43,7 @@
           </v-list>
         </v-flex>
       </v-layout>
+      <!-- Section Shibboleth login page screenshot -->
       <v-layout>
         <v-flex xs12>
           <v-list>
@@ -63,7 +65,7 @@
                     <img
                       src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/Screenshot_3.jpg"
                       class="screenshot"
-                      alt="Screenshot-3"
+                      alt="Screenshot-Shibboleth-1"
                     >
                   </a>
                 </v-flex>
@@ -73,6 +75,7 @@
           </v-list>
         </v-flex>
       </v-layout>
+      <!-- Section TUB-MOSES screenshots -->
       <v-layout>
         <v-flex xs12>
           <v-list>
@@ -94,7 +97,7 @@
                     <img
                       src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_1.jpg"
                       class="screenshot"
-                      alt="Screenshot-1"
+                      alt="Screenshot-TUB-MOSES-1"
                     >
                   </a>
                   <a
@@ -104,7 +107,7 @@
                     <img
                       src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_2.jpg"
                       class="screenshot"
-                      alt="Screenshot-1"
+                      alt="Screenshot-TUB-MOSES-2"
                     >
                   </a>
                   <a
@@ -114,7 +117,7 @@
                     <img
                       src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_3.jpg"
                       class="screenshot"
-                      alt="Screenshot-1"
+                      alt="Screenshot-TUB-MOSES-3"
                     >
                   </a>
                   <a
@@ -124,7 +127,40 @@
                     <img
                       src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_4.jpg"
                       class="screenshot"
-                      alt="Screenshot-1"
+                      alt="Screenshot-TUB-MOSES-4"
+                    >
+                  </a>
+                </v-flex>
+              </div>
+            </div>
+            <br>
+          </v-list>
+        </v-flex>
+      </v-layout>
+      <!-- Section Edit Settings for UserCSS -->
+      <v-layout>
+        <v-flex xs12>
+          <v-list>
+            <v-list-tile>
+              <v-list-tile-avatar id="v-list-tile-avatar">
+                <v-icon>extension</v-icon>
+              </v-list-tile-avatar>
+              <v-list-tile-content>
+                <v-list-tile-title>Edit Settings for UserCSS</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+            <div class="text-container">
+              Customize the theme like you want. You can change the colors or the background pattern.
+              <div class="image-container">
+                <v-flex xs12>
+                  <a
+                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.png"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.png"
+                      class="screenshot"
+                      alt="Screenshot-Settings-UserCSS-1"
                     >
                   </a>
                 </v-flex>
