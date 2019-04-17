@@ -6,7 +6,7 @@ Vue.use(Router);
 
 export default new Router({
     mode: "history",
-    base: process.env.BASE_URL,
+    base: "https://dark-theme-styles.github.io/Dark-Theme-TUB/",
     routes: [
         {
             path: "/",
