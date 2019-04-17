@@ -32,6 +32,25 @@
 
 <img src="/images/Screenshots_ISIS/ISIS_Screenshot_2-3.png" target="_blank" alt="Screenshot login pages"/>
 
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+
 ## Plugin for UserCSS
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
 - Stylus <br>
@@ -66,7 +85,16 @@ Customize the theme like you want. You can change the colors or the background p
 [visit on GitHub](https://github.com/dark-theme-styles) 
 
 ## Authors 
-
-[B4rtware](https://github.com/B4rtware)        |  [Re-Krass](https://github.com/Re-Krass)
-:-------------------------:|:-------------------------:
-<img src="https://avatars1.githubusercontent.com/u/34386047" width="184" alt="B4rtware profile picture" target="_blank"> |  <img src="https://avatars1.githubusercontent.com/u/38668040" width="184" alt="Re-Krass profile picture" target="_blank"> 
+<div align="center">
+<table style="width:100%">
+  <tr>
+    <td><img src="https://avatars1.githubusercontent.com/u/34386047" width="200" alt="B4rtware profile picture" target="_blank"></td>
+    <td><img src="https://avatars1.githubusercontent.com/u/38668040" width="200" alt="Re-Krass profile picture" target="_blank"> </td>
+  </tr>
+    <tr>
+    <th><a href="https://github.com/B4rtware">B4rtware</a></th>
+    <th><a href="https://github.com/Re-Krass">Re-Krass</a></th>
+<!--     <th>Re-Krass <a href="https://github.com/Re-Krass"><img src="https://material.io/tools/icons/static/icons/baseline-link-24px.svg" width="25" alt="link" target="_blank"></a></th> -->
+  </tr>
+</table>
+</div>
