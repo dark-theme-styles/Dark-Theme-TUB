@@ -73,16 +73,14 @@
             content="Dark theme for most ISIS TUB modules and overall ISIS TUB site."
             link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css"
             buttonText="Install UserCSS"
-            :showTooltip="false"
           ></ThemeCard>
         </v-flex>
         <v-flex xs12 sm6 md4> 
           <ThemeCard
             headline="MOSES TUB"
-            content="Dark theme for most MOSES TUB modules and overall MOSES TUB site. "
+            content="Dark theme for most Dark theme for most MOSES TUB modules and overall MOSES TUB site."
             link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
             buttonText="Install UserCSS"
-            :showTooltip="false"
           ></ThemeCard>
         </v-flex>
         <v-flex xs12 sm6 md4>
@@ -91,7 +89,7 @@
             content="Dark theme for TUB homepage."
             link
             buttonText="soon™"
-            :showTooltip="true"
+            showTooltip
           ></ThemeCard>
         </v-flex>
       </v-layout>
@@ -275,15 +273,7 @@ ul ul li {
     .container {
         padding: 0;
     }
-    .v-card {
-        height: 100%;
-    }
-    .v-card {
-        height: 190px;
-    }
-    #v-card-actions {
-        bottom: 0;
-    }
+
     #img-isis-tub {
         border-bottom: 2px solid white;
     }
