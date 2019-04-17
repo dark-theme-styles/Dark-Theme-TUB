@@ -66,5 +66,7 @@ Customize the theme like you want. You can change the colors or the background p
 [visit on GitHub](https://github.com/dark-theme-styles) 
 
 ## Authors 
-- <img src="https://avatars1.githubusercontent.com/u/34386047" height="15" alt="B4rtware profile picture" target="_blank"> [B4rtware](https://github.com/B4rtware) <br>
-- <img src="https://avatars1.githubusercontent.com/u/38668040" height="15" alt="Re-Krass profile picture" target="_blank"> [Re-Krass](https://github.com/Re-Krass)
+
+[B4rtware](https://github.com/B4rtware)        |  [Re-Krass](https://github.com/Re-Krass)
+:-------------------------:|:-------------------------:
+<img src="https://avatars1.githubusercontent.com/u/34386047" width="184" alt="B4rtware profile picture" target="_blank"> |  <img src="https://avatars1.githubusercontent.com/u/38668040" width="184" alt="Re-Krass profile picture" target="_blank"> 
