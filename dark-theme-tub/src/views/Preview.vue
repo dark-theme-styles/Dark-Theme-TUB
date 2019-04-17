@@ -105,7 +105,7 @@
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/MOSES_Screenshot_2.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_2.jpg"
                       class="screenshot"
                       alt="Screenshot-TUB-MOSES-2"
                     >
