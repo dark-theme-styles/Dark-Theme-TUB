@@ -1,6 +1,6 @@
 {
   "name": "dark-theme-isis-tub",
-  "version": "0.7.4",
+  "version": "0.8.5",
   "description": "dark theme for TUB-ISIS website",
   "main": "index.js",
   "directories": {
