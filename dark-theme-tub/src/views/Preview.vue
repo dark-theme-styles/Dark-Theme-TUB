@@ -17,21 +17,21 @@
               <div class="image-container">
                 <v-flex xs12>
                   <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_1.png"
+                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_1.png"
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/Screenshot_1.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_1.jpg"
                       class="screenshot"
                       alt="Screenshot-TUB-ISIS-1"
                     >
                   </a>
                   <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_2.png"
+                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_2.png"
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/Screenshot_2.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_2.jpg"
                       class="screenshot"
                       alt="Screenshot-TUB-ISIS-2"
                     >
@@ -59,11 +59,11 @@
               <div class="image-container">
                 <v-flex xs12>
                   <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_3.png"
+                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/Shibboleth_Screenshot_1.png"
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/Screenshot_3.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/Shibboleth_Screenshot_1.jpg"
                       class="screenshot"
                       alt="Screenshot-Shibboleth-1"
                     >
@@ -95,7 +95,7 @@
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_1.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_1.jpg"
                       class="screenshot"
                       alt="Screenshot-TUB-MOSES-1"
                     >
@@ -105,7 +105,7 @@
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_2.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/MOSES_Screenshot_2.jpg"
                       class="screenshot"
                       alt="Screenshot-TUB-MOSES-2"
                     >
@@ -115,7 +115,7 @@
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_3.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_3.jpg"
                       class="screenshot"
                       alt="Screenshot-TUB-MOSES-3"
                     >
@@ -125,7 +125,7 @@
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/screenshots/moses/MOSES_Screenshot_4.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_4.jpg"
                       class="screenshot"
                       alt="Screenshot-TUB-MOSES-4"
                     >
