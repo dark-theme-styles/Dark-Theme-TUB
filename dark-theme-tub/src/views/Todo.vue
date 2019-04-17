@@ -70,8 +70,8 @@ export default {
                         "line_content not found!\n Please run manually the script to extract lines and upload the file!\n(todos.json is newer than todos_line_extractions.json)"
                     );
                 }
-                var split_file_string = todo["file"].split(".");
-                var type = split_file_string[split_file_string.length - 1];
+                // var split_file_string = todo["file"].split(".");
+                // var type = split_file_string[split_file_string.length - 1];
 
                 var todo_obj = {
                     id: queryString,
@@ -103,10 +103,7 @@ export default {
         };
     },
     mounted() {
-        getLineData().then(data => (this.todoList = data));
-    },
-    beforeRouteUpdate(to, from, next) {
-        console.log("from todo");
+        this.getLineData().then(data => (this.todoList = data));
     }
 };
 </script>
