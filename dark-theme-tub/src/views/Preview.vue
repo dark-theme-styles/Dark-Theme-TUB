@@ -59,11 +59,11 @@
               <div class="image-container">
                 <v-flex xs12>
                   <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/Shibboleth_Screenshot_1.png"
+                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_Shibboleth/Shibboleth_Screenshot_1.png"
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/Shibboleth_Screenshot_1.jpg"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_Shibboleth/Shibboleth_Screenshot_1.jpg"
                       class="screenshot"
                       alt="Screenshot-Shibboleth-1"
                     >
@@ -158,7 +158,7 @@
                     target="_blank"
                   >
                     <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/docs/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.png"
+                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG"
                       class="screenshot"
                       alt="Screenshot-Settings-UserCSS-1"
                     >
