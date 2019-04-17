@@ -9,7 +9,7 @@
                 <v-icon>extension</v-icon>
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title>TUB-ISIS Screenshots</v-list-tile-title>
+                <v-list-tile-title>TUB-ISIS screenshots</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
             <div class="text-container">
@@ -50,7 +50,7 @@
                 <v-icon>extension</v-icon>
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title>Shibboleth Login Page Screenshot</v-list-tile-title>
+                <v-list-tile-title>Shibboleth login page screenshot</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
             <div class="text-container">
@@ -81,7 +81,7 @@
                 <v-icon>extension</v-icon>
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title>Shibboleth Login Page Screenshot</v-list-tile-title>
+                <v-list-tile-title>TUB-MOSES screenshots</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
             <div class="text-container">

@@ -6,9 +6,8 @@
 @author       B4rtware (https://github.com/B4rtware), Re-Krass (https://github.com/Re-Krass)
 @homepageURL  https://github.com/dark-theme-styles/Dark-Theme-TUB
 @updateURL    https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css
-@version      0.8.3
+@version      0.8.4
 
-@advanced  text     a_text       "Here you can edit the colors. If you like to use the default color, click on the 'X' on the right."  "/"
 @var          color    main-bg-color "Main background color"    rgb(20, 20, 20)
 @var          color    main-navs-color "Main navigations color"    rgb(45, 45, 45)
 @var          color    main-white "Main white color"    rgb(245, 245, 245)
@@ -108,6 +107,18 @@
 	}
 	p {
 		color: var(--main-white);
+	}
+	.dropdown-menu.show {
+		/* 	dropdown menu */
+		background-color: var(--main-navs-color);
+	}
+	.page-link {
+		/* previous / next page */
+		background-color: var(--main-navs-color)!important;
+	}
+	.page-item.disabled .page-link {
+		/* previous / next page disabled */
+		background-color: var(--main-white-muted)!important;
 	}
 	/* FIXME: shibboleth bg pattern */
 }
