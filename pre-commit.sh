@@ -50,3 +50,17 @@ else
 	echo "$error_emoji $commit_abort"
 	exit 1
 fi
+
+# extract verions for UserCSS files
+if python extract_versions.py; then
+	# add created file to commit
+	git add versions.json
+	echo "$check_emoji added <versions.json> to commit"
+else
+	echo "$error_emoji error while running python version extractor!"
+	echo "$error_emoji $commit_abort"
+	exit 1
+fi
+
+
+
