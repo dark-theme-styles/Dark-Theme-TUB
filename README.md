@@ -1,24 +1,39 @@
 <h1 align="center">Dark theme for TUB ISIS / MOSES website </h2>
 <p align="center">
   <br>
+  <!-- Website up status -->
   <a href="https://dark-theme-styles.github.io/Dark-Theme-TUB/">
     <img alt="Website" src="https://img.shields.io/website/https/dark-theme-styles.github.io/Dark-Theme-TUB.svg?down_message=offline&style=for-the-badge">
   </a>
+  <!-- Website Uptime -->
   <a href="https://dark-theme-styles.github.io/Dark-Theme-TUB/">
     <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/uptimerobot/ratio/7/m782458020-1b26bc32279274168a804f88.svg?style=for-the-badge">
   </a>
+  <!-- Code Quality Codacy -->
+  <a href="https://www.codacy.com/app/Re-Krass/Dark-Theme-TUB?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dark-theme-styles/Dark-Theme-TUB&amp;utm_campaign=Badge_Grade">
+    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/913b3ef29b1e460297038dafd4216c98.svg?style=for-the-badge">
+  </a>
+  <!-- Cody Style Prettier -->
+  <a href="#badge">
+    <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge">
+    </a>
   <br>
-    <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
-    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/npm/v/npm.svg?color=brightgreen&style=for-the-badge">
-  </a>
-  <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
-    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/badge/vue-V3.3.5-brightgreen.svg?&style=for-the-badge">
-  </a>
 
+  <!-- Version NPM -->
+  <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
+    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/npm/v/npm.svg?color=informational&style=for-the-badge">
+  </a>
+  <!-- Version VUE -->
+  <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
+    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/badge/vue-V3.3.5-brightgreen.svg?color=informational&style=for-the-badge">
+  </a>
   <br>
+
+  <!-- Version dark-theme ISIS-TUB -->
   <a href="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css">
     <img alt="GitHub package.json version" src="https://img.shields.io/badge/dynamic/json.svg?color=orange&label=VERSION%20DARK-THEME%20ISIS&query=%24.versionDarkThemeIsisTub&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdark-theme-styles%2FDark-Theme-TUB%2Fmaster%2Fversions.json&style=for-the-badge">
   </a>
+  <!-- Version dark-theme MOSES-TUB -->
   <a href="https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-moses-tub.user.css">
     <img alt="GitHub package.json version" src="https://img.shields.io/badge/dynamic/json.svg?color=orange&label=VERSION%20DARK-THEME%20MOSES&query=%24.versionDarkThemeMosesTub&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdark-theme-styles%2FDark-Theme-TUB%2Fmaster%2Fversions.json&style=for-the-badge">
   </a>
