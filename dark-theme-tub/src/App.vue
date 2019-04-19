@@ -16,13 +16,13 @@
               <v-btn flat to="/preview">Preview</v-btn>
               <v-btn flat to="/todo">Todo</v-btn>
             </v-toolbar-items>
-            <v-menu bottom left>
+            <v-menu id="burger-menu" left nudge-bottom=5 offset-y transition="slide-y-transition">
               <template v-slot:activator="{ on }">
                 <v-btn dark icon v-on="on" class="hidden-md-and-up">
                   <v-icon>menu</v-icon>
                 </v-btn>
               </template>
-              <v-list>
+              <v-list id="burger-menu-list">
                 <v-list-tile>
                   <v-btn flat to="/">Home</v-btn>
                 </v-list-tile>
@@ -121,6 +121,13 @@ html {
 .cursor-fade-enter,
 .cursor-fade-leave-to {
     opacity: 0;
+}
+
+// #burger-menu {
+//   padding-top: 60px
+// }
+#burger-menu-list {
+
 }
 
 #app {
