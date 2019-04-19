@@ -26,6 +26,8 @@
 
 -----
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/333a4f4a9c4b4262ac7c9180e3b52126)](https://app.codacy.com/app/Re-Krass/Dark-Theme-TUB?utm_source=github.com&utm_medium=referral&utm_content=dark-theme-styles/Dark-Theme-TUB&utm_campaign=Badge_Grade_Settings)
+
 <img src="/images/Screenshots_ISIS/ISIS_Screenshot_1.png" target="_blank" alt="Screenshot main page"/>
 
 -----
