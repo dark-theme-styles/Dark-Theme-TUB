@@ -5,19 +5,5 @@ module.exports = {
   runtimeCompiler: undefined,
   productionSourceMap: undefined,
   parallel: undefined,
-  css: undefined,
-
-  pluginOptions: {
-    prerenderSpa: {
-      registry: undefined,
-      renderRoutes: [
-        '/',
-        '/preview',
-        '/todo'
-      ],
-      useRenderEvent: true,
-      headless: true,
-      onlyProduction: true
-    }
-  }
+  css: undefined
 }
