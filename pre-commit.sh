@@ -52,7 +52,7 @@ else
 fi
 
 # extract verions for UserCSS files
-if python extract_versions.py; then
+if python extract_version.py; then
 	# add created file to commit
 	git add versions.json
 	echo "$check_emoji added <versions.json> to commit"
