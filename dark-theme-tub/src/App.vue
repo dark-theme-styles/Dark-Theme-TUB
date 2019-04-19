@@ -1,59 +1,47 @@
 <template>
-  <v-app
-    id="app"
-    dark
-  >
+  <v-app id="app" dark>
     <v-content id="v-content">
-      <v-card
-        id="window"
-        color="primary"
-        class="shake-animation"
-      >
+      <v-card id="window" color="primary" class="shake-animation">
         <div id="nav">
-          <v-toolbar
-            flat
-            color="success"
-          >
+          <v-toolbar flat color="success">
             <v-toolbar-title>
-              $: {{headerTextCurrent}}<transition name="cursor-fade"><span v-if="typingText">_</span></transition>
+              $: {{headerTextCurrent}}
+              <transition name="cursor-fade">
+                <span v-if="typingText">_</span>
+              </transition>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">
-              <v-btn
-                flat
-                to="/"
-              >
-                Home
-              </v-btn>
-              <v-btn
-                flat
-                to="/preview"
-              >
-                Preview
-              </v-btn>
-              <v-btn
-                flat
-                to="/todo"
-              >
-                Todo
-              </v-btn>
+              <v-btn flat to="/">Home</v-btn>
+              <v-btn flat to="/preview">Preview</v-btn>
+              <v-btn flat to="/todo">Todo</v-btn>
             </v-toolbar-items>
+            <v-menu bottom left>
+              <template v-slot:activator="{ on }">
+                <v-btn dark icon v-on="on" class="hidden-md-and-up">
+                  <v-icon>menu</v-icon>
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-tile>
+                  <v-btn flat to="/">Home</v-btn>
+                </v-list-tile>
+                <v-list-tile>
+                  <v-btn flat to="/preview">Preview</v-btn>
+                </v-list-tile>
+                <v-list-tile>
+                  <v-btn flat to="/todo">Todo</v-btn>
+                </v-list-tile>
+              </v-list>
+            </v-menu>
             <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-            <v-btn
-              flat
-              icon
-              color="error"
-              @click="shakeAnimationF"
-            >
+            <v-btn flat icon color="error" @click="shakeAnimationF">
               <v-icon>close</v-icon>
             </v-btn>
           </v-toolbar>
         </div>
-        <router-view />
-        <v-footer
-          height="23"
-          class="pa-2 caption"
-        >
+        <router-view/>
+        <v-footer height="23" class="pa-2 caption">
           <v-spacer></v-spacer>
           <div>&copy; {{ new Date().getFullYear() }}</div>
         </v-footer>
