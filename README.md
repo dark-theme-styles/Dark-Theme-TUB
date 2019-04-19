@@ -8,11 +8,11 @@
     <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/uptimerobot/ratio/7/m782458020-1b26bc32279274168a804f88.svg?style=for-the-badge">
   </a>
   <br>
-  <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
-    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/badge/vue-V3.3.5-brightgreen.svg?&style=for-the-badge">
+    <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
+    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/npm/v/npm.svg?color=brightgreen&style=for-the-badge">
   </a>
   <a href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
-    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/npm/v/npm.svg?color=brightgreen&style=for-the-badge">
+    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/badge/vue-V3.3.5-brightgreen.svg?&style=for-the-badge">
   </a>
 
   <br>
