@@ -5,7 +5,7 @@ check_emoji="✔️ "
 error_emoji="❌ "
 warning_emoji="⚠️ "
 
-commit_abort="commit abort." 
+commit_abort="commit abort."
 
 # create the todos json file
 echo "$work_emoji creating todos ..."
@@ -14,11 +14,11 @@ echo "$work_emoji creating todos ..."
 cd docs
 # check if json file exists
 if [ ! -f todos.json ] ; then
-	echo "$error_emoji <todos.json> file not found!"
-	echo "$error_emoji $commit_abort"
-	exit 1
+    echo "$error_emoji <todos.json> file not found!"
+    echo "$error_emoji $commit_abort"
+    exit 1
 fi
-# move out of folder 
+# move out of folder
 cd ..
 # add the created file to the commit
 git add docs/todos.json
@@ -28,39 +28,40 @@ echo "$work_emoji extracting line content ..."
 
 # check if to use the other python command
 if ! type "python3" > /dev/null; then
-	echo "$warning_emoji <python3> command not exists using <python>"
-	if python extract_file_lines.py; then
-		# add created file to commit
-		git add docs/todos_line_extractions.json
-		echo "$check_emoji added <todos_line_extractions.json> to commit"
+    echo "$warning_emoji <python3> command not exists using <python>"
+    if python extract_file_lines.py; then
+        # add created file to commit
+        git add docs/todos_line_extractions.json
+        echo "$check_emoji added <todos_line_extractions.json> to commit"
+        # extract verions for UserCSS files
+        if python extract_version.py; then
+            # add created file to commit
+            git add versions.json
+            echo "$check_emoji added <versions.json> to commit"
+        else
+            echo "$error_emoji error while running python version extractor!"
+            echo "$error_emoji $commit_abort"
+            exit 1
+        fi
 		exit 0
-	else
-		echo "$error_emoji error while running python line extractor!"
-		echo "$error_emoji $commit_abort"
-		exit 1
-	fi
+    else
+        echo "$error_emoji error while running python line extractor!"
+        echo "$error_emoji $commit_abort"
+        exit 1
+    fi
 fi
 
 if python3 extract_file_lines.py; then
-	# add created file to commit
-	git add docs/todos_line_extractions.json
-	echo "$check_emoji added <todos_line_extractions.json> to commit"
+    # add created file to commit
+    git add docs/todos_line_extractions.json
+    echo "$check_emoji added <todos_line_extractions.json> to commit"
 else
-	echo "$error_emoji error while running python line extractor!"
-	echo "$error_emoji $commit_abort"
-	exit 1
+    echo "$error_emoji error while running python line extractor!"
+    echo "$error_emoji $commit_abort"
+    exit 1
 fi
 
-# extract verions for UserCSS files
-if python extract_version.py; then
-	# add created file to commit
-	git add versions.json
-	echo "$check_emoji added <versions.json> to commit"
-else
-	echo "$error_emoji error while running python version extractor!"
-	echo "$error_emoji $commit_abort"
-	exit 1
-fi
+
 
 
 
