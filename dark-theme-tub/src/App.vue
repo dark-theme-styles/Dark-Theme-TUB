@@ -163,9 +163,9 @@ html {
 
 .shake-animation-active {
     // animation: shake 0.3s;
-    animation: shake 5s;
+    animation: shake 3s;
     // animation-iteration-count: 0.3s;
-    animation-iteration-count: 5s;
+    animation-iteration-count: 3s;
 }
 
 @keyframes shake {
