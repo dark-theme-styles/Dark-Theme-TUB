@@ -4,7 +4,7 @@
       <v-card id="window" color="primary" class="shake-animation">
         <div id="nav">
           <v-toolbar flat color="success">
-            <v-toolbar-title>
+            <v-toolbar-title class="font-weight-bold">
               $: {{headerTextCurrent}}
               <transition name="cursor-fade">
                 <span v-if="typingText">_</span>
@@ -16,7 +16,7 @@
               <v-btn flat to="/preview">Preview</v-btn>
               <v-btn flat to="/todo">Todo</v-btn>
             </v-toolbar-items>
-            <v-menu id="burger-menu" left nudge-bottom=5 offset-y transition="slide-y-transition">
+            <v-menu id="burger-menu" left nudge-bottom="5" offset-y transition="slide-y-transition">
               <template v-slot:activator="{ on }">
                 <v-btn dark icon v-on="on" class="hidden-md-and-up">
                   <v-icon>menu</v-icon>
@@ -34,7 +34,6 @@
                 </v-list-tile>
               </v-list>
             </v-menu>
-            <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
             <v-btn flat icon color="error" @click="shakeAnimationF">
               <v-icon>close</v-icon>
             </v-btn>
@@ -43,7 +42,7 @@
         <router-view/>
         <v-footer height="23" class="pa-2 caption">
           <v-spacer></v-spacer>
-          <div>&copy; {{ new Date().getFullYear() }}</div>
+          <div>last updated: {{lastModified}} &copy; {{ new Date().getFullYear() }}</div>
         </v-footer>
       </v-card>
     </v-content>
@@ -52,6 +51,7 @@
 
 <script>
 import { setInterval, clearInterval, setTimeout } from "timers";
+import axiosInstance from "@/store/api";
 export default {
     name: "App",
     methods: {
@@ -63,6 +63,18 @@ export default {
                     anim_elem.classList.remove("shake-animation-active");
                 }, 300);
             }
+        },
+        getLastModified() {
+            console.log(this);
+            var self = this;
+            axiosInstance
+                .head("index.html")
+                .then(function(response) {
+                    console.log(self);
+                    console.log(response.headers["last-modified"]);
+                    self.lastModified = response.headers["last-modified"];
+                })
+                .catch(error => console.log(error));
         },
         displayTitle() {
             // reset interval and string
@@ -92,11 +104,13 @@ export default {
             headerText: this.$route.name,
             headerTextCurrent: "",
             intervallID: null,
-            typingText: true
+            typingText: true,
+            lastModified: ""
         };
     },
     mounted() {
         this.displayTitle();
+        this.getLastModified();
     },
     watch: {
         $route: function() {
@@ -123,21 +137,12 @@ html {
     opacity: 0;
 }
 
-// #burger-menu {
-//   padding-top: 60px
-// }
-#burger-menu-list {
-
-}
-
 #app {
     // font-family: "Avenir", Helvetica, Arial, sans-serif;
     font-family: "Source Code Pro", monospace !important;
+    font-size: 15px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // line-height: 1rem;
-    // text-align: center;
-    // color: #2c3e50;
     background-color: #1e1e1e;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAEJklEQVRogdXaW08TQRTA8dO1u5PNviiFiIpG0CjeQdGoX6UQAiF8KhIeSF/4IBoviHdA5eI1JtLW+OBadtIxp+nQYXZntrDbdnYSbvNnApTt+dHQ3NjYGDDGGi/1ev2i4zhl3/ery8vLgGtqakrsVxzH+anpDxzHWV9YWKjath3VJxzH2dScb6dv+b5f0fQd3/d3ebegtS4AwKdarVb1PO8E7k5PTwsZRgFgTdPvA8Bj7PPz81H9DgA815xvt1di+q7nef2889/gCGNsq16v81sCe8F13XJz7zJjbEPT7zHGnvK+tLQExWJR7OOMsVXN+aje77ruboI+4LruL/wBhxlj2zzwt57nge/7Bdu2C4yxD5qON84zTT/LGHvZod5v2/aQpg9YlNI/oFiEkD5KaTm6NvowpXQrFFp9iFL6NRTS62copd9CodVPW/l8vswY6wtVgIsA8FHTb+M1r+k3AeBVSr0Qqq2+q+sW3l9KpVIll8uJX+QqDhz+QS6Xk/tDAHih6XcB4HWKvdxGL0T1PL6anJzEa7eSz+dPBEEwCADv5ZtD6KOlUumR2GZmZsSO0/iZ5nyS3hcEwYiil6O6hY7wRSkdJIT8lA8LfZQQsi7uzc7Oiv0CIWQzdDC9PtJGPzATRAdDzkkr5Nzc3Jz4GSHHpNWtXhH7scFBvCLhMgBs4IjFtbe39y8IAhzRfnPvHgA84X1xcfEfOif0cbxPas53oiMRf+M6OnjJYOeS9n7LcOeSdq2D3XQuaY9y8AZSoXKw284l7bKTEwDwBhQO9tK5NJwcxiuP78sO9tq5pH1Y52BWnFN1nBkrcucOmujcYfoYAKyqHLybYecKzceDr1TdyrhziR4PmuRcVG84p+nXkQqVg6Y5J/d95xQdB9JbUDioc8aEPiI6F9HRwRW+LztounOhx3tSRwe3xT3RwUw6Jyyk4oXKwSw6J/ZbOJCiusUPyzeH53nlWq1WMKDjN/9S0xvTVtWtGGeMd45S+j0UhG6yg205l1UH23Yurpvo4KGci+umOXho5+K6SQ4eybm4boqDR3YuCw4mcs50BxM7Z7KDqThnqoOpORfXe+Fgqs7F9W47mLpzcb2bDnbEubjeLQc75pwJDnbUuXYc/CJHvrLgXEw/hQ5WFI5kwjlNv4ZUiA6Kd9zMOKfoONDegeRgNYvORfTz4j9v03aw685J/TwhZEfcywvvc8dwAh0HgN/SebHj5VyVOndO1blTneo4rVflnpaDPXOuuYcD73VUj3OwL6b33Dk+rVUdHfwsR74IIWdjnOy5c5TSH6HQ6ifRwSpjLOpvO+6cykkjnNP0K/isSe5gVecgAMhOHnCu2ZVOdaDvO6foeLdaw3caU7RYLOIbdPB4EAT4TN9955pP8BadPOCc0COd6kA/4FxEP7c/EwDgP7aSCeGBS/bXAAAAAElFTkSuQmCC);
     background-origin: padding-box;

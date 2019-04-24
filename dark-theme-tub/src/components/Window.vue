@@ -18,7 +18,7 @@
         </v-toolbar-items>
       </v-toolbar>
     </div>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 

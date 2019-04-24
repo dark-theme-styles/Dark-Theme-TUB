@@ -1,10 +1,7 @@
 <template>
   <div id="todo">
     <div v-if="todoList">
-      <v-expansion-panel
-        v-model="openPanels"
-        expand
-      >
+      <v-expansion-panel v-model="openPanels" expand>
         <v-expansion-panel-content
           hide-actions
           class="primary"
@@ -13,28 +10,18 @@
         >
           <template v-slot:header>
             <span>
-              <v-icon>{{openPanels[index] ? "folder_open" : "folder"}}</v-icon> {{name}}
+              <v-icon>{{openPanels[index] ? "folder_open" : "folder"}}</v-icon>
+              {{name}}
             </span>
           </template>
-          <div
-            v-for="todo in todos"
-            :key="todo.id"
-          >
-            <TodoLine
-              :line="todo.line"
-              :todo-type="todo.type"
-              :comment="todo.comment"
-            />
+          <div v-for="todo in todos" :key="todo.id">
+            <TodoLine :line="todo.line" :todo-type="todo.type" :comment="todo.comment"/>
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
     </div>
     <div v-else>
-      <v-progress-linear
-        color="error"
-        :indeterminate="true"
-        class="ma-0"
-      ></v-progress-linear>
+      <v-progress-linear color="error" :indeterminate="true" class="ma-0"></v-progress-linear>
     </div>
   </div>
 </template>

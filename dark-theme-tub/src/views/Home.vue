@@ -1,15 +1,9 @@
 <template>
   <div class="home">
-    <v-container
-      grid-list-md
-      fluid
-    >
+    <v-container grid-list-md fluid>
       <v-layout>
         <v-flex xs12>
-          <Section
-            icon="extension"
-            title="Plugin for UserCSS"
-          >
+          <Section icon="extension" title="Plugin for UserCSS">
             <div class="text-container">
               First download a plug-in for your web browser to install the CSS.
               <br>We prefer
@@ -20,7 +14,9 @@
                   <li>
                     for Chrome:
                     <br>
-                    <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Install Chrome extension</a>
+                    <a
+                      href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
+                    >Install Chrome extension</a>
                   </li>
                   <li>
                     for Firefox:
@@ -50,19 +46,9 @@
       </v-layout>
       <v-layout>
         <v-flex xs12>
-          <Section
-            icon="code"
-            title="Install UserCSS Style"
-          >
-            <v-layout
-              id="install-card"
-              wrap
-            >
-              <v-flex
-                xs12
-                sm6
-                md4
-              >
+          <Section icon="code" title="Install UserCSS Style">
+            <v-layout id="install-cards" wrap>
+              <v-flex id="install-card" xs12 sm6 md4>
                 <ThemeCard
                   headline="ISIS TUB"
                   content="Dark theme for most ISIS TUB modules and overall ISIS TUB site."
@@ -70,11 +56,7 @@
                   buttonText="Install UserCSS"
                 ></ThemeCard>
               </v-flex>
-              <v-flex
-                xs12
-                sm6
-                md4
-              >
+              <v-flex id="install-card" xs12 sm6 md4>
                 <ThemeCard
                   headline="MOSES TUB"
                   content="Dark theme for most Dark theme for most MOSES TUB modules and overall MOSES TUB site."
@@ -82,11 +64,7 @@
                   buttonText="Install UserCSS"
                 ></ThemeCard>
               </v-flex>
-              <v-flex
-                xs12
-                sm6
-                md4
-              >
+              <v-flex id="install-card" xs12 sm6 md4>
                 <ThemeCard
                   headline="Homepage TUB"
                   content="Dark theme for TUB homepage."
@@ -101,10 +79,7 @@
       </v-layout>
       <v-layout>
         <v-flex xs12>
-          <Section
-            icon="link"
-            title="Links"
-          >
+          <Section icon="link" title="Links">
             <div class="text-container">
               <ul>
                 <li>
@@ -129,10 +104,7 @@
                       src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
                       alt="homepage favicon"
                     >
-                    <a
-                      href="https://dark-theme-styles.github.io"
-                      target="_blank"
-                    >visit Homepage</a>
+                    <a href="https://dark-theme-styles.github.io" target="_blank">visit Homepage</a>
                   </p>
                 </li>
                 <li>
@@ -147,10 +119,7 @@
                 <li>
                   GitHub Dark Theme Styles Organization page:
                   <p>
-                    <a
-                      href="https://github.com/dark-theme-styles"
-                      target="_blank"
-                    >visit on GitHub</a>
+                    <a href="https://github.com/dark-theme-styles" target="_blank">visit on GitHub</a>
                   </p>
                 </li>
               </ul>
@@ -160,25 +129,12 @@
       </v-layout>
       <v-layout>
         <v-flex xs12>
-          <Section
-            icon="code"
-            title="Authors"
-          >
+          <Section icon="code" title="Authors">
             <div class="window__content">
-              <v-layout
-                id="users-card"
-                wrap
-                justify-content-center
-              >
+              <v-layout id="users-card" wrap justify-content-center>
                 <v-layout justify-content-center>
                   <!-- <v-flex xs12 offset-xs2 offset-sm1 sm12 offset-md3> -->
-                  <v-flex
-                    xs12
-                    offset-xs1
-                    offset-sm1
-                    sm12
-                    offset-md3
-                  >
+                  <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
                     <ImageCard
                       imageSrc="https://avatars1.githubusercontent.com/u/34386047"
                       titleName="B4rtware"
@@ -188,13 +144,7 @@
                 </v-layout>
 
                 <v-layout justify-content-center>
-                  <v-flex
-                    xs12
-                    offset-xs1
-                    offset-sm1
-                    sm12
-                    offset-md3
-                  >
+                  <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
                     <ImageCard
                       imageSrc="https://avatars1.githubusercontent.com/u/38668040"
                       titleName="Re-Krass"
@@ -214,12 +164,11 @@
 <script>
 import ThemeCard from "@/components/home/ThemeCard";
 import ImageCard from "@/components/home/ImageCard";
-import DialogWindow from "@/components/home/DialogWindow";
 import Section from "@/components/Section";
 // @ is an alias to /src
 export default {
     name: "home",
-    components: { ThemeCard, ImageCard, DialogWindow, Section }
+    components: { ThemeCard, ImageCard, Section }
 };
 </script>
 
@@ -235,18 +184,16 @@ ul ul li {
     padding-bottom: 5px;
 }
 
-#install-card {
+#install-cards {
     padding-top: 3px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
 }
-
-#users-card {
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+#install-card {
+    padding-left: 1%;
+    padding-right: 1%;
+    // max-width: 430px;
 }
 
 .image-container {
@@ -269,7 +216,7 @@ ul ul li {
             height: 35px !important;
             padding-left: 5px !important;
             //border-bottom: 2px solid #c8c8c8;
-            background-color:#363636;
+            background-color: #363636;
             box-shadow: 0 2px 2px -1px black;
             padding-top: 0;
 
