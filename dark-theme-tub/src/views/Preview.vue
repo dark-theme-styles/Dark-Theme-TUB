@@ -1,177 +1,180 @@
 <template>
-  <div class="preview">
-    <v-container grid-list-md fluid>
-      <!-- Section TUB-ISIS screenshots -->
-      <v-layout>
-        <v-flex xs12>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-avatar id="v-list-tile-avatar">
-                <v-icon>extension</v-icon>
-              </v-list-tile-avatar>
-              <v-list-tile-content>
-                <v-list-tile-title>TUB-ISIS screenshots</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <div class="text-container">
-              <div class="image-container">
+    <div class="preview">
+        <v-container grid-list-md fluid>
+            <!-- Section TUB-ISIS screenshots -->
+            <v-layout>
                 <v-flex xs12>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_1.png"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_1.jpg"
-                      class="screenshot"
-                      alt="Screenshot-TUB-ISIS-1"
-                    >
-                  </a>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_2.png"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_2.jpg"
-                      class="screenshot"
-                      alt="Screenshot-TUB-ISIS-2"
-                    >
-                  </a>
+                    <v-list>
+                        <v-list-tile>
+                            <v-list-tile-avatar id="v-list-tile-avatar">
+                                <v-icon>extension</v-icon>
+                            </v-list-tile-avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>TUB-ISIS screenshots</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <div class="text-container">
+                            <div class="image-container">
+                                <v-flex xs12>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_1.png"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_1.jpg"
+                                            class="screenshot"
+                                            alt="Screenshot-TUB-ISIS-1"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_2.png"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_ISIS/ISIS_Screenshot_2.jpg"
+                                            class="screenshot"
+                                            alt="Screenshot-TUB-ISIS-2"
+                                        />
+                                    </a>
+                                </v-flex>
+                            </div>
+                        </div>
+                        <br />
+                    </v-list>
                 </v-flex>
-              </div>
-            </div>
-            <br>
-          </v-list>
-        </v-flex>
-      </v-layout>
-      <!-- Section Shibboleth login page screenshot -->
-      <v-layout>
-        <v-flex xs12>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-avatar id="v-list-tile-avatar">
-                <v-icon>extension</v-icon>
-              </v-list-tile-avatar>
-              <v-list-tile-content>
-                <v-list-tile-title>Shibboleth login page screenshot</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <div class="text-container">
-              <div class="image-container">
+            </v-layout>
+            <!-- Section Shibboleth login page screenshot -->
+            <v-layout>
                 <v-flex xs12>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_Shibboleth/Shibboleth_Screenshot_1.png"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_Shibboleth/Shibboleth_Screenshot_1.jpg"
-                      class="screenshot"
-                      alt="Screenshot-Shibboleth-1"
-                    >
-                  </a>
+                    <v-list>
+                        <v-list-tile>
+                            <v-list-tile-avatar id="v-list-tile-avatar">
+                                <v-icon>extension</v-icon>
+                            </v-list-tile-avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title
+                                    >Shibboleth login page screenshot</v-list-tile-title
+                                >
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <div class="text-container">
+                            <div class="image-container">
+                                <v-flex xs12>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_Shibboleth/Shibboleth_Screenshot_1.png"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_Shibboleth/Shibboleth_Screenshot_1.jpg"
+                                            class="screenshot"
+                                            alt="Screenshot-Shibboleth-1"
+                                        />
+                                    </a>
+                                </v-flex>
+                            </div>
+                        </div>
+                        <br />
+                    </v-list>
                 </v-flex>
-              </div>
-            </div>
-            <br>
-          </v-list>
-        </v-flex>
-      </v-layout>
-      <!-- Section TUB-MOSES screenshots -->
-      <v-layout>
-        <v-flex xs12>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-avatar id="v-list-tile-avatar">
-                <v-icon>extension</v-icon>
-              </v-list-tile-avatar>
-              <v-list-tile-content>
-                <v-list-tile-title>TUB-MOSES screenshots</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <div class="text-container">
-              <div class="image-container">
+            </v-layout>
+            <!-- Section TUB-MOSES screenshots -->
+            <v-layout>
                 <v-flex xs12>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_1.png"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_1.jpg"
-                      class="screenshot"
-                      alt="Screenshot-TUB-MOSES-1"
-                    >
-                  </a>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_2.png"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_2.jpg"
-                      class="screenshot"
-                      alt="Screenshot-TUB-MOSES-2"
-                    >
-                  </a>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_3.png"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_3.jpg"
-                      class="screenshot"
-                      alt="Screenshot-TUB-MOSES-3"
-                    >
-                  </a>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_4.png"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_4.jpg"
-                      class="screenshot"
-                      alt="Screenshot-TUB-MOSES-4"
-                    >
-                  </a>
+                    <v-list>
+                        <v-list-tile>
+                            <v-list-tile-avatar id="v-list-tile-avatar">
+                                <v-icon>extension</v-icon>
+                            </v-list-tile-avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>TUB-MOSES screenshots</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <div class="text-container">
+                            <div class="image-container">
+                                <v-flex xs12>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_1.png"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_1.jpg"
+                                            class="screenshot"
+                                            alt="Screenshot-TUB-MOSES-1"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_2.png"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_2.jpg"
+                                            class="screenshot"
+                                            alt="Screenshot-TUB-MOSES-2"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_3.png"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_3.jpg"
+                                            class="screenshot"
+                                            alt="Screenshot-TUB-MOSES-3"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_4.png"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshots_MOSES/MOSES_Screenshot_4.jpg"
+                                            class="screenshot"
+                                            alt="Screenshot-TUB-MOSES-4"
+                                        />
+                                    </a>
+                                </v-flex>
+                            </div>
+                        </div>
+                        <br />
+                    </v-list>
                 </v-flex>
-              </div>
-            </div>
-            <br>
-          </v-list>
-        </v-flex>
-      </v-layout>
-      <!-- Section Edit Settings for UserCSS -->
-      <v-layout>
-        <v-flex xs12>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-avatar id="v-list-tile-avatar">
-                <v-icon>extension</v-icon>
-              </v-list-tile-avatar>
-              <v-list-tile-content>
-                <v-list-tile-title>Edit Settings for UserCSS</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <div class="text-container">
-              Customize the theme like you want. You can change the colors or the background pattern.
-              <div class="image-container">
+            </v-layout>
+            <!-- Section Edit Settings for UserCSS -->
+            <v-layout>
                 <v-flex xs12>
-                  <a
-                    href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG"
-                      class="screenshot"
-                      alt="Screenshot-Settings-UserCSS-1"
-                    >
-                  </a>
+                    <v-list>
+                        <v-list-tile>
+                            <v-list-tile-avatar id="v-list-tile-avatar">
+                                <v-icon>extension</v-icon>
+                            </v-list-tile-avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Edit Settings for UserCSS</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <div class="text-container">
+                            Customize the theme like you want. You can change the colors or the
+                            background pattern.
+                            <div class="image-container">
+                                <v-flex xs12>
+                                    <a
+                                        href="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG"
+                                            class="screenshot"
+                                            alt="Screenshot-Settings-UserCSS-1"
+                                        />
+                                    </a>
+                                </v-flex>
+                            </div>
+                        </div>
+                        <br />
+                    </v-list>
                 </v-flex>
-              </div>
-            </div>
-            <br>
-          </v-list>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </div>
+            </v-layout>
+        </v-container>
+    </div>
 </template>
 
 <style lang="scss" scoped>

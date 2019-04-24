@@ -1,164 +1,175 @@
 <template>
-  <div class="home">
-    <v-container grid-list-md fluid>
-      <v-layout>
-        <v-flex xs12>
-          <Section icon="extension" title="Plugin for UserCSS">
-            <div class="text-container">
-              First download a plug-in for your web browser to install the CSS.
-              <br>We prefer
-              <a href="https://github.com/openstyles/stylus">'Stylus'</a>.
-              <ul>
-                <li>Stylus</li>
-                <ul>
-                  <li>
-                    for Chrome:
-                    <br>
-                    <a
-                      href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
-                    >Install Chrome extension</a>
-                  </li>
-                  <li>
-                    for Firefox:
-                    <br>
-                    <a href="https://addons.mozilla.org/firefox/addon/styl-us/">
-                      Install Firefox
-                      extension
-                    </a>
-                  </li>
-                  <li>
-                    for Opera:
-                    <br>
-                    <a href="https://addons.opera.com/extensions/details/stylus/">
-                      Install Opera
-                      extension
-                    </a>
-                  </li>
-                </ul>
-              </ul>
-              <div class="window__content__text">
-                For Safari on Mac, we recommend
-                <a href="https://cascadea.app/">'Cascadea'</a>.
-              </div>
-            </div>
-          </Section>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex xs12>
-          <Section icon="code" title="Install UserCSS Style">
-            <v-layout id="install-cards" wrap>
-              <v-flex id="install-card" xs12 sm6 md4>
-                <ThemeCard
-                  headline="ISIS TUB"
-                  content="Dark theme for most ISIS TUB modules and overall ISIS TUB site."
-                  link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css"
-                  buttonText="Install UserCSS"
-                ></ThemeCard>
-              </v-flex>
-              <v-flex id="install-card" xs12 sm6 md4>
-                <ThemeCard
-                  headline="MOSES TUB"
-                  content="Dark theme for most Dark theme for most MOSES TUB modules and overall MOSES TUB site."
-                  link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
-                  buttonText="Install UserCSS"
-                ></ThemeCard>
-              </v-flex>
-              <v-flex id="install-card" xs12 sm6 md4>
-                <ThemeCard
-                  headline="Homepage TUB"
-                  content="Dark theme for TUB homepage."
-                  link
-                  buttonText="soon™"
-                  showTooltip
-                ></ThemeCard>
-              </v-flex>
+    <div class="home">
+        <v-container grid-list-md fluid>
+            <v-layout>
+                <v-flex xs12>
+                    <Section icon="extension" title="Plugin for UserCSS">
+                        <div class="text-container">
+                            First download a plug-in for your web browser to install the CSS.
+                            <br />We prefer
+                            <a href="https://github.com/openstyles/stylus">'Stylus'</a>.
+                            <ul>
+                                <li>Stylus</li>
+                                <ul>
+                                    <li>
+                                        for Chrome:
+                                        <br />
+                                        <a
+                                            href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
+                                            >Install Chrome extension</a
+                                        >
+                                    </li>
+                                    <li>
+                                        for Firefox:
+                                        <br />
+                                        <a href="https://addons.mozilla.org/firefox/addon/styl-us/">
+                                            Install Firefox extension
+                                        </a>
+                                    </li>
+                                    <li>
+                                        for Opera:
+                                        <br />
+                                        <a
+                                            href="https://addons.opera.com/extensions/details/stylus/"
+                                        >
+                                            Install Opera extension
+                                        </a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <div class="window__content__text">
+                                For Safari on Mac, we recommend
+                                <a href="https://cascadea.app/">'Cascadea'</a>.
+                            </div>
+                        </div>
+                    </Section>
+                </v-flex>
             </v-layout>
-          </Section>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex xs12>
-          <Section icon="link" title="Links">
-            <div class="text-container">
-              <ul>
-                <li>
-                  Visit our Dark-Theme-TUB website for more informations:
-                  <p>
-                    <img
-                      id="icons"
-                      src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
-                      alt="homepage favicon"
-                    >
-                    <a
-                      href="https://dark-theme-styles.github.io/Dark-Theme-TUB"
-                      target="_blank"
-                    >visit project website</a>
-                  </p>
-                </li>
-                <li>
-                  Visit our Homepage for more dark theme projects:
-                  <p>
-                    <img
-                      id="icons"
-                      src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
-                      alt="homepage favicon"
-                    >
-                    <a href="https://dark-theme-styles.github.io" target="_blank">visit Homepage</a>
-                  </p>
-                </li>
-                <li>
-                  GitHub Dark-Theme-TUB project:
-                  <p>
-                    <a
-                      href="https://github.com/dark-theme-styles/Dark-Theme-TUB"
-                      target="_blank"
-                    >visit on GitHub</a>
-                  </p>
-                </li>
-                <li>
-                  GitHub Dark Theme Styles Organization page:
-                  <p>
-                    <a href="https://github.com/dark-theme-styles" target="_blank">visit on GitHub</a>
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </Section>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex xs12>
-          <Section icon="code" title="Authors">
-            <div class="window__content">
-              <v-layout id="users-card" wrap justify-content-center>
-                <v-layout justify-content-center>
-                  <!-- <v-flex xs12 offset-xs2 offset-sm1 sm12 offset-md3> -->
-                  <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
-                    <ImageCard
-                      imageSrc="https://avatars1.githubusercontent.com/u/34386047"
-                      titleName="B4rtware"
-                      linkHref="https://github.com/B4rtware"
-                    ></ImageCard>
-                  </v-flex>
-                </v-layout>
+            <v-layout>
+                <v-flex xs12>
+                    <Section icon="code" title="Install UserCSS Style">
+                        <v-layout id="install-cards" wrap>
+                            <v-flex id="install-card" xs12 sm6 md4>
+                                <ThemeCard
+                                    headline="ISIS TUB"
+                                    content="Dark theme for most ISIS TUB modules and overall ISIS TUB site."
+                                    link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-isis-tub.user.css"
+                                    button-text="Install UserCSS"
+                                ></ThemeCard>
+                            </v-flex>
+                            <v-flex id="install-card" xs12 sm6 md4>
+                                <ThemeCard
+                                    headline="MOSES TUB"
+                                    content="Dark theme for most Dark theme for most MOSES TUB modules and overall MOSES TUB site."
+                                    link="https://raw.githubusercontent.com/dark-theme-styles/Dark-Theme-TUB/master/dark-theme-moses-tub.user.css"
+                                    button-text="Install UserCSS"
+                                ></ThemeCard>
+                            </v-flex>
+                            <v-flex id="install-card" xs12 sm6 md4>
+                                <ThemeCard
+                                    headline="Homepage TUB"
+                                    content="Dark theme for TUB homepage."
+                                    link
+                                    button-text="soon™"
+                                    show-tooltip
+                                ></ThemeCard>
+                            </v-flex>
+                        </v-layout>
+                    </Section>
+                </v-flex>
+            </v-layout>
+            <v-layout>
+                <v-flex xs12>
+                    <Section icon="link" title="Links">
+                        <div class="text-container">
+                            <ul>
+                                <li>
+                                    Visit our Dark-Theme-TUB website for more informations:
+                                    <p>
+                                        <img
+                                            id="icons"
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
+                                            alt="homepage favicon"
+                                        />
+                                        <a
+                                            href="https://dark-theme-styles.github.io/Dark-Theme-TUB"
+                                            target="_blank"
+                                            >visit project website</a
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    Visit our Homepage for more dark theme projects:
+                                    <p>
+                                        <img
+                                            id="icons"
+                                            src="https://raw.githubusercontent.com/dark-theme-styles/dark-theme-styles.github.io/master/images/favicon/android-chrome-512x512.png"
+                                            alt="homepage favicon"
+                                        />
+                                        <a
+                                            href="https://dark-theme-styles.github.io"
+                                            target="_blank"
+                                            >visit Homepage</a
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    GitHub Dark-Theme-TUB project:
+                                    <p>
+                                        <a
+                                            href="https://github.com/dark-theme-styles/Dark-Theme-TUB"
+                                            target="_blank"
+                                            >visit on GitHub</a
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    GitHub Dark Theme Styles Organization page:
+                                    <p>
+                                        <a
+                                            href="https://github.com/dark-theme-styles"
+                                            target="_blank"
+                                            >visit on GitHub</a
+                                        >
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </Section>
+                </v-flex>
+            </v-layout>
+            <v-layout>
+                <v-flex xs12>
+                    <Section icon="code" title="Authors">
+                        <div class="window__content">
+                            <v-layout id="users-card" wrap justify-content-center>
+                                <v-layout justify-content-center>
+                                    <!-- <v-flex xs12 offset-xs2 offset-sm1 sm12 offset-md3> -->
+                                    <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
+                                        <ImageCard
+                                            image-src="https://avatars1.githubusercontent.com/u/34386047"
+                                            title-name="B4rtware"
+                                            link-href="https://github.com/B4rtware"
+                                        ></ImageCard>
+                                    </v-flex>
+                                </v-layout>
 
-                <v-layout justify-content-center>
-                  <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
-                    <ImageCard
-                      imageSrc="https://avatars1.githubusercontent.com/u/38668040"
-                      titleName="Re-Krass"
-                      linkHref="https://github.com/Re-Krass"
-                    ></ImageCard>
-                  </v-flex>
-                </v-layout>
-              </v-layout>
-            </div>
-          </Section>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </div>
+                                <v-layout justify-content-center>
+                                    <v-flex xs12 offset-xs1 offset-sm1 sm12 offset-md3>
+                                        <ImageCard
+                                            image-src="https://avatars1.githubusercontent.com/u/38668040"
+                                            title-name="Re-Krass"
+                                            link-href="https://github.com/Re-Krass"
+                                        ></ImageCard>
+                                    </v-flex>
+                                </v-layout>
+                            </v-layout>
+                        </div>
+                    </Section>
+                </v-flex>
+            </v-layout>
+        </v-container>
+    </div>
 </template>
 
 <script>
@@ -167,7 +178,7 @@ import ImageCard from "@/components/home/ImageCard";
 import Section from "@/components/Section";
 // @ is an alias to /src
 export default {
-    name: "home",
+    name: "Home",
     components: { ThemeCard, ImageCard, Section }
 };
 </script>

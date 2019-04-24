@@ -1,29 +1,33 @@
 <template>
-  <div id="todo">
-    <div v-if="todoList">
-      <v-expansion-panel v-model="openPanels" expand>
-        <v-expansion-panel-content
-          hide-actions
-          class="primary"
-          v-for="(todos, name, index) in todoList"
-          :key="name"
-        >
-          <template v-slot:header>
-            <span>
-              <v-icon>{{openPanels[index] ? "folder_open" : "folder"}}</v-icon>
-              {{name}}
-            </span>
-          </template>
-          <div v-for="todo in todos" :key="todo.id">
-            <TodoLine :line="todo.line" :todo-type="todo.type" :comment="todo.comment"/>
-          </div>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
+    <div id="todo">
+        <div v-if="todoList">
+            <v-expansion-panel v-model="openPanels" expand>
+                <v-expansion-panel-content
+                    v-for="(todos, name, index) in todoList"
+                    :key="name"
+                    hide-actions
+                    class="primary"
+                >
+                    <template v-slot:header>
+                        <span>
+                            <v-icon>{{ openPanels[index] ? "folder_open" : "folder" }}</v-icon>
+                            {{ name }}
+                        </span>
+                    </template>
+                    <div v-for="todo in todos" :key="todo.id">
+                        <TodoLine
+                            :line="todo.line"
+                            :todo-type="todo.type"
+                            :comment="todo.comment"
+                        />
+                    </div>
+                </v-expansion-panel-content>
+            </v-expansion-panel>
+        </div>
+        <div v-else>
+            <v-progress-linear color="error" :indeterminate="true" class="ma-0"></v-progress-linear>
+        </div>
     </div>
-    <div v-else>
-      <v-progress-linear color="error" :indeterminate="true" class="ma-0"></v-progress-linear>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -34,6 +38,15 @@ export default {
     name: "Todo",
     components: {
         TodoLine
+    },
+    data() {
+        return {
+            todoList: null,
+            openPanels: [false, false, false, false, false, false, false]
+        };
+    },
+    mounted() {
+        this.getLineData().then(data => (this.todoList = data));
     },
     methods: {
         getLineData: async function() {
@@ -82,16 +95,6 @@ export default {
 
             return combinedTodoList;
         }
-    },
-    data() {
-        return {
-            todoList: null,
-            openPanels: [false, false, false, false, false, false, false]
-        };
-    },
-    mounted() {
-        this.getLineData().then(data => (this.todoList = data));
     }
 };
 </script>
-

@@ -1,52 +1,61 @@
 <template>
-  <v-app id="app" dark>
-    <v-content id="v-content">
-      <v-card id="window" color="primary" class="shake-animation">
-        <div id="nav">
-          <v-toolbar flat color="success">
-            <v-toolbar-title class="font-weight-bold">
-              $: {{headerTextCurrent}}
-              <transition name="cursor-fade">
-                <span v-if="typingText">_</span>
-              </transition>
-            </v-toolbar-title>
-            <v-spacer></v-spacer>
-            <v-toolbar-items class="hidden-sm-and-down">
-              <v-btn flat to="/">Home</v-btn>
-              <v-btn flat to="/preview">Preview</v-btn>
-              <v-btn flat to="/todo">Todo</v-btn>
-            </v-toolbar-items>
-            <v-menu id="burger-menu" left nudge-bottom="5" offset-y transition="slide-y-transition">
-              <template v-slot:activator="{ on }">
-                <v-btn dark icon v-on="on" class="hidden-md-and-up">
-                  <v-icon>menu</v-icon>
-                </v-btn>
-              </template>
-              <v-list id="burger-menu-list">
-                <v-list-tile>
-                  <v-btn flat to="/">Home</v-btn>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-btn flat to="/preview">Preview</v-btn>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-btn flat to="/todo">Todo</v-btn>
-                </v-list-tile>
-              </v-list>
-            </v-menu>
-            <v-btn flat icon color="error" @click="shakeAnimationF">
-              <v-icon>close</v-icon>
-            </v-btn>
-          </v-toolbar>
-        </div>
-        <router-view/>
-        <v-footer height="23" class="pa-2 caption">
-          <v-spacer></v-spacer>
-          <div>last updated: {{lastModified}} &copy; {{ new Date().getFullYear() }}</div>
-        </v-footer>
-      </v-card>
-    </v-content>
-  </v-app>
+    <v-app id="app" dark>
+        <v-content id="v-content">
+            <v-card id="window" color="primary" class="shake-animation">
+                <div id="nav">
+                    <v-toolbar flat color="success">
+                        <v-toolbar-title class="font-weight-bold">
+                            $: {{ headerTextCurrent }}
+                            <transition name="cursor-fade">
+                                <span v-if="typingText">_</span>
+                            </transition>
+                        </v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-toolbar-items class="hidden-sm-and-down">
+                            <v-btn flat to="/">Home</v-btn>
+                            <v-btn flat to="/preview">Preview</v-btn>
+                            <v-btn flat to="/todo">Todo</v-btn>
+                        </v-toolbar-items>
+                        <v-menu
+                            id="burger-menu"
+                            left
+                            nudge-bottom="5"
+                            offset-y
+                            transition="slide-y-transition"
+                        >
+                            <template v-slot:activator="{ on }">
+                                <v-btn dark icon class="hidden-md-and-up" v-on="on">
+                                    <v-icon>menu</v-icon>
+                                </v-btn>
+                            </template>
+                            <v-list id="burger-menu-list">
+                                <v-list-tile>
+                                    <v-btn flat to="/">Home</v-btn>
+                                </v-list-tile>
+                                <v-list-tile>
+                                    <v-btn flat to="/preview">Preview</v-btn>
+                                </v-list-tile>
+                                <v-list-tile>
+                                    <v-btn flat to="/todo">Todo</v-btn>
+                                </v-list-tile>
+                            </v-list>
+                        </v-menu>
+                        <v-btn flat icon color="error" @click="shakeAnimationF">
+                            <v-icon>close</v-icon>
+                        </v-btn>
+                    </v-toolbar>
+                </div>
+                <router-view />
+                <v-footer height="23" class="pa-2 caption">
+                    <v-spacer></v-spacer>
+                    <div>
+                        last updated: {{ lastModified }} &copy;
+                        {{ new Date().getFullYear() }}
+                    </div>
+                </v-footer>
+            </v-card>
+        </v-content>
+    </v-app>
 </template>
 
 <script>
@@ -54,6 +63,24 @@ import { setInterval, clearInterval, setTimeout } from "timers";
 import axiosInstance from "@/store/api";
 export default {
     name: "App",
+    data() {
+        return {
+            headerText: this.$route.name,
+            headerTextCurrent: "",
+            intervallID: null,
+            typingText: true,
+            lastModified: ""
+        };
+    },
+    watch: {
+        $route: function() {
+            this.displayTitle();
+        }
+    },
+    mounted() {
+        this.displayTitle();
+        this.getLastModified();
+    },
     methods: {
         shakeAnimationF() {
             var animation_elements = [document.getElementById("window")];
@@ -98,28 +125,9 @@ export default {
                 }
             }, delay);
         }
-    },
-    data() {
-        return {
-            headerText: this.$route.name,
-            headerTextCurrent: "",
-            intervallID: null,
-            typingText: true,
-            lastModified: ""
-        };
-    },
-    mounted() {
-        this.displayTitle();
-        this.getLastModified();
-    },
-    watch: {
-        $route: function() {
-            this.displayTitle();
-        }
     }
 };
 </script>
-
 
 <style lang="scss">
 html {
@@ -234,4 +242,3 @@ html {
     background: rgb(1, 1, 1);
 }
 </style>
-

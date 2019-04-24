@@ -1,10 +1,9 @@
 <template>
-  <div>title</div>
+    <div>title</div>
 </template>
 
 <script>
 export default {
-    name="Title"
-}
+    name: "Title"
+};
 </script>
-
