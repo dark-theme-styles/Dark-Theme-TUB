@@ -1,6 +1,5 @@
 {
 	"hooks": {
-		"pre-commit": "npm run lint",
-		"pre-commit": ".\\pre-commit.sh"
+		"pre-commit": "cd dark-theme-tub\ && npm run lint && cd .. && .\\pre-commit.sh"
 	}
 }
