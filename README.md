@@ -25,11 +25,11 @@
 
   <!-- Version NPM -->
   <a target="_blank" href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
-    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/npm/v/npm.svg?color=informational&style=for-the-badge">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/npm.svg?color=informational&style=for-the-badge">
   </a>
   <!-- Version VUE -->
   <a target="_blank" href="https://github.com/dark-theme-styles/Dark-Theme-TUB">
-    <img alt="Uptime Robot ratio (7 days)" src="https://img.shields.io/badge/vue-V3.3.5-brightgreen.svg?color=informational&style=for-the-badge">
+    <img alt="VUE Version" src="https://img.shields.io/badge/vue-V3.3.5-brightgreen.svg?color=informational&style=for-the-badge">
   </a>
   <br>
 
