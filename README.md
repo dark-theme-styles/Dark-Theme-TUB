@@ -1,4 +1,4 @@
-<h1 align="center">Dark theme for TUB ISIS / MOSES website </h2>
+<h1 align="center">Dark theme for TUB ISIS / MOSES website </h1>
 <p align="center">
   <br>
   <!-- Website up status -->
