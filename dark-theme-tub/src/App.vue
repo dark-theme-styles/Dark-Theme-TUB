@@ -167,9 +167,7 @@ html {
     margin-top: 5%;
     margin-bottom: 5%;
     -webkit-box-shadow: 0px 0px 64px 3px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.75);
-}
-
+    box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.75
 .v-toolbar__content {
     height: 45px !important;
 }
