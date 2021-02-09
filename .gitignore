@@ -210,3 +210,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+.mypy_cache
