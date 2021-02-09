@@ -10,9 +10,6 @@
                         <router-link to="/">Home</router-link>
                     </v-btn>
                     <v-btn flat>
-                        <router-link to="/preview">Preview</router-link>
-                    </v-btn>
-                    <v-btn flat>
                         <router-link to="/todo">Todo</router-link>
                     </v-btn>
                 </v-toolbar-items>

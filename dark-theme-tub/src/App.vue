@@ -13,7 +13,6 @@
                         <v-spacer></v-spacer>
                         <v-toolbar-items class="hidden-sm-and-down">
                             <v-btn flat to="/">Home</v-btn>
-                            <v-btn flat to="/preview">Preview</v-btn>
                             <v-btn flat to="/todo">Todo</v-btn>
                         </v-toolbar-items>
                         <v-menu
@@ -31,9 +30,6 @@
                             <v-list id="burger-menu-list">
                                 <v-list-tile>
                                     <v-btn flat to="/">Home</v-btn>
-                                </v-list-tile>
-                                <v-list-tile>
-                                    <v-btn flat to="/preview">Preview</v-btn>
                                 </v-list-tile>
                                 <v-list-tile>
                                     <v-btn flat to="/todo">Todo</v-btn>
