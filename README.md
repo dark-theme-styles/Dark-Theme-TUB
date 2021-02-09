@@ -44,13 +44,6 @@
 </p>
 
 -----
-
-<img src="/images/Screenshots_ISIS/ISIS_Screenshot_1.png" target="_blank" alt="Screenshot main page"/>
-
------
-
-<img src="/images/Screenshots_ISIS/ISIS_Screenshot_2-3.png" target="_blank" alt="Screenshot login pages"/>
-
 ## Plugin for UserCSS
 First download a plug-in for your web browser to install the CSS. We prefer '[Stylus](https://github.com/openstyles/stylus)'. <br>
 - Stylus <br>
@@ -69,10 +62,6 @@ For Mac Safari we recommend '[Cascadea](https://cascadea.app/)'.
   [Install with UserCSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-isis-tub.user.css)
   - TUB MOSES <br>
   [Install with UserCSS](https://raw.githubusercontent.com/Re-Krass/Dark-Theme-ISIS-TUB/master/dark-theme-moses-tub.user.css)
-
-## Edit UserCSS style
-Customize the theme like you want. You can change the colors or the background pattern. <br>
-<img src="/images/Screenshot_UserCSS/Screenshot_UserCSS_settings.PNG" target="_blank" alt="Screenshot edit UserCSS"/>
 
 ## Links
 - Visit our Dark-Theme-TUB website for more informations: <br>
